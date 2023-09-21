@@ -1,0 +1,45 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 5px;
+    background: white;
+}
+
+.topBar .leftSide{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.topBar .leftSide img{
+    height: 25px;
+}
+.topBar .leftSide .pageHead{
+    margin-left: 20px;
+}
+.topBar .leftSide .pageHead h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 900;
+}
+.topBar .leftSide .bread-crum a{
+    color: #CCD3E3;
+    font-size: 12px;
+}
+.topBar .leftSide .bread-crum a:nth-child(1){
+    margin-right: 10px;
+}
+.topBar .rightSide{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.topBar .rightSide svg{
+    margin: 0 10px;
+}
+.topBar .rightSide img{
+    height: 30px;
+    margin: 0 10px;
+}

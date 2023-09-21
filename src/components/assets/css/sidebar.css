@@ -1,0 +1,52 @@
+.mainSideBar{
+    width: 5%;
+    background-color: white;
+    position: relative;
+    height: 100vh;
+    border-right: 1px solid lightgray;
+}
+#openBar{
+    width: 25%;
+}
+.closeBar{
+    width: 5%;
+}
+.innerSideBar{
+    /* width: inherit; */
+}
+.innerSideBar .positionBox{
+    /* width: inherit; */
+}
+.sidebarScrollBox{
+    padding-left: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: inherit; */
+}
+.mainSideBar .sidebarScrollBox .logoBox img{
+     display: block;
+    height: 70px;
+    margin: 20px auto;
+}
+
+.toggleLogo{
+height: 30px !important;
+}
+.sidebarScrollBox .sidebarHead{
+    margin-top: 50px;
+    color: #CCD3E3;
+}
+.sidebarScrollBox a{
+    display: flex;
+    align-items: center;
+}
+.sidebarScrollBox svg{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.sidebarScrollBox span{
+    font-size: 15px;
+    font-weight: 800;
+}
