@@ -1,0 +1,157 @@
+
+.member_leftBarMainBox{
+    background: white;
+    height: 100vh;
+    padding: 0 15px;
+    margin-top: 30px;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+
+    
+}
+.member_leftBarMainBox .search-bar{
+    position: relative;
+    top: 12px;
+}
+.member_leftBarMainBox .search-bar input{
+    padding: 6px 18px;
+    border: none;
+    background: #F9F9F9;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 35px;
+}
+.member_leftBarMainBox .search-bar input::placeholder{
+    color: #B9C2D9;
+}
+.member_leftBarMainBox .search-bar svg{
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    font-size: 20px;
+    color: #B9C2D9;
+}
+
+.team_member{
+display: flex;
+border-bottom: 1px solid #F1F1F2;
+height: 40px;
+padding: 2px;
+}
+.team_member img{
+    height: 30px;
+}
+.team_detail h5{
+  font-size: 14px;
+  padding-left: 10px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.team_detail span{
+  font-size: 14px;
+  padding-left: 10px;
+  color: #B9C2D9;
+  text-align: left;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 9px;
+  text-transform: capitalize;
+  
+}
+.overflow{
+    margin: 25px;
+}
+
+/* ///////////////////// */
+
+.Add_member_panel{
+    background: white;
+    height: 100vh;
+    padding: 0 15px;
+    margin-top: 30px;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Add_member_panel img{
+    height: 20vh;
+    margin-bottom: 25px;
+}
+
+.Add_member_panel h5{
+text-align: center;
+font-size:  26px;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.Add_member_panel p{
+text-align: center;
+font-size:16px;
+letter-spacing: 0px;
+color: #B5BDD3;
+opacity: 1;
+}
+
+button{
+border-radius: 7px;
+opacity: 1;
+background: #3E97FF;
+}
+
+.add-member-btn{
+text-align: center;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+border-radius: 7px;
+width: 25%;
+font-size: 12px;
+padding: 6px;
+}
+
+
+@media screen and (max-width:400px) {
+    .Add_member_panel h5 {
+        font-size: 18px;
+    }
+    
+.add-member-btn{
+width: 37%;
+font-size: 14px;
+}
+.Add_member_panel p{
+    font-size: 13px;
+}
+
+.Add_member_panel img {
+    height: 15vh;
+}
+
+}
+
+@media screen and (max-width:320px) {
+.Add_member_panel h5 {
+        font-size: 14px;
+    }
+
+.add-member-btn {
+        width: 47%;
+        font-size: 16px;
+    }
+
+.Add_member_panel p {
+        font-size: 11px;
+    }
+.Add_member_panel img {
+        height: 12vh;
+    }
+}
