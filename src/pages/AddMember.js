@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
-import JobsProgress from '../components/dashboardTables/JobsProgress'
+import "../components/assets/css/addmember.css"
+import AddMemberCom from '../components/AddMemberCom'
 
-
-function Home() {
+function AddMember() {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
@@ -21,8 +21,11 @@ function Home() {
                     />
                     <div className="container">
                         <div className="row">
-                            <div className="col-6">
-                                <JobsProgress />   
+                            <div className="col-12 p-0">
+                            <div className='container'>
+                                <AddMemberCom/>
+                                
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -32,4 +35,4 @@ function Home() {
     )
 }
 
-export default Home
+export default AddMember
