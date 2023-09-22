@@ -15,13 +15,13 @@ const TeamManagement = () => {
             <div className='OdjBottom'>
                 <table className="table align-middle mb-0 bg-white">
                     <thead ct assName="bg-light">
-                        <tr>
-                            <th>Job</th>
-                            <th>Date</th>
-                            <th>Client</th>
-                            <th>Job Status</th>
-                            <th>End Date</th>
-                            <th>View</th>
+                        <tr className='objtr'>
+                            <th><p className='objtbletext'>Job</p></th>
+                            <th><p className='objtbletext'>Date</p></th>
+                            <th><p className='objtbletext'>Client</p></th>
+                            <th><p className='objtbletext'>Job Status</p></th>
+                            <th><p className='objtbletext'>End Date</p></th>
+                            <th><p className='objtbletext'>View</p></th>
                         </tr>
                     </thead>
                     <tbody>
