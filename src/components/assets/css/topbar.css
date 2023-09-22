@@ -43,3 +43,16 @@
     height: 30px;
     margin: 0 10px;
 }
+
+.InnerTopbar{
+    height: 56px;
+    margin: 0px 0px !important;
+    background: #FFFFFF ;
+        opacity: 1;
+
+}
+.innerRightSide{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
