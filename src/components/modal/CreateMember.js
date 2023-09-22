@@ -8,70 +8,72 @@ function CreateMember(props) {
     <div className="createmembermodal">
         {/* <div className='layoutBox'> */}
             <div className="createmembermodalInnerBox">
+                <h4> Create Member </h4>
+                <p> Create a new member </p>
                 <GrClose className='formClsoeIco' onClick={()=> {props?.setShowCreateMember(!props?.isShowCreateMember)}}/>
                 <form action="">
                     <div className="formScrollBox">
                         <div className="formFlex pt-4">
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label> User Name <span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
-                                <input type="text" class="form-control"placeholder="Enter email" />
-                            </div>
-                        </div>
-
-                        <div className="formFlex">
-                            <div class="form-group">
-                                <label>Email address <span>*</span></label>
-                                <input type="text" class="form-control"placeholder="Enter email" />
-                            </div>
-                            <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label>Password<span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                         </div>
 
                         <div className="formFlex">
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label> Name <span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
-                                <input type="text" class="form-control"placeholder="Enter email" />
-                            </div>
-                        </div>
-
-                        <div className="formFlex">
-                            <div class="form-group">
-                                <label>Email address <span>*</span></label>
-                                <input type="text" class="form-control"placeholder="Enter email" />
-                            </div>
-                            <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label> Company Name <span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                         </div>
 
                         <div className="formFlex">
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label> Email <span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                             <div class="form-group">
-                                <label>Email address <span>*</span></label>
+                                <label> Phone <span>*</span></label>
+                                <input type="text" class="form-control"placeholder="Enter email" />
+                            </div>
+                        </div>
+
+                        <div className="formFlex">
+                            <div class="form-group">
+                                <label> Mobile <span>*</span></label>
+                                <input type="text" class="form-control"placeholder="Enter email" />
+                            </div>
+                            <div class="form-group">
+                                <label> City <span>*</span></label>
+                                <input type="text" class="form-control"placeholder="Enter email" />
+                            </div>
+                        </div>
+
+                        <div className="formFlex">
+                            <div class="form-group">
+                                <label> Country <span>*</span></label>
+                                <input type="text" class="form-control"placeholder="Enter email" />
+                            </div>
+                            <div class="form-group">
+                                <label> Postal Code <span>*</span></label>
                                 <input type="text" class="form-control"placeholder="Enter email" />
                             </div>
                         </div>
                         <div class="form-group mt-3 px-3">
-                            <label>Email address <span>*</span></label>
+                            <label> Note <span>*</span></label>
                             <textarea class="form-control" ></textarea>
                         </div>
                         <div className="fileBox">
                             <div class="form-group mt-3 px-3">
-                                <label>Email address <span>*</span></label>
+                                <label> Postal Code <span>*</span></label>
                                 <div className="fileInnerBox">
                                     <input type="file" />
                                     <img src={profileIco} alt="" />
