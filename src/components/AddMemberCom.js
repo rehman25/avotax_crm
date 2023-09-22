@@ -117,12 +117,8 @@ function AddMemberCom() {
         </div>
         {isShow ? (
           <>
-<<<<<<< HEAD
           <MemberDetails />
            
-=======
-            <MemberDetails />
->>>>>>> ecd829c70cc11f1624f212efd36678cdc4f91d33
           </>
         ) : (
           <>
