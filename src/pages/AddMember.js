@@ -9,6 +9,8 @@ function AddMember() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
+    var one="Home"
+    var two="Team management"
     return (
         <>
             <div className="allPages">
@@ -17,7 +19,7 @@ function AddMember() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick }}
+                        {...{ hideShowMenuClick,one,two  }}
                     />
                     <div className="container">
                         <div className="row">

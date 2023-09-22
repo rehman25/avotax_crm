@@ -1,6 +1,7 @@
 .member_detail {
   background: white;
-  /* height: 100vh; */
+  /* max-height: 682px; */
+  /* min-height: 682px; */
   padding: 0 15px;
   margin-top: 30px;
   border: 1px solid #F1F1F2;
@@ -12,6 +13,7 @@
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .sub_member_detail h6{
   font-weight: 600;
@@ -33,7 +35,6 @@
 
 .employe_detail {
   display: flex;
-  height: 40px;
   padding: 2px;
 }
 
@@ -72,6 +73,7 @@
 .member_detail .employe_detail .emp_contact {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .member_detail .employe_detail .emp_contact p {
@@ -94,7 +96,6 @@
 
 /* TABS ============================== */
 .memberDetailsTabs{
-  margin-top: 65px;
 }
 .memberDetailsTabs .react-tabs__tab-list{
   display: flex;
@@ -206,13 +207,80 @@
 .getTaskBox svg{
   font-size: 20px;
 }
-.getTaskBox .table{
+.getTaskBox .tableee{
   margin-top: 20px;
 }
-.getTaskBox .table tr{
-  margin: 10px 0 !important;
-  border-color: red;
-  border-style: dashed;
-  border-width: 0 0 3px 0;
-  display: unset;
+.getTaskBox .tableee {
+  width: 100%;
+  overflow-y: scroll;
+  display: block;
+}
+
+.getTaskBox .tableee tr {
+  border-bottom: 1px dashed #dddddd;
+  margin: 20px 0;
+  display: block;
+  padding-bottom: 10px;
+}
+.getTaskBox .tableee td{
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+.getTaskBox .tabsPaginationBox{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.getTaskBox .tabsPaginationBox span{
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.getTaskBox .tabsPaginationBox svg{
+  margin: 0 5px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 6px 6px;
+  font-size: 36px;
+}
+
+
+@media screen and (max-width: 992px){
+    .generalTab {
+      border-right: none;
+      margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .employe_detail {
+        flex-direction: column;
+        align-items: start;
+    } 
+    .employe_detail span {
+      padding-bottom: 10px;
+    }
+      .employee_data {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+  .generalTabRightArea .rightAreaFlex {
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+  }
+  .generalTabRightArea .rightAreaFlex .headBox {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+  .generalTabRightArea .rightAreaFlex .dataPicker {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }

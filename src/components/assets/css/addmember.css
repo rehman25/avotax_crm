@@ -1,6 +1,6 @@
 .member_leftBarMainBox {
     background: white;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0 15px;
     margin-top: 30px;
     border: 1px solid #F1F1F2;
@@ -67,7 +67,7 @@
     margin: 35px 0 0 5px;
     overflow-y: scroll;
     overflow-x: hidden;
-    max-height: 570px;
+    max-height: 682px;
     min-height: 450px;
     padding-bottom: 30px;
     padding: 10px;

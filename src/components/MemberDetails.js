@@ -14,6 +14,8 @@ import { AiFillDribbbleSquare } from 'react-icons/ai';
 import showPwdImg from './assets/images/hide.avi'
 import hidePwdImg from './assets/images/show.avi'
 import user_img from "./assets/images/user.avi";
+import { MdNavigateBefore } from 'react-icons/md';
+import { MdNavigateNext } from 'react-icons/md';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { DatePicker, Space } from 'antd';
 const { RangePicker } = DatePicker;
@@ -48,9 +50,7 @@ function MemberDetails() {
               </div>
 
             </div>
-          </div>
-
-          <div className='memberDetailsTabs'>
+            <div className='memberDetailsTabs'>
               <Tabs>
                 <TabList>
                   <Tab>
@@ -125,7 +125,7 @@ function MemberDetails() {
                               </div>
                             </div>
                             <div className="getTaskBox">
-                                <table class="table">
+                                <table class="tableee">
                                   <tbody>
                                     <tr>
                                       <td style={{borderLeft: "5px solid #2DACF2"}}>T2</td>
@@ -149,7 +149,50 @@ function MemberDetails() {
                                         <BiDotsVertical />
                                       </td>
                                     </tr>
+
+                                    <tr>
+                                      <td style={{borderLeft: "5px solid #2DACF2"}}>T2</td>
+                                      <td>Dec 31 2020</td>
+                                      <td>415452452 canada inc -sean swarts</td>
+                                      <td>
+                                        <span style={{background: "#F1FAFF"}}>in progress</span>
+                                      </td>
+                                      <td>
+                                        <BiDotsVertical />
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td style={{borderLeft: "5px solid #2DACF2"}}>T2</td>
+                                      <td>Dec 31 2020</td>
+                                      <td>415452452 canada inc -sean swarts</td>
+                                      <td>
+                                        <span style={{background: "#F1FAFF"}}>in progress</span>
+                                      </td>
+                                      <td>
+                                        <BiDotsVertical />
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td style={{borderLeft: "5px solid #2DACF2"}}>T2</td>
+                                      <td>Dec 31 2020</td>
+                                      <td>415452452 canada inc -sean swarts</td>
+                                      <td>
+                                        <span style={{background: "#F1FAFF"}}>in progress</span>
+                                      </td>
+                                      <td>
+                                        <BiDotsVertical />
+                                      </td>
+                                    </tr>
                                   </tbody>
+                                  <div className='tabsPaginationBox'>
+                                    <span>200 results total</span>
+                                    <div>
+                                      <MdNavigateBefore />
+                                      <MdNavigateNext />
+                                    </div>
+                                  </div>
                                 </table>
                               </div>
                           </div>
@@ -160,6 +203,9 @@ function MemberDetails() {
 
               </Tabs>
           </div>
+          </div>
+
+       
         </div>
         {/* --------------------------------------- */}
 

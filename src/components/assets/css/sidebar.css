@@ -1,29 +1,31 @@
 .mainSideBar{
     width: 5%;
-    background-color: white;
     position: relative;
     height: 100vh;
-    border-right: 1px solid lightgray;
+    z-index: 999;
 }
 #openBar{
     width: 25%;
 }
-.closeBar{
+#closeBar{
+    width: 5%;
+}
+#openBox{
+    width: 20%;
+}
+#closeBox{
     width: 5%;
 }
 .innerSideBar{
-    /* width: inherit; */
-}
-.innerSideBar .positionBox{
-    /* width: inherit; */
+    border-right: 1px solid lightgray;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    width: 5%;
+    z-index: 999;
 }
 .sidebarScrollBox{
     padding-left: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: inherit; */
 }
 .mainSideBar .sidebarScrollBox .logoBox img{
      display: block;
