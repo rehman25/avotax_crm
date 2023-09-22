@@ -1,6 +1,7 @@
 import React from 'react'
 import './assets/css/annualrevenue.css'
 import AnnualChart from './charts/AnnualChart'
+import {AiOutlineCalendar} from 'react-icons/ai'
 
 const AnnualRevenue = () => {
   return (
@@ -12,8 +13,8 @@ const AnnualRevenue = () => {
                   <p>2.5% increase from last year. <b>Total 20k in 2023</b></p>
             </span>
             <span>
-                <div className="form-control">
-                      
+                <div className="form-control ArCalender">
+            <span>Jan 2022 - Jan 2023 <AiOutlineCalendar className='ArIcon' /> </span>
                 </div>
             </span>
         </div>

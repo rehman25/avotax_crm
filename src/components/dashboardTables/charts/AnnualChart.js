@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/annualrevenue.css'
-import ReactDOM from 'react-dom';
 import { Area } from '@ant-design/plots';
 
 const AnnualChart = () => {

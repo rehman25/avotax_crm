@@ -5,6 +5,7 @@ import { BsChevronRight } from 'react-icons/bs';
 import { BsSearch } from 'react-icons/bs';
 import { BsBell } from 'react-icons/bs';
 import  user_img from '../components/assets/images/user.avi'
+import { LuFilter } from 'react-icons/lu'
 
 import './assets/css/topbar.css'
 
@@ -32,6 +33,13 @@ function Topbar(props) {
             <img src={user_img} alt="" />
         </div>
     </div>
+          <div className='InnerTopbar row'>
+              <div className="col-lg-6 col-md-6 col-sm-6"></div>
+              <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
+                  <button><LuFilter />Filter</button>
+                  <button className='CreateJobbtn'>Create Job</button>
+              </div>
+          </div>
     </>
   )
 }

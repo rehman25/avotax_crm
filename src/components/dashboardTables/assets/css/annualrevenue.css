@@ -23,7 +23,7 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
     margin: 0px;
 }
 .ArTop span p{
-  font-size: 14px;
+  font-size: 10px;
   color: lightgray;
   margin: 0px;
 }
@@ -40,4 +40,76 @@ width: 100%;
 
 .ArBottom{
     padding: 15px;
+}
+
+.ArCalender{
+    /* width: 174px !important; */
+        height: 38px;
+        background: #F9F9F9;
+        border-radius: 8px !important;
+        opacity: 1;
+
+}
+
+.ArCalender span{
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #B9C2D9;
+        opacity: 1;
+        margin: 0px;
+}
+.ArIcon{
+    font-size: 14px !important;
+}
+
+
+@media screen and (max-width:450px) {
+.ArCalender {
+width: 120px !important;
+height: 38px;
+background: #F9F9F9;
+border-radius: 8px !important;
+opacity: 1;
+
+}
+.ArCalender span {
+text-align: center;
+font-size: 8px;
+letter-spacing: 0px;
+color: #B9C2D9;
+opacity: 1;
+margin: 0px;
+}
+
+.ArIcon {
+font-size: 10px !important;
+}
+}
+
+
+@media screen and (max-width:450px) {
+    .ArBottom{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .ArBottom::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    /* Track */
+.ArBottom::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.ArBottom::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+.ArBottom::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
 }
