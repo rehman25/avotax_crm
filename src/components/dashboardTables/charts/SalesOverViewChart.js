@@ -1,4 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
+
+
 import '../assets/css/SalesOverView.css'
 import ReactDOM from 'react-dom';
 import { Column } from '@ant-design/plots';
@@ -7,58 +10,58 @@ const SalesOverViewChart = () => {
     const data = [
         {
             action: 'Jan',
-            pv: 50000,
+            pv: "0k",
         },
         {
             action: 'Feb',
-            pv: 35000,
+            pv: "50k",
         },
         {
             action: 'March',
-            pv: 25000,
+            pv: "100k",
         },
         {
             action: 'April',
-            pv: 15000,
+            pv: "150k"
         },
         {
             action: 'May',
-            pv: 8500,
+            pv: "200k",
             
         },
         {
             action: 'June',
-            pv: 8500,
+            pv: "250k",
 
         },
         {
             action: 'July',
-            pv: 8500,
+            pv: "300",
 
         },
         {
             action: 'Aug',
-            pv: 8500,
+            pv: "250k",
 
         },
         {
             action: 'Sept',
-            pv: 8500,
+            pv: "350k",
 
         },
         {
             action: 'Oct',
-            pv: 8500,
+            pv: "350k",
 
         },
         {
             action: 'Nov',
-            pv: 8500,
+            pv: "350k",
 
         },
         {
             action: 'Dec',
-            pv: 8500,
+            pv: "350k",
 
         },
     ];
@@ -75,7 +78,7 @@ const SalesOverViewChart = () => {
         },
     };
     return(
-       <div style={{}} className='ChartCont'>
+       <div className='ChartCont'>
            <Column {...config} />
        </div>
     )

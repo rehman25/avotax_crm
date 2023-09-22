@@ -10,8 +10,8 @@ const WipPartner = () => {
                   <p className='Head'>Total WIP By Partner</p>
               </span>
           </div>
-          <div className='WipBottom '>
-            <div className='WipChartsLeft '>
+          <div className='WipBottom row'>
+            <div className='WipChartsLeft col-lg-6 col-md-6 '>
                 <div className='WipPartners'>
                       <span className='PartnerName'>
                           <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" />
@@ -82,7 +82,7 @@ const WipPartner = () => {
                 </div> 
 
             </div>
-              <div className='WipChartsRight'>
+              <div className='WipChartsRight col-lg-6 col-md-6 '>
                   <WipChart />
 
              </div>

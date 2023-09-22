@@ -95,6 +95,7 @@ svg {
 
 button {
     border: none;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
@@ -135,6 +136,7 @@ font-family: 'Poppins', sans-serif;
 
 textarea {
     width: 100%;
+font-family: 'Poppins', sans-serif;
 }
 
 textarea:focus {
@@ -155,4 +157,11 @@ textarea:focus {
     flex-direction: column;
     width: 100%;
     position: relative;
+}
+
+th{
+font-family: 'Poppins', sans-serif;
+}
+td{
+font-family: 'Poppins', sans-serif;
 }
