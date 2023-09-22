@@ -3,9 +3,11 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import user_img from "./assets/images/user.avi";
 import addmemberimg from "./assets/images/addmemberimg.webp";
 import MemberDetails from "./MemberDetails";
+import CreateMember from "./modal/CreateMember";
 
 function AddMemberCom() {
   const [isShow, setShow] = useState(false);
+  const [isShowCreateMember,setShowCreateMember] = useState(false)
   return (
     <>
       <div className="row">
@@ -115,6 +117,10 @@ function AddMemberCom() {
         </div>
         {isShow ? (
           <>
+            <MemberDetails />
+          </>
+        ) : (
+          <>
             <div className="col-lg-8 p-0">
               <div className="Add_member_panel">
                 <img src={addmemberimg} alt="" />
@@ -124,16 +130,18 @@ function AddMemberCom() {
                   them
                 </p>
 
-                <button className="add-member-btn">Add Member</button>
+                <button className="add-member-btn" onClick={() => {setShowCreateMember(!isShowCreateMember)}}>Add Member</button>
               </div>
             </div>
           </>
-        ) : (
-          <>
-            <MemberDetails />
-          </>
         )}
       </div>
+
+      {isShowCreateMember && (
+        <CreateMember 
+        {...{setShowCreateMember,isShowCreateMember}}
+        />
+      )}
     </>
   );
 }

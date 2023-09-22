@@ -1,0 +1,98 @@
+.createmembermodal{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.397);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-Content: center;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.createmembermodal .createmembermodalInnerBox{
+    background: white;
+    width: 50%;
+    position: relative;
+}
+.createmembermodal .formScrollBox{
+    height: 500px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.createmembermodal svg.formClsoeIco{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.createmembermodal .createmembermodalInnerBox .formFlex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.createmembermodal .formFlex .form-group{
+    width: 47%;
+}
+.createmembermodal .formFlex .form-group label > span{
+    color: red;
+}
+.createmembermodal button{
+    margin: 15px auto;
+    display: block;
+    color: white;
+    padding: 7px 50px;
+    border-radius: 7px;
+}
+.createmembermodal .fileBox .fileInnerBox{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background: #F1FAFF;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px dashed #9fbecf;
+    position: relative;
+}
+.createmembermodal .fileBox .fileInnerBox .flexBoxxx{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.createmembermodal .fileBox .fileInnerBox h5{
+    margin: 0;
+    font-size: 15px;
+}
+.createmembermodal .fileBox .fileInnerBox span{
+    font-size: 15px;
+    color: #E4E9ED;
+}
+
+.createmembermodal .fileBox .fileInnerBox input{
+    position: absolute;
+    height: 62px;
+    top: 0;
+    background: red;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+    .createmembermodal .createmembermodalInnerBox{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px){
+    .createmembermodal .createmembermodalInnerBox{
+        width: 80%;
+    }
+    .createmembermodal .createmembermodalInnerBox .formFlex{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .createmembermodal .formFlex .form-group{
+        width: 100%;
+        margin: 15px 0 0 10px;
+    }
+}
