@@ -1,0 +1,90 @@
+.TmParentContainer{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 2px #0000000A;
+        border: 1px solid #F1F1F2;
+        border-radius: 9px;
+        opacity: 1;
+        height: 400px;
+        padding: 3px;
+
+}
+
+.TmTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    border-bottom: 0.5px solid #F1F1F2;
+        opacity: 1;
+}
+
+.TmTop span {
+    margin-top: 10px;
+}
+
+.TmTop span .Head {
+text-align: left;
+    font-size:16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 0px;
+}
+
+.TmTop span p {
+text-align: left;
+    font-size:14px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+    margin: 0px;
+}
+
+.TmTop span p b {
+    color: blue;
+}
+
+.TmTableImg{
+     width: 40px;
+    height: 40px;
+}
+.TmTableHead{
+        font-size:12px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+
+}
+.TmTablepara{
+        font-size:10px ;
+        letter-spacing: 0px;
+        color: #A1A1A1;
+        opacity: 1;
+}
+
+th{
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #A1A1A1  !important;
+        opacity: 1;
+}
+tr{
+    border-bottom: 0.5px dotted #F1F1F2;
+  opacity: 1;
+}
+
+.TableText{
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+}
+
+.TmBottom{
+    padding: 5px;
+}
+
+.TableIcon{
+        color: #B9C2D9;
+        opacity: 1;
+}

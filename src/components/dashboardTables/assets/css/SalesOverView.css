@@ -1,0 +1,80 @@
+.SOVParentContainer {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 2px #0000000A;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+    opacity: 1;
+    height: 400px;
+}
+
+.SOVTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.SOVTop span {
+    margin-top: 10px;
+}
+
+.SOVTop span .Head {
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.SOVTop span p {
+    font-size: 14px;
+    color: lightgray;
+    margin: 0px;
+}
+
+.SOVselectList {
+    display: flex;
+}
+
+.SOVselectList li {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 12px;
+    margin: 0px 5px;
+}
+
+.SOVselectList li:active {
+    color: blue;
+}
+
+.SOvBottom{
+    padding: 15px;
+}
+
+.ChartCont{
+    padding: 15px;
+    height:300px;
+    overflow-x: scroll;
+    overflow-y: hidden
+}
+
+.ChartCont::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.ChartCont::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.ChartCont::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+.ChartCont::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

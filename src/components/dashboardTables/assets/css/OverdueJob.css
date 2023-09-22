@@ -1,0 +1,139 @@
+.OdjParentContainer {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 2px #0000000A;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+    opacity: 1;
+    height: 400px;
+    padding: 3px;
+
+}
+
+.OdjTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 0.5px solid #F1F1F2;
+    opacity: 1;
+    margin: 0px;
+}
+
+.OdjTop span {
+    margin-top: 10px;
+}
+
+.OdjTop span .Head {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 0px;
+}
+
+.OdjTop span p {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+    margin: 0px;
+}
+
+.OdjTop span p b {
+    color: blue;
+}
+
+.OdjTableImg {
+    width: 40px;
+    height: 40px;
+}
+
+.OdjTableHead {
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+
+}
+
+.OdjTablepara {
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+}
+
+th {
+    /* text-align: center; */
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #A1A1A1 !important;
+    opacity: 1;
+}
+
+tr {
+    border-bottom: 0.5px dotted #F1F1F2;
+    opacity: 1;
+}
+
+.OdjTableText {
+    margin: 0px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    /* text-align: center; */
+}
+
+.OdjBottom {
+    padding: 5px;
+}
+
+.OdjTableIcon {
+    color: #B9C2D9;
+    opacity: 1;
+}
+
+.OdjLower {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.OdjLowerPara {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+}
+
+.Pagination {
+    display: flex;
+}
+
+.Pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    margin: 0px 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.OdjTableTextHighlighted {
+    background: #F1FAFF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0px;
+    opacity: 1;
+    text-align: center;
+}
