@@ -1,4 +1,4 @@
-.JpParentContainer {
+.OdjParentContainer {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 2px #0000000A;
     border: 1px solid #F1F1F2;
@@ -9,7 +9,7 @@
 
 }
 
-.JpTop {
+.OdjTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,11 +19,11 @@
     margin: 0px;
 }
 
-.JpTop span {
+.OdjTop span {
     margin-top: 10px;
 }
 
-.JpTop span .Head {
+.OdjTop span .Head {
     text-align: left;
     font-size: 16px;
     letter-spacing: 0px;
@@ -32,7 +32,7 @@
     margin: 0px;
 }
 
-.JpTop span p {
+.OdjTop span p {
     text-align: left;
     font-size: 14px;
     letter-spacing: 0px;
@@ -41,16 +41,16 @@
     margin: 0px;
 }
 
-.JpTop span p b {
+.OdjTop span p b {
     color: blue;
 }
 
-.JpTableImg {
+.OdjTableImg {
     width: 40px;
     height: 40px;
 }
 
-.JpTableHead {
+.OdjTableHead {
     font-size: 12px;
     letter-spacing: 0px;
     color: #000000;
@@ -58,7 +58,7 @@
 
 }
 
-.JpTablepara {
+.OdjTablepara {
     font-size: 10px;
     letter-spacing: 0px;
     color: #A1A1A1;
@@ -78,7 +78,7 @@ tr {
     opacity: 1;
 }
 
-.JpTableText {
+.OdjTableText {
     margin: 0px;
     font-size: 12px;
     letter-spacing: 0px;
@@ -87,22 +87,22 @@ tr {
     /* text-align: center; */
 }
 
-.JpBottom {
+.OdjBottom {
     padding: 5px;
 }
 
-.JpTableIcon {
+.OdjTableIcon {
     color: #B9C2D9;
     opacity: 1;
 }
 
-.JpLower {
+.OdjLower {
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
 }
 
-.JpLowerPara {
+.OdjLowerPara {
     text-align: left;
     font-size: 14px;
     letter-spacing: 0px;
@@ -126,7 +126,7 @@ tr {
     height: 25px;
 }
 
-.TableTextHighlighted {
+.OdjTableTextHighlighted {
     background: #F1FAFF 0% 0% no-repeat padding-box;
     border-radius: 6px;
     opacity: 1;

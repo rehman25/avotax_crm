@@ -1,0 +1,117 @@
+.WipParentContainer {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 2px #0000000A;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+    opacity: 1;
+    height: 400px;
+    padding: 3px;
+
+}
+
+.WipTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    opacity: 1;
+    margin: 0px;
+}
+
+.WipTop span {
+    margin-top: 10px;
+}
+
+.WipTop span .Head {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 0px;
+}
+
+.WipTop span p {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+    margin: 0px;
+}
+
+.WipChartsLeft {
+    border: 1px solid #F1F1F2;
+    opacity: 1;
+    padding: 5px;
+    width: 50%;
+}
+
+.WipChartsRight {
+    border: 1px solid #F1F1F2;
+    opacity: 1;
+}
+
+.WipPartners {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDFE9;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.WipBottom {
+    display: flex;
+}
+
+.PartnerName {
+    display: flex;
+}
+
+.PartnerName img {
+    width: 31%;
+    height: 39px;
+    border-radius: 50%;
+
+}
+
+.WipPara p {
+    margin: 0px;
+    margin-left: 8px;
+    text-align: left;
+    font-size:10px;
+    letter-spacing: 0px;
+    color: #A1A1A1;
+    opacity: 1;
+}
+
+.paracolor{
+    color: #000000  !important;
+    font-weight: bold;
+}
+
+.WipTotal{
+    border-top: 1px solid #F1F1F2;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.WipTotal span{
+    text-align: left;
+        font-size: 13px;
+        letter-spacing: 0.57px;
+        color: #000000;
+        opacity: 1;
+}
+
+.TotalWip{
+    text-align: left;
+        font-size:16px;
+        letter-spacing: 0.57px;
+        color: #A1A1A1 !important;
+        opacity: 1;
+}

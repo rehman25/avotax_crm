@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { AiFillPieChart } from 'react-icons/ai';
 import '../components/assets/css/sidebar.css'
@@ -7,46 +7,66 @@ import logoIco from '../components/assets/images/logoIco.avi'
 import {IoIosPeople} from 'react-icons/io'
 import {BiErrorCircle} from 'react-icons/bi'
 import { BsBagFill } from 'react-icons/bs'
-
+import {FaMoneyBill} from 'react-icons/fa'
+import {FaClipboardList} from 'react-icons/fa'
+import {RiSettings5Fill} from 'react-icons/ri'
 
 
 export default function Sidebar(props) {
-  return (
+    const [isOpen, setIsopen] = useState(false)
+    const handleClose = () =>{
+        setIsopen(true)
+    }
+    return (
     <>
-        <div className="mainSideBar" id={props.isMenuOpen ?  "openBar" : "closeBar"}>
+        <div className="mainSideBar" id={props.isMenuOpen ?  "openBar" : "closeBar"} isOpen={!isOpen}>
             <div className="innerSideBar">
                 <div className="positionBox">
                     <div className="sidebarScrollBox">
                         <div className="logoBox">
+                                <span className='sideclose' onClick={() => setIsopen(handleClose)}>X</span>
                               {props.isMenuOpen ? <img src={logo} alt="" /> : <img src={logoIco} alt="" className='toggleLogo' />}
                         </div>
-                        <div className="">
+                          <div className="SideNav">
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Application</h6> : false}
                             <Link to="">
-                                <AiFillPieChart />
+                                <AiFillPieChart className='DashboardIco' />
                                 {props.isMenuOpen ? <span>Dashboard</span> : false}
                             </Link>
-                            <Link to="">
+                        </div>
+                        <div className='SideNav'>
+                              {props.isMenuOpen ? <h6 className='sidebarHead'>Management</h6> : false}
+                              <Link to="">
                                   <IoIosPeople />
-                                {props.isMenuOpen ? <span>Dashboard</span> : false}
-                            </Link>
+                                  {props.isMenuOpen ? <span>Team Management</span> : false}
+                              </Link>
+                              <Link to="">
+                                  <BiErrorCircle />
+                                  {props.isMenuOpen ? <span>Client</span> : false}
+                              </Link>
                               <Link to="">
                                   <BsBagFill />
-                                  {props.isMenuOpen ? <span>Dashboard</span> : false}
-                              </Link>
-                            <Link to="">
-                                  <BiErrorCircle />
-                                {props.isMenuOpen ? <span>Dashboard</span> : false}
-                            </Link>
-                              <Link to="">
-                                  <BiErrorCircle />
-                                  {props.isMenuOpen ? <span>Dashboard</span> : false}
+                                  {props.isMenuOpen ? <span>Jobs</span> : false}
                               </Link>
 
-                              {props.isMenuOpen ? <h6 className='sidebarHead'>Application</h6> : false}
                               <Link to="">
-                                  <BsBagFill />
-                                  {props.isMenuOpen ? <span>Dashboard</span> : false}
+                                  <FaMoneyBill />
+                                  {props.isMenuOpen ? <span>Payroll</span> : false}
+                              </Link>
+                        </div>
+                          <div className='SideNav'>
+                              {props.isMenuOpen ? <h6 className='sidebarHead'>Others</h6> : false}
+                              <Link to="">
+                                  <FaClipboardList />
+                                  {props.isMenuOpen ? <span>Config</span> : false}
+                              </Link>
+                              <Link to="">
+                                  <FaClipboardList />
+                                  {props.isMenuOpen ? <span>Reports</span> : false}
+                              </Link>
+                              <Link to="">
+                                  <RiSettings5Fill />
+                                  {props.isMenuOpen ? <span>Settings</span> : false}
                               </Link>
                         </div>
                     </div>

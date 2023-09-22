@@ -117,7 +117,8 @@ function AddMemberCom() {
         </div>
         {isShow ? (
           <>
-            <MemberDetails />
+          <MemberDetails />
+           
           </>
         ) : (
           <>
