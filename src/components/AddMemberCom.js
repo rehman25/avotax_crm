@@ -11,7 +11,7 @@ function AddMemberCom() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-4 p-0">
+        <div className="col-lg-3 p-0">
           <div className="member_leftBarMainBox">
             <div className="search-bar">
               <BiSearchAlt2 />
@@ -22,7 +22,7 @@ function AddMemberCom() {
               ></input>
             </div>
 
-            <div className="overflow">
+            <div className="overflowBox">
               <div
                 className="team_member"
                 onClick={() => {
@@ -122,7 +122,7 @@ function AddMemberCom() {
           </>
         ) : (
           <>
-            <div className="col-lg-8 p-0">
+            <div className="col-lg-9 p-0">
               <div className="Add_member_panel">
                 <img src={addmemberimg} alt="" />
                 <h5>Manage and connect with your team</h5>

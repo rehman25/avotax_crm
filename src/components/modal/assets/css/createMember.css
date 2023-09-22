@@ -20,6 +20,20 @@
     height: 500px;
     overflow-y: scroll;
     padding-bottom: 20px;
+    margin-top: 35px;
+}
+.createmembermodal .formScrollBox{
+    height: 500px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.createmembermodal .formScrollBox::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+.createmembermodal .formScrollBox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(226, 223, 223, 0.24);
 }
 .createmembermodal svg.formClsoeIco{
     position: absolute;
