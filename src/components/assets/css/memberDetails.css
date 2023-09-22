@@ -1,0 +1,69 @@
+.member_detail{
+    background: white;
+    height: 100vh;
+    padding: 0 15px;
+    margin-top: 30px;
+    border: 1px solid #F1F1F2;
+    border-radius: 9px;
+}
+
+.sub_member_detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.message-button{
+border-radius: 5px;
+opacity: 1;
+background: #F9F9F9;
+margin-right: 7px;
+}
+.btn_dotted{
+    border-radius: 5px;
+    opacity: 1;
+    background: #F9F9F9; 
+}
+
+.employe_detail{
+    display: flex;
+    flex-direction:row;
+    height: 40px;
+    padding: 2px;
+}
+.employe_detail img{
+    height: 40px;
+}
+
+.employe_detail h5{
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .employe_detail span{
+    font-size: 14px;
+    padding-left: 13px;
+    color: #B9C2D9;
+    text-align: left;
+    padding-bottom: 20px;
+    bottom: 9px;
+    text-transform: capitalize;
+    
+  }
+
+  .employee_data{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .employe_detail span p{
+    margin: 0;
+    color: black;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .emp_contact{
+    display: flex;
+  }

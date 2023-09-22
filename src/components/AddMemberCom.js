@@ -115,6 +115,11 @@ function AddMemberCom() {
         </div>
         {isShow ? (
           <>
+          <MemberDetails />
+           
+          </>
+        ) : (
+          <>
             <div className="col-lg-8 p-0">
               <div className="Add_member_panel">
                 <img src={addmemberimg} alt="" />
@@ -127,10 +132,6 @@ function AddMemberCom() {
                 <button className="add-member-btn">Add Member</button>
               </div>
             </div>
-          </>
-        ) : (
-          <>
-            <MemberDetails />
           </>
         )}
       </div>
