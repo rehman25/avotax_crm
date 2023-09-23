@@ -30,7 +30,7 @@ function MemberDetails() {
           <div className='sub_member_detail'>
             <h6>Member details</h6>
             <span>
-              <button className='message-button'><BiMessageDetail /> Messge</button>
+              <button className='message-button'><BiMessageDetail /> Message</button>
               <button className='btn_dotted'><BiDotsHorizontalRounded /></button>
             </span>
           </div>
