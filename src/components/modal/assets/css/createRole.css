@@ -1,0 +1,98 @@
+.createrolemodel {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.createrolemodel h4 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.createrolemodel .createrolemodelInnerBox {
+    width: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 15PX;
+}
+
+.createrolemodel .createrolemodelInnerBox svg.closeiconerole {
+    position: absolute;
+    right: 363px;
+    top: 50px;
+}
+
+.createrollheadercont {
+    display: flex;
+    flex-direction: column;
+}
+
+.createrollheadercont span {
+    font-weight: 600;
+}
+
+.createtabletext {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.createtabletext p {
+    margin: 0px 5px;
+}
+
+.craeterolltr {
+    border-bottom: 2px dotted #E0E0E0;
+}
+
+.createrollheader h5 {
+    padding: 5px;
+    color: #7E87A1;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.createrolemodel button {
+    margin: 25px auto;
+    display: block;
+    color: white;
+    padding: 8px 50px;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 992px) {
+    .createrolemodel .createrolemodelInnerBox {
+        width: 50%;
+    }
+
+    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
+        right: 272px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .createrolemodel .createrolemodelInnerBox {
+        width: 80%;
+    }
+
+    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
+        right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .createrolemodel .createrolemodelInnerBox {
+        width: 90%;
+    }
+
+    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
+        right: 10px;
+    }
+}

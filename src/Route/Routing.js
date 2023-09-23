@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import AddMember from '../pages/AddMember';
+import AddJob from '../components/modal/AddJob';
+import ClientType from '../components/modal/ClientType';
+import CreateRole from '../components/modal/CreateRole';
 
 function Routing() {
   return (
@@ -12,6 +15,9 @@ function Routing() {
                   <Route path="/" Component={Login}/>
                   <Route path="/Home" Component={Home}/>
                   <Route path="/AddMember" Component={AddMember}/>
+                  <Route path="/AddJob" Component={AddJob}/>
+                  <Route path="/ClientType" Component={ClientType}/>
+                  <Route path="/CreateRole" Component={CreateRole}/>
               </Routes>
           </Router>
     </>
