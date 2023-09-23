@@ -13,14 +13,17 @@ const JobTable = () => {
                 <table className="table align-middle mb-0 bg-white">
                     <thead ct assName="bg-light">
                         <tr className='JobtTR'>
-                            <th><input type="Checkbox" name="" id="" className='jobtext' /></th>
-                            <th><p className='jobtext'>Client Code</p></th>
+                            <th><input type="Checkbox" name="" id="" className='jobtext'/></th>
+                            <th><p className='jobtext'>Job ID</p></th>
+                            <th><p className='jobtext'>Job Type</p></th>
+                            <th><p className='jobtext'>Period Endend</p></th>
                             <th><p className='jobtext'>Client</p></th>
                             <th><p className='jobtext'>Key Contact</p></th>
-                            <th><p className='jobtext'>Partner</p></th>
-                            <th><p className='jobtext'>Manager</p></th>
-                            <th><p className='jobtext'>Email</p></th>
-                            <th><p className='jobtext'>Phone</p></th>
+                            <th><p className='jobtext'>Hrs. Worked</p></th>
+                            <th><p className='jobtext'>Hrs. Allocated</p></th>
+                            <th><p className='jobtext'>Hrs. To go</p></th>
+                            <th><p className='jobtext'>Target End Date</p></th>
+                            <th><p className='jobtext'>Job Status</p></th>
                             <th><p className='jobtext'>Action</p></th>
                         </tr>
                     </thead>
@@ -36,27 +39,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -83,27 +101,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -130,27 +163,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -177,27 +225,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -224,27 +287,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -271,27 +349,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -318,27 +411,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -365,27 +473,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -412,27 +535,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -459,27 +597,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -506,27 +659,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -553,27 +721,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -600,27 +783,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext' >
+                                    1.0000
+                                </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -647,74 +845,42 @@ const JobTable = () => {
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
-                                    10429244 Canada Inc
+                                    T1
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext'>
+                                    Sep 01 2023
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
+                                    10429244 Canada Inc...
+                                </p>
+                            </td>
+                            <td>
+                                <p className='Jobtabletext' >
                                     Paul Wolff
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
-                                </p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>Corinne </p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
-                            </td>
-                            <td>
-                                <p className='Jobtext'>
-                                    <span className='JobICo'>
-                                        <BsEye className='Jobeyeico' />
-                                    </span>
-                                    <span className='JobICo'>
-                                        <MdOutlineModeEditOutline className='Jobeditico' />
-                                    </span>
-                                    <span className='JobICo'>
-                                        <RiDeleteBin5Line className='Jobdeteleico' />
-                                    </span>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p className='Jobtabletext' s>
-                                    <input type="checkbox" name="" id="" />
-                                </p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>1001</p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>
-                                    10429244 Canada Inc
-                                </p>
-                            </td>
-                            <td>
-                                <p className='Jobtabletext'>
-                                    Paul Wolff
+                                    1.0000
                                 </p>
                             </td>
                             <td>
                                 <p className='Jobtabletext' >
-                                    Justin Joy
+                                    1.0000
                                 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Corinne </p>
+                                <p className='Jobtabletext'>1.0000 </p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>Pwolff77@hotmail.com</p>
+                                <p className='Jobtabletext'>Sep 01 2023</p>
                             </td>
                             <td>
-                                <p className='Jobtabletext'>613-727-6020</p>
+                                <p className='Jobtabletext Processtext'>In Process</p>
                             </td>
                             <td>
                                 <p className='Jobtext'>
@@ -734,18 +900,18 @@ const JobTable = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="row p-2 PaginationRow">
+            <div className="row p-2 JobPaginationRow">
                 <div className="col-lg-6">
-                    <span className='CitotalPage'>
+                    <span className='JobtotalPage'>
                         10/Page
                     </span>
                 </div>
                 <div className="col-lg-6">
-                    <div className='cipagination'>
+                    <div className='Jobpagination'>
                         <span>1-10 of 100 items</span>
-                        <span className='cipgnos'><MdOutlineArrowBackIos className='pagesICo' /></span>
-                        <span className='d-flex align-items-center'><p className='cipageno'>1</p><p className='cipagenodot'>...</p><p className='cipageno'>4</p><p className='cipageno'>5</p><p className='cipageno'>6</p><p className='cipageno'>7</p><p className='cipageno'>8</p><p className='cipagenodot'>...</p> </span>
-                        <span><MdOutlineArrowForwardIos className='pagesICo' /></span>
+                        <span className='Jobpgnos'><MdOutlineArrowBackIos className='JobpagesICo' /></span>
+                        <span className='d-flex align-items-center'><p className='Jobpageno'>1</p><p className='Jobpagenodot'>...</p><p className='Jobpageno'>4</p><p className='Jobpageno'>5</p><p className='Jobpageno'>6</p><p className='Jobpageno'>7</p><p className='Jobpageno'>8</p><p className='Jobpagenodot'>...</p> </span>
+                        <span><MdOutlineArrowForwardIos className='JobpagesICo' /></span>
                     </div>
                 </div>
             </div>
