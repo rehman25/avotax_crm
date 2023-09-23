@@ -2,6 +2,7 @@ import React from 'react'
 import "./assets/css/clientType.css"
 import { GrClose } from 'react-icons/gr';
 import Corporate from '../modal/assets/images/Corporate.avi.png'
+import Personal from '../modal/assets/images/Personal.avi.png'
 
 
 
@@ -13,11 +14,11 @@ function ClientType() {
                     <GrClose className='ClientcloseIcon' />
                     <h4 className='head'> Client Type </h4>
                     <div className="PersonalClients mt-5">
-                        <img src={Corporate} alt="" />
+                        <img src={Personal} alt="" />
                         <input type="file" />
                         <span>
                             <h5> Personal Client </h5>
-                            <p>Client with social number ( SIN )</p>
+                            <p>Client with social number (SIN)</p>
                         </span>
 
                     </div>
@@ -25,7 +26,7 @@ function ClientType() {
                         <img src={Corporate} alt="" />
                         <span>
                             <h5> Corporate Client </h5>
-                            <p> Client with Business number ( BN )</p>
+                            <p> Client with Business number (BN)</p>
                         </span>
                     </div>
                     <button>Continue</button>
