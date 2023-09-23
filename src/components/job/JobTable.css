@@ -1,4 +1,4 @@
-.ClientInfoMain {
+.JobMain {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 2px #0000000A;
     border: 1px solid #F1F1F2;
@@ -7,7 +7,7 @@
     padding: 10px;
 }
 
-.clientinfotabletext {
+.Jobtabletext {
     text-align: left;
     font-size: 12px;
     letter-spacing: 0.7px;
@@ -44,7 +44,7 @@
     color: #cc3333;
 }
 
-.cittext {
+.jobtext {
     font-size: 14px;
     letter-spacing: 0px;
     color: #A1A1A1 !important;
@@ -52,7 +52,7 @@
     margin: 0px;
 }
 
-.CitTR {
+.JobtTR {
     border-bottom: 0.5px dotted #F1F1F2;
     opacity: 1;
     background: #FAFAFA 0% 0% no-repeat padding-box !important;
@@ -72,54 +72,55 @@
     opacity: 1;
 }
 
-.pagesICo{
+.pagesICo {
     font-size: 14px !important;
     color: #D9D9D9;
     width: 25px;
-        height: 31px;
-        border: 1px solid #D9D9D9;
-        border-radius: 2px;
-        opacity: 1;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    opacity: 1;
 }
 
-.cipageno{
-        width: 20px;
-        height: 31px;     
-        border: 1px solid #D9D9D9;
-        border-radius: 2px;
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 5px;
+.cipageno {
+    width: 20px;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
 
 }
-.cipagenodot{
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 5px;
+
+.cipagenodot {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
 }
 
-.cipagination{
-    display: flex ;
+.cipagination {
+    display: flex;
     align-items: center;
     justify-content: end;
     flex-wrap: wrap !important;
 }
 
-.cipgnos{
+.cipgnos {
     margin: 0px 5px;
 }
 
-.PaginationRow{
+.PaginationRow {
     display: flex !important;
     flex-wrap: wrap !important;
 }
 
 @media screen and (max-width:1100px) {
-    .CItable{
+    .Jobtable {
         overflow-x: scroll !important;
     }
 }

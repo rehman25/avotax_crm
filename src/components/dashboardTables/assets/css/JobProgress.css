@@ -65,17 +65,18 @@
     opacity: 1;
 }
 
-/* th {
+.jptbletext{
     font-size: 12px;
     letter-spacing: 0px;
     color: #A1A1A1 !important;
     opacity: 1;
+    margin: 0px;
 }
 
-tr {
+.jptr{
     border-bottom: 0.5px dotted #F1F1F2;
     opacity: 1;
-} */
+}
 
 .JpTableText {
     margin: 0px;

@@ -15,11 +15,12 @@ const TeamManagement = () => {
           <div className='TmBottom'>
               <table className="table align-middle mb-0 bg-white">
                   <thead ct assName="bg-light">
-                      <tr>
-                          <th>Name</th>
-                          <th>Conv.</th>
-                          <th>Chart</th>
-                          <th>View</th>
+                      <tr className='TmTbletxttr'>
+                          <th> <p className='TmTbletxt'>Name</p> </th>
+                          <th><p className='TmTbletxt'>Conv.</p></th>
+                          <th><p className='TmTbletxt'>Chart</p> </th>
+                          <th><p className='TmTbletxt'>View</p> </th>
+                          
                       </tr>
                   </thead>
                   <tbody>
