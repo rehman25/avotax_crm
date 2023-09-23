@@ -1,0 +1,111 @@
+.clientstypemodal {
+    background: rgba(0, 0, 0, 0.397);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.clientstypemodal h4 {
+    font-weight: 600;
+    margin: 15px;
+    text-align: center;
+}
+
+.clientstypemodal .clientstypeinnermodal {
+    background: white;
+    height: 70vh;
+    width: 50%;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.clientstypemodal svg.ClientcloseIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.clientstypemodal .PersonalClients,
+.clientstypemodal .CorporateClients {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px dashed #707070;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.clientstypemodal .PersonalClients h5,
+.clientstypemodal .CorporateClients h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.clientstypemodal .PersonalClients p,
+.clientstypemodal .CorporateClients p {
+    margin: 0;
+}
+
+.clientstypemodal button {
+    margin: 30px auto;
+    display: block;
+    color: white;
+    padding: 7px 50px;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 80%;
+        height: 75vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 75%;
+    }
+
+    .clientstypemodal .PersonalClients {
+        margin: 10px auto;
+    }
+
+    .clientstypemodal button {
+        margin: 5px auto;
+        padding: 5px 50px;
+    }
+
+    .clientstypemodal h4 {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 348px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 281px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 90%; 
+        height: 75vh;
+    }
+}
+
+@media (max-width: 280px) {
+    .clientstypemodal .clientstypeinnermodal {
+        width: 90%; 
+        height: 80vh;
+    }
+}
