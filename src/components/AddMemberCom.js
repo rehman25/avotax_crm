@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import user_img from "./assets/images/user.avi";
-import addmemberimg from "./assets/images/addmemberimg.webp";
+import contact from "./assets/images/contact.svg.svg";
 import MemberDetails from "./MemberDetails";
 import CreateMember from "./modal/CreateMember";
 
@@ -124,7 +124,7 @@ function AddMemberCom() {
           <>
             <div className="col-lg-8 p-0">
               <div className="Add_member_panel">
-                <img src={addmemberimg} alt="" />
+                <img src={contact} alt="" />
                 <h5>Manage and connect with your team</h5>
                 <p>
                   Add your team member or manage there <br /> status by clicking

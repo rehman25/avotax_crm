@@ -32,7 +32,7 @@ margin-right: 7px;
     padding: 2px;
 }
 .employe_detail img{
-    height: 40px;
+    height: 50px;
 }
 
 .employe_detail h5{
@@ -43,8 +43,8 @@ margin-right: 7px;
   }
 
   .employe_detail span{
-    font-size: 14px;
-    padding-left: 13px;
+    font-size: 12px;
+    padding-left: 12px;
     color: #B9C2D9;
     text-align: left;
     padding-bottom: 20px;
@@ -67,3 +67,8 @@ margin-right: 7px;
   .emp_contact{
     display: flex;
   }
+ .icon_border{
+   border: 2px solid #F1F1F1;
+   border-radius: 10px;
+   background-color: #F1F1F1;
+ }

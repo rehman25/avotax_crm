@@ -25,8 +25,8 @@ function MemberDetails() {
                    <h5>Smith Johnson</h5>
                   <span>Managing partner</span>
                   <span className='emp_contact'>
-                    <p><BsFillTelephoneFill/> 613-722-2183</p>
-                    <p><BsEnvelope/> derek@gmail.com</p>
+                    <p><BsFillTelephoneFill className='icon_border'/> 613-722-2183</p>
+                    <p><BsEnvelope className='icon_border'/> derek@gmail.com</p>
                   </span>
                   </div>
                 </div>
