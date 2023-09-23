@@ -41,7 +41,7 @@ height: 30px !important;
     color: #CCD3E3;
 }
 .DashboardIco{
-    color: blue !important;
+    /* color: blue !important; */
 }
 .sidebarScrollBox a{
     display: flex;

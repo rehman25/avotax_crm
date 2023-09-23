@@ -8,6 +8,7 @@ import Job from '../pages/Job'
 import AddJob from '../components/modal/AddJob';
 import ClientType from '../components/modal/ClientType';
 import CreateRole from '../components/modal/CreateRole';
+import UserManagementConfig from '../pages/UserManagementConfig';
 
 function Routing() {
   return (
@@ -20,7 +21,8 @@ function Routing() {
           <Route path="/ClientInfo" Component={ClientInfo} />
           <Route path="/Job" Component={Job} />
           <Route path="/ClientType" Component={ClientType}/>
-          <Route path="/CreateRole" Component={CreateRole}/>
+          <Route path="/CreateRole" Component={CreateRole} />
+          <Route path="/UserManagementConfig" Component={UserManagementConfig} />
         </Routes>
       </Router>
     </>

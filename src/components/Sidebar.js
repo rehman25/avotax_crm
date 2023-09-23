@@ -29,22 +29,22 @@ export default function Sidebar(props) {
                         </div>
                           <div className="SideNav">
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Application</h6> : false}
-                            <Link to="">
+                            <Link to="/home">
                                 <AiFillPieChart className='DashboardIco' />
                                 {props.isMenuOpen ? <span>Dashboard</span> : false}
                             </Link>
                         </div>
                         <div className='SideNav'>
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Management</h6> : false}
-                              <Link to="">
+                              <Link to="/UserManagement">
                                   <IoIosPeople />
                                   {props.isMenuOpen ? <span>Team Management</span> : false}
                               </Link>
-                              <Link to="">
+                              <Link to="/ClientInfo">
                                   <BiErrorCircle />
                                   {props.isMenuOpen ? <span>Client</span> : false}
                               </Link>
-                              <Link to="">
+                              <Link to="/Job">
                                   <BsBagFill />
                                   {props.isMenuOpen ? <span>Jobs</span> : false}
                               </Link>

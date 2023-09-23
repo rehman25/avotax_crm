@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
-import JobTable from '../components/job/JobTable'
+import UserManagementConfigCom from '../components/UserManagementConfigCom'
 
 
-function Job(){
+function UserManagementConfig() {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
@@ -20,7 +20,7 @@ function Job(){
                         {...{ hideShowMenuClick }}
                     />
                     <div className="container mt-5">
-                        <JobTable />
+                        <UserManagementConfigCom />
                     </div>
                 </div>
             </div>
@@ -28,4 +28,4 @@ function Job(){
     )
 }
 
-export default Job
+export default UserManagementConfig
