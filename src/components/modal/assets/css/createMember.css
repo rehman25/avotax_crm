@@ -11,15 +11,41 @@
     width: 100%;
 }
 
+.createmembermodal h4{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.createmembermodal p{
+    text-align: center;
+}
+
 .createmembermodal .createmembermodalInnerBox{
     background: white;
     width: 50%;
     position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 .createmembermodal .formScrollBox{
     height: 500px;
     overflow-y: scroll;
     padding-bottom: 20px;
+    margin-top: 35px;
+}
+.createmembermodal .formScrollBox{
+    height: 500px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.createmembermodal .formScrollBox::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+.createmembermodal .formScrollBox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(226, 223, 223, 0.24);
 }
 .createmembermodal svg.formClsoeIco{
     position: absolute;
@@ -29,7 +55,7 @@
 .createmembermodal .createmembermodalInnerBox .formFlex{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .createmembermodal .formFlex .form-group{
     width: 47%;
@@ -92,7 +118,13 @@
         margin-top: 0px;
     }
     .createmembermodal .formFlex .form-group{
-        width: 100%;
+        width: 95%;
         margin: 15px 0 0 10px;
+    }
+}
+
+@media screen and (max-width:756px) {
+    .createmembermodal .formScrollBox{
+        overflow-x: hidden;
     }
 }

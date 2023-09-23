@@ -33,7 +33,7 @@ text-align: left;
 
 .TmTop span p {
 text-align: left;
-    font-size:14px;
+    font-size:10px;
     letter-spacing: 0px;
     color: #A1A1A1;
     opacity: 1;
@@ -62,14 +62,15 @@ text-align: left;
         opacity: 1;
 }
 
-th{
+.TmTbletxt{
         font-size: 14px;
         letter-spacing: 0px;
         color: #A1A1A1  !important;
         opacity: 1;
+        margin: 0px;
 }
-tr{
-    border-bottom: 0.5px dotted #F1F1F2;
+.TmTbletxttr{
+    border-bottom: 0.5px dotted #F1F1F2 !important;
   opacity: 1;
 }
 
@@ -87,4 +88,44 @@ tr{
 .TableIcon{
         color: #B9C2D9;
         opacity: 1;
+}
+
+
+@media screen and (max-width:450px) {
+    
+    .TmBottom{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .TmBottom::-webkit-scrollbar {
+        width: 2px;
+}
+
+/* Track */
+.TmBottom::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.TmBottom::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+.TmBottom::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+th{
+    font-size: 10px;
+}
+.TmTableHead{
+    font-size: 10px;
+}
+.TmTablepara {
+    font-size: 8px;
+}
+.TableText{
+    font-size: 12px;
+}
 }

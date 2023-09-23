@@ -1,74 +1,286 @@
-.member_detail{
-    background: white;
-    height: 100vh;
-    padding: 0 15px;
-    margin-top: 30px;
-    border: 1px solid #F1F1F2;
-    border-radius: 9px;
+.member_detail {
+  background: white;
+  /* max-height: 682px; */
+  /* min-height: 682px; */
+  padding: 0 15px;
+  margin-top: 30px;
+  border: 1px solid #F1F1F2;
+  border-radius: 9px;
 }
 
-.sub_member_detail{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.sub_member_detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.sub_member_detail h6{
+  font-weight: 600;
+}
+.message-button {
+  border-radius: 5px;
+  background: #F9F9F9;
+  margin-right: 7px;
+  padding: 4px 15px;
+  font-weight: 300;
+  font-size: 15px;
 }
 
-.message-button{
-border-radius: 5px;
-opacity: 1;
-background: #F9F9F9;
-margin-right: 7px;
-}
-.btn_dotted{
-    border-radius: 5px;
-    opacity: 1;
-    background: #F9F9F9; 
+.btn_dotted {
+  border-radius: 5px;
+  padding: 4px 10px;
+  background: #F9F9F9;
 }
 
-.employe_detail{
-    display: flex;
-    flex-direction:row;
-    height: 40px;
-    padding: 2px;
-}
-.employe_detail img{
-    height: 50px;
+.employe_detail {
+  display: flex;
+  padding: 2px;
 }
 
-.employe_detail h5{
-    font-size: 14px;
-    padding-left: 10px;
-    margin: 0;
-    text-transform: capitalize;
+.employe_detail img {
+  height: 85px;
+}
+
+.employe_detail h5 {
+  font-size: 14px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.employe_detail span {
+  font-size: 14px;
+  color: #B9C2D9;
+  padding-bottom: 20px;
+  bottom: 9px;
+  text-transform: capitalize;
+
+}
+
+.employee_data {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.employe_detail .employee_data span p {
+  margin: 0;
+  color: black;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.member_detail .employe_detail .emp_contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member_detail .employe_detail .emp_contact p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.member_detail .employe_detail .emp_contact p svg {
+  margin-right: 10px;
+  background: #F1F1F1;
+  padding: 3px 6px;
+  font-size: 27px;
+  border-radius: 15px;
+}
+
+.member_detail .employe_detail .emp_contact p:nth-child(2) {
+  margin-left: 20px;
+}
+
+/* TABS ============================== */
+.memberDetailsTabs{
+}
+.memberDetailsTabs .react-tabs__tab-list{
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #F1F1F2;
+  padding-bottom: 15px !important;
+  position: relative;
+}
+
+.memberDetailsTabs .react-tabs__tab-list li{
+  display: flex;
+  align-items: center;
+  outline: none !important;
+}
+.memberDetailsTabs .react-tabs__tab-list li:nth-child(2){
+  margin-left: 20px;
+}
+.memberDetailsTabs .react-tabs__tab-list li svg{
+  margin-right: 10px;
+  color: #BBC2DE;
+}
+.memberDetailsTabs .react-tabs__tab-list li span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #BBC2DE;
+}
+.memberDetailsTabs .react-tabs__tab-list li.react-tabs__tab--selected svg{
+  color: #56A4FF;
+}
+.memberDetailsTabs .react-tabs__tab-list li.react-tabs__tab--selected span{
+  color: #56A4FF;
+}
+
+/* TABS DESCRIPTION =================================== */
+.generalTab{
+  border-right: 1px solid #F1F1F2;
+  margin-top: 20px !important;
+}
+.generalTab .generalInnerInfo{
+  margin-top: 10px;
+  position: relative;
+}
+.generalTab .generalInnerInfo span{
+  color: #BBC2DE;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.generalTab .generalInnerInfo h6{
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.generalTab .generalInnerInfo input{
+  border: none;
+  width: 100%;
+  background: #f1f1f1;
+  padding-left: 5px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.generalTab .generalInnerInfo img{
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  height: 20px;
+}
+
+.generalTab .generalInnerInfo .social_links{
+  margin-bottom: 20px;
+}
+.generalTab .generalInnerInfo .social_links svg{
+  margin: 0 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.generalTabRightArea .rightAreaFlex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px !important;
+  align-items: center;
+}
+.generalTabRightArea .rightAreaFlex .headBox h6{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.generalTabRightArea .rightAreaFlex .headBox span{
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.generalTabRightArea .rightAreaFlex .dataPicker{
+  width: 30%;
+}
+
+.generalTabRightArea .rightAreaFlex .dataPicker .ant-picker{
+  background: #f9f9f9;
+}
+.getTaskBox{
+  border-top: 1px solid #f1f1f1;
+}
+.getTaskBox span{
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.getTaskBox svg{
+  font-size: 20px;
+}
+.getTaskBox .tableee{
+  margin-top: 20px;
+}
+.getTaskBox .tableee {
+  width: 100%;
+  overflow-y: scroll;
+  display: block;
+}
+
+.getTaskBox .tableee tr {
+  border-bottom: 1px dashed #dddddd;
+  margin: 20px 0;
+  display: block;
+  padding-bottom: 10px;
+}
+.getTaskBox .tableee td{
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+.getTaskBox .tabsPaginationBox{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.getTaskBox .tabsPaginationBox span{
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.getTaskBox .tabsPaginationBox svg{
+  margin: 0 5px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 6px 6px;
+  font-size: 36px;
+}
+
+
+@media screen and (max-width: 992px){
+    .generalTab {
+      border-right: none;
+      margin-top: 20px !important;
   }
+}
 
-  .employe_detail span{
-    font-size: 12px;
-    padding-left: 12px;
-    color: #B9C2D9;
-    text-align: left;
-    padding-bottom: 20px;
-    bottom: 9px;
-    text-transform: capitalize;
-    
-  }
+@media screen and (max-width: 768px){
+  .employe_detail {
+        flex-direction: column;
+        align-items: start;
+    } 
+    .employe_detail span {
+      padding-bottom: 10px;
+    }
+      .employee_data {
+        padding-left: 0;
+    }
+}
 
-  .employee_data{
-    display: flex;
-    flex-direction: column;
-    
+@media screen and (max-width: 480px){
+  .generalTabRightArea .rightAreaFlex {
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
   }
-  .employe_detail span p{
-    margin: 0;
-    color: black;
-    margin: 0 5px;
-    font-size: 12px;
-  }
-  .emp_contact{
-    display: flex;
-  }
- .icon_border{
-   border: 2px solid #F1F1F1;
-   border-radius: 10px;
-   background-color: #F1F1F1;
- }
+  .generalTabRightArea .rightAreaFlex .headBox {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+  .generalTabRightArea .rightAreaFlex .dataPicker {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

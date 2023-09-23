@@ -56,17 +56,23 @@
 .ChartCont{
     padding: 15px;
     height:300px;
-    overflow-x: scroll;
-    overflow-y: hidden
+    
 }
 
-.ChartCont::-webkit-scrollbar {
-    width: 2px;
-}
+@media screen and (max-width:450px) {
+    .ChartCont{
+        overflow-x: scroll;
+        overflow-y: hidden;
 
-/* Track */
-.ChartCont::-webkit-scrollbar-track {
-    background: transparent;
+    }
+    
+    .ChartCont::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    /* Track */
+    .ChartCont::-webkit-scrollbar-track {
+        background: transparent;
 }
 
 /* Handle */
@@ -77,4 +83,14 @@
 /* Handle on hover */
 .ChartCont::-webkit-scrollbar-thumb:hover {
     background: transparent;
+}
+}
+
+@media screen and (max-width:400px){
+.SOVselectList li{
+    font-size: 10px;
+}
+.SOVTop span .Head{
+    font-size: 14px;
+}
 }

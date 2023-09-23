@@ -65,15 +65,15 @@
     opacity: 1;
 }
 
-th {
-    /* text-align: center; */
+.objtbletext{
     font-size: 12px;
     letter-spacing: 0px;
     color: #A1A1A1 !important;
     opacity: 1;
+    margin: 0px;
 }
 
-tr {
+.objtr{
     border-bottom: 0.5px dotted #F1F1F2;
     opacity: 1;
 }
@@ -90,6 +90,7 @@ tr {
 .OdjBottom {
     padding: 5px;
 }
+
 
 .OdjTableIcon {
     color: #B9C2D9;
@@ -136,4 +137,52 @@ tr {
     margin: 0px;
     opacity: 1;
     text-align: center;
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    .OdjBottom{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .OdjBottom::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    /* Track */
+    .OdjBottom::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    .OdjBottom::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    /* Handle on hover */
+    .OdjBottom::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
+
+    .OdjTableText {
+        font-size: 8px;
+    }
+
+    .TableTextHighlighted {
+        font-size: 8px;
+        font-size: 8px;
+    }
+    .OdjTableTextHighlighted{
+        font-size: 8px;
+
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .OdjParentContainer {
+        height: 450px;
+    }
 }

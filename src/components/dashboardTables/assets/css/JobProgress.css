@@ -65,15 +65,15 @@
     opacity: 1;
 }
 
-th {
-    /* text-align: center; */
+.jptbletext{
     font-size: 12px;
     letter-spacing: 0px;
     color: #A1A1A1 !important;
     opacity: 1;
+    margin: 0px;
 }
 
-tr {
+.jptr{
     border-bottom: 0.5px dotted #F1F1F2;
     opacity: 1;
 }
@@ -89,6 +89,7 @@ tr {
 
 .JpBottom {
     padding: 5px;
+
 }
 
 .JpTableIcon {
@@ -136,4 +137,43 @@ tr {
     margin: 0px;
     opacity: 1;
     text-align: center;
+}
+
+
+@media screen and (max-width:450px) {
+    .JpBottom{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    
+    .JpBottom::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    /* Track */
+    .JpBottom::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    /* Handle */
+    .JpBottom::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+.JpBottom::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.JpTableText{
+    font-size: 8px !important;
+}
+
+}
+
+
+@media screen and (max-width:350px) {
+.JpParentContainer{
+    height: 450px;
+}
 }

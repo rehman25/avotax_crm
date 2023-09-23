@@ -15,13 +15,13 @@ const TeamManagement = () => {
             <div className='JpBottom'>
                 <table className="table align-middle mb-0 bg-white">
                     <thead ct assName="bg-light">
-                        <tr>
-                            <th>Job</th>
-                            <th>Date</th>
-                            <th>Client</th>
-                            <th>Job Status</th>
-                            <th>WIP Total</th>
-                            <th>View</th>
+                        <tr className='jptr'>
+                            <th><p className='jptbletext'>Job</p></th>
+                            <th><p className='jptbletext'>Date</p></th>
+                            <th><p className='jptbletext'>Client</p></th>
+                            <th><p className='jptbletext'>Job Status</p></th>
+                            <th><p className='jptbletext'>WIP Total</p></th>
+                            <th><p className='jptbletext'>View</p></th>
                         </tr>
                     </thead>
                     <tbody>

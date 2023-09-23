@@ -7,12 +7,15 @@ import JobProgress from '../components/dashboardTables/JobProgress'
 import OverdueJob from '../components/dashboardTables/OverdueJob'
 import WipPartner from '../components/dashboardTables/WipPartner'
 import SalesOverView from '../components/dashboardTables/SalesOverView'
+import InnerTopbar from '../components/InnerTopbar'
 
 function Home() {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
+    var one="Home"
+    var two="Team management"
     return (
         <>
             <div className="allPages">
@@ -21,8 +24,9 @@ function Home() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick }}
+                        {...{ hideShowMenuClick,one,two  }}
                     />
+                    <InnerTopbar />
                     <div className="container mt-2">
                         <div className="row">
                             <div className="col-lg-6">

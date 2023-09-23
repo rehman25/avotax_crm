@@ -20,7 +20,7 @@ export default function Sidebar(props) {
     return (
     <>
         <div className="mainSideBar" id={props.isMenuOpen ?  "openBar" : "closeBar"} isOpen={!isOpen}>
-            <div className="innerSideBar">
+            <div className="innerSideBar" id={props.isMenuOpen ?  "openBox" : "closeBox"}>
                 <div className="positionBox">
                     <div className="sidebarScrollBox">
                         <div className="logoBox">

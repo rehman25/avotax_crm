@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
-import "../components/assets/css/addmember.css"
-import AddMemberCom from '../components/AddMemberCom'
+import ClientInfotable from '../components/clientInfo/clientInfotable'
 
-function AddMember() {
+function ClientInfo() {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
-    var one="Home"
-    var two="Team management"
     return (
         <>
             <div className="allPages">
@@ -19,15 +16,11 @@ function AddMember() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick,one,two  }}
+                        {...{ hideShowMenuClick }}
                     />
-                    <div className="container">
+                    <div className="container mt-2">
                         <div className="row">
-                            <div className="col-12 p-0">
-                            <div className='container mb-5'>
-                                <AddMemberCom/>
-                            </div>
-                            </div>
+                            <ClientInfotable />
                         </div>
                     </div>
                 </div>
@@ -36,4 +29,4 @@ function AddMember() {
     )
 }
 
-export default AddMember
+export default ClientInfo

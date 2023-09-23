@@ -4,6 +4,9 @@
     border-bottom: 1px solid lightgray;
     padding: 5px 5px;
     background: white;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 99;
 }
 
 .topBar .leftSide{
@@ -42,4 +45,40 @@
 .topBar .rightSide img{
     height: 30px;
     margin: 0 10px;
+}
+
+.InnerTopbar{
+    height: 56px;
+    margin: 0px 0px !important;
+    background: #FFFFFF ;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 53px;
+    z-index: 99;
+
+}
+.innerRightSide{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.innerRightSide button{
+        height: 40px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E2E5F1;
+        border-radius: 6px;
+        opacity: 1;
+        margin: 0px 5px;
+        width: 123px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #000000;
+        
+
+}
+.CreateJobbtn{
+    background: #3E97FF 0% 0% no-repeat padding-box !important;
+    color: white !important;
 }
