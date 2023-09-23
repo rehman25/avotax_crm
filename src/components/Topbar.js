@@ -5,7 +5,6 @@ import { BsChevronRight } from 'react-icons/bs';
 import { BsSearch } from 'react-icons/bs';
 import { BsBell } from 'react-icons/bs';
 import user_img from '../components/assets/images/user.avi'
-
 import './assets/css/topbar.css'
 
 function Topbar(props) {
