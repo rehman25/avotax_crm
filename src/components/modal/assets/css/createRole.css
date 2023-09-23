@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    position: fixed;
+    width: 100%;
 }
 
 .createrolemodel h4 {
@@ -18,12 +19,13 @@
     border-radius: 10px;
     opacity: 1;
     padding: 15PX;
+    position: relative;
 }
 
 .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
     position: absolute;
-    right: 363px;
-    top: 50px;
+    right: 10px;
+    top: 10px;
 }
 
 .createrollheadercont {
@@ -69,30 +71,20 @@
     .createrolemodel .createrolemodelInnerBox {
         width: 50%;
     }
-
-    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
-        right: 272px;
-
+    .craeterolltr {
+        flex-direction: column;
+        display: flex;
     }
-
 }
 
 @media (max-width: 768px) {
     .createrolemodel .createrolemodelInnerBox {
         width: 80%;
     }
-
-    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
-        right: 20px;
-    }
 }
 
 @media (max-width: 576px) {
     .createrolemodel .createrolemodelInnerBox {
         width: 90%;
-    }
-
-    .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
-        right: 10px;
     }
 }
