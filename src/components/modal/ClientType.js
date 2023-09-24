@@ -15,7 +15,7 @@ function ClientType() {
                     <GrClose className='ClientcloseIcon' onClick={() => dispatch(ClientTypes())} />
                     <h4 className='head'> Client Type </h4>
                     <div className="PersonalClients mt-5">
-                        <img src={Personal} alt="" />
+                        <img src={Corporate} alt="" />
                         <input type="file" />
                         <span>
                             <h5>Personal Client</h5>
