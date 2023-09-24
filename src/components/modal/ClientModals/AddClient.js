@@ -32,37 +32,37 @@ function AddClient() {
                   </div>
                   <div className="innerStep">
                     <span>
-                      <p>1</p>
+                      <p>2</p>
                     </span>
                     <div className="">
-                      <h6>Details</h6>
-                      <p>Name,Email,Phone</p>
+                      <h6>Other Info</h6>
+                      <p>Address, etc</p>
                     </div>
                   </div>
                   <div className="innerStep">
                     <span>
-                      <p>1</p>
+                      <p>3</p>
                     </span>
                     <div className="">
-                      <h6>Details</h6>
-                      <p>Name,Email,Phone</p>
+                      <h6>Client Details</h6>
+                      <p>Website, Contact, Type, etc</p>
                     </div>
                   </div>
                   <div className="innerStep">
                     <span>
-                      <p>1</p>
+                      <p>4</p>
                     </span>
                     <div className="">
-                      <h6>Details</h6>
-                      <p>Name,Email,Phone</p>
+                      <h6>Engagements</h6>
+                      <p>HST, T1, T2, etc</p>
                     </div>
                   </div>
                   <div className="innerStep">
                     <span>
-                      <p>1</p>
+                      <p>5</p>
                     </span>
                     <div className="">
-                      <h6>Details</h6>
+                      <h6>Accounting Software</h6>
                       <p>Name,Email,Phone</p>
                     </div>
                   </div>
@@ -71,7 +71,11 @@ function AddClient() {
               </div>
 
               <div className="col-8">
-                hamza
+                <div>
+                  <form action="">
+                    <span></span>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

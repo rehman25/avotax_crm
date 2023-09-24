@@ -18,16 +18,16 @@ function ClientType() {
                         <img src={Personal} alt="" />
                         <input type="file" />
                         <span>
-                            <h5> Personal Client </h5>
-                            <p>Client with social number (SIN)</p>
+                            <h5>Personal Client</h5>
+                            <p>Client with social number ( SIN )</p>
                         </span>
 
                     </div>
                     <div className="PersonalClients mt-4">
                         <img src={Corporate} alt="" />
                         <span>
-                            <h5> Corporate Client </h5>
-                            <p> Client with Business number (BN)</p>
+                            <h5>Corporate Client</h5>
+                            <p>Client with Business number ( BN )</p>
                         </span>
                     </div>
                     <button onClick={() => {
