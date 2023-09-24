@@ -5,107 +5,76 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
-
-.clientstypemodal h4 {
-    font-weight: 600;
-    margin: 15px;
-    text-align: center;
-}
-
-.clientstypemodal .clientstypeinnermodal {
-    background: white;
-    height: 70vh;
+.clientstypemodal .clientstypeinnermodal{
     width: 50%;
+    background: white;
     position: relative;
-    border: 1px solid white;
+    padding: 50px 50px;
     border-radius: 10px;
-    padding: 20px;
 }
-
-.clientstypemodal svg.ClientcloseIcon {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.clientstypemodal .PersonalClients,
-.clientstypemodal .CorporateClients {
-    width: 90%;
-    margin: 20px auto;
-    padding: 15px;
-    border: 1px dashed #707070;
-    border-radius: 3px;
-    opacity: 1;
-}
-
-.clientstypemodal .PersonalClients h5,
-.clientstypemodal .CorporateClients h5 {
+.clientstypemodal .clientstypeinnermodal h4.head{
+    text-align: center;
     font-weight: 600;
-    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
-
-.clientstypemodal .PersonalClients p,
-.clientstypemodal .CorporateClients p {
+.clientstypemodal .clientstypeinnermodal .ClientcloseIcon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+}
+.clientstypemodal .clientstypeinnermodal .PersonalClients{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 2px dashed #707070;
+    position: relative;
+    cursor: pointer;
+}
+.clientstypemodal .clientstypeinnermodal .PersonalClients:hover{
+    border: 2px dashed #3E97FF;
+    background: #F1FAFF;
+    cursor: pointer;
+}
+.clientstypemodal .clientstypeinnermodal .PersonalClients img{
+    height: 40px;
+    margin-right: 20px;
+}
+.clientstypemodal .clientstypeinnermodal .PersonalClients input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 87px;
+    opacity: 0;
+}
+.clientstypemodal  .PersonalClients span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.clientstypemodal  .PersonalClients span h5{
     margin: 0;
 }
-
-.clientstypemodal button {
-    margin: 30px auto;
+.clientstypemodal  .PersonalClients span p{
+    padding: 0;
+    margin: 0;
+}
+.clientstypemodal .clientstypeinnermodal button{
+    background: #3E97FF;
+    border-radius: 6px;
+    margin: auto;
     display: block;
+    padding: 10px 50px;
     color: white;
-    padding: 7px 50px;
-    border-radius: 7px;
-}
-
-@media (max-width: 768px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 80%;
-        height: 75vh;
-    }
-}
-
-@media (max-width: 576px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 90%;
-    }
-}
-
-@media (max-width: 420px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 75%;
-    }
-
-    .clientstypemodal .PersonalClients {
-        margin: 10px auto;
-    }
-
-    .clientstypemodal button {
-        margin: 5px auto;
-        padding: 5px 50px;
-    }
-
-    .clientstypemodal h4 {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 348px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 90%;
-    }
-}
-
-@media (max-width: 281px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 90%; 
-        height: 75vh;
-    }
-}
-
-@media (max-width: 280px) {
-    .clientstypemodal .clientstypeinnermodal {
-        width: 90%; 
-        height: 80vh;
-    }
+    font-weight: 500;
+    margin-top: 80px !important;
+    font-size: 20px;
 }

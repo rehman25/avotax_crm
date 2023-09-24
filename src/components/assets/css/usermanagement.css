@@ -1,0 +1,115 @@
+.User_Admin_mainBox{
+background-color: #FFFFFF;
+border: 1px solid #F1F1F2;
+border-radius: 10px;
+margin-top: 22px;
+height: 230px;
+
+}
+
+.User_Admin_Inner{
+    padding-left: 25px;
+    text-align: left;
+}
+
+.User_Admin_Inner h5{
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #F7F8FA;
+    margin: 12px 0px 16px 0px;
+    padding: 1px 0px 10px 0px;
+    color: #000000;
+}
+
+
+
+.User_Admin_Details li{
+    /* list-style: disc !important; */
+    font-size: 11px;
+    letter-spacing: 0.7px;      
+}
+
+.User_Admin_Details li::before {
+    content: "\2022";
+    color: #1565D8;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.Btn_Inner_Box .button{
+    border-radius: 6px;
+    background: #F1FAFF;
+    padding: 4px 15px;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 13px 8px 0px 0px;
+    color: #464E5F;
+}
+
+
+.UMtotalPage {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    opacity: 1;
+    width: 92px;
+    height: 31px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 5px;
+    opacity: 1;
+}
+
+.UMpagesICo {
+    font-size: 14px !important;
+    color: #D9D9D9;
+    width: 25px;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.UMpageno {
+    width: 20px;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+
+}
+
+.UMpagenodot {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.UMpagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap !important;
+}
+
+.UMcipgnos {
+    margin: 0px 5px;
+}
+
+.UMPaginationRow {
+    display: flex !important;
+    margin-top: 10px !important;
+    background-color:#FFFFFF;
+    flex-wrap: wrap !important;
+    padding: 10px;
+    border-radius: 10px  ;
+}

@@ -1,0 +1,80 @@
+.addClientModal{
+    position: fixed;
+    background: #0000005e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 100vh;
+}
+
+.addClientModal .inneraddClientModal{
+    width:100%;
+    background: white;
+    position: relative;
+}
+.inneraddClientModal .container{
+    display: contents;
+}
+.inneraddClientModal .customeRow{
+    padding: 5px 15px !important;
+    border-bottom: 1px solid #f1f1f1;
+}
+.inneraddClientModal h5{}
+.inneraddClientModal svg{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.inneraddClientModal .clientStepsBox{
+    padding: 20px 0;
+    /* flex-direction: column; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* position: relative; */
+    background: #F2F3F7;
+}
+.inneraddClientModal .clientStepsBox .innerStep span{
+    position: relative;
+    text-align: center;
+}
+.inneraddClientModal .clientStepsBox span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 1px dashed #70707052;
+    height: 65px;
+    z-index: 99999;
+}
+.inneraddClientModal .clientStepsBox .innerStep{
+    display: flex;
+    margin: 25px 0;
+    position: relative;
+    margin-left: 25px;
+}
+.inneraddClientModal .clientStepsBox .innerStep span p{
+    margin: 0;
+    background: #F1FAFF;
+    color: #3E97FF;
+    padding: 1px 12px;
+    text-align: center;
+    z-index: 9999999;
+    position: relative;
+    border-radius: 5px;
+}
+.inneraddClientModal .clientStepsBox .innerStep div{
+    margin-left: 30px;
+}
+.inneraddClientModal .clientStepsBox .innerStep div h6{
+    color: #7E87A1;
+    font-size: 13px;
+}
+.inneraddClientModal .clientStepsBox .innerStep div p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+}

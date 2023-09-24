@@ -1,12 +1,16 @@
 import Routing from "./Route/Routing";
 import './assets/css/main.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import { Provider } from 'react-redux';
+import store from './redux/Stores';
 
 function App() {
   return (
    
     <>
-      <Routing />
+        <Provider store={store}>
+          <Routing />
+        </Provider>
     </>
   );
 }
