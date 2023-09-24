@@ -10,42 +10,42 @@ body {
 h1 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 h2 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 h3 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 h4 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 h5 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 h6 {
     font-size: 25px;
     font-weight: 400;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
@@ -58,21 +58,21 @@ li {
     padding: 0;
     margin: 0%;
     list-style: none;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 b {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 span {
     cursor: pointer;
     display: inline-block;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -91,7 +91,7 @@ button {
 
 a {
     display: inline-block;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none !important;
@@ -104,12 +104,12 @@ a:hover {
 p {
     margin: 0;
     padding: 0;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
     outline: none;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input:focus {
@@ -117,12 +117,12 @@ input:focus {
 }
 
 input::placeholder {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 textarea {
     width: 100%;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 textarea:focus {
@@ -145,9 +145,15 @@ textarea:focus {
     position: relative;
 }
 
-th{
-font-family: 'Poppins', sans-serif;
+th {
+    font-family: 'Poppins', sans-serif;
 }
-td{
-font-family: 'Poppins', sans-serif;
+
+td {
+    font-family: 'Poppins', sans-serif;
+}
+
+.marginTop{
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
