@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
+import InnerTopbar from '../components/InnerTopbar'
 import UserManagementConfigCom from '../components/UserManagementConfigCom'
 
 
@@ -19,6 +20,7 @@ function UserManagementConfig() {
                     <Topbar
                         {...{ hideShowMenuClick }}
                     />
+                    <InnerTopbar  />
                     <div className="container mt-5">
                         <UserManagementConfigCom />
                     </div>
