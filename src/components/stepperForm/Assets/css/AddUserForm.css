@@ -1,67 +1,164 @@
-.AddUserMainContainer{
+.addUserModal {
     position: fixed;
-        background: rgba(0, 0, 0, 0.397);
-        padding: 20px !important;
-        /* height: 100vh; */
-        display: flex;
-        align-items: center;
-        justify-Content: center;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-
-      
-}
-
-.FormContainer{
-    height: 611px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 7px;
-}
-
-.AddUserHeader{
+    background: #0000005e;
     display: flex;
-    justify-content: space-between;
-    padding: 15px 10px;
-    align-items: center;
-    
+    align-items: center;    
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    /* height: 100vh; */
+    padding: 20px;
+
 }
-.AddUserHeader p{
+
+.addUserModal .inneraddUserModal {
+    width: 100%;
+    background: white;
+    position: relative;
+    padding: 15px;
+}
+
+.inneraddUserModal .container {
+    display: contents;
+}
+
+.inneraddUserModal .AddusercustomeRow {
+    padding: 5px 15px !important;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.inneraddUserModal h5 {}
+
+.inneraddUserModal svg {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.inneraddUserModal .AddUserStepsBox {
+    padding: 20px 0;
+    /* flex-direction: column; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* position: relative; */
+    background: #F2F3F7;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep span {
+    position: relative;
+    text-align: center;
+}
+
+.inneraddUserModal .AddUserStepsBox span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 1px dashed #70707052;
+    height: 65px;
+    z-index: 99999;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep {
+    display: flex;
+    margin: 25px 0;
+    position: relative;
+    margin-left: 25px;
+    margin-top:40px;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep span p {
+    margin: 0;
+    background: #F1FAFF;
+    color: #3E97FF;
+    padding: 1px 12px;
+    text-align: center;
+    z-index: 9999999;
+    position: relative;
+    border-radius: 5px;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep div {
+    margin-left: 30px;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep div h6 {
+    color: #7E87A1;
+    font-size: 16px;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep div p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.firstStepHeading{
+    padding: 5px;
+    margin-top: 15px;
+}
+.firstStepHeading h5{
+    font-size:18px;
+        letter-spacing: 0px;
+        color: #7E87A1;
+}
+
+.formInputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.formInputs .form-group{
+    margin: 0px 5px;
+}
+
+.createUserFormLabel{
+    font-size: 14px;
+    color: #000000;
+}
+
+.Functionality{
+    padding: 2px;
+    display: flex;
+}
+
+.AddUserModalBottom{
+    border-top:1px solid #f1f1f1 ;
     margin: 0px;
-    font-weight: bold;
-}
-.AddUserHeaderRow{
-    border-bottom: 1px solid #F2F3F7;
-}
-
-.AddUserBottom{
-  padding: 15px;
-  display: flex;
+    padding: 10px;
+    display: flex;
     justify-content: end;
-}
-.AddUserBottomRow{
-    border-top: 1px solid #F2F3F7;
-    
+    flex-direction: row;
 }
 
-.AddUserBottom button{
-        margin: 0px 5px;
-        border-radius: 6px;
-        opacity: 1;
-        padding: 5px;
-        width: 100px;
-        border-radius: 6px;
-        
+.AddUserModalBottom button{
+   margin: 0px 5px;
 }
 
-.AddUserCancelbtn{
-    background: #F1FAFF 0% 0% no-repeat padding-box;
-        color: #3E97FF !important;
+.AddUserCancelButton{
+    background: #F1FAFF ;
+    border-radius: 6px;
+    color: #3E97FF;
+    width: 8%;
+    padding: 6px 0px;
 }
-.AddUserNextbtn{
-    background-color: #3E97FF;
-    color: #FFFFFF;
 
+.AddUserNextButton {
+    width: 8%;
+    padding: 6px 0px;
+    background: #3E97FF;
+    border-radius: 6px;
+    color: #FFFF;
+}
+
+@media screen and (max-width:992px){
+    .inneraddUserModal .AddUserStepsBox{
+        display: none;
+    }
+        .AddUserResp{
+            height: 381px;
+                overflow-y: scroll;
+
+    }
 }

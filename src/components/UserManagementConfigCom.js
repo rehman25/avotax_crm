@@ -6,7 +6,7 @@ import { MdOutlineArrowBackIos } from 'react-icons/md'
 import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import TablePro from '../components/assets/images/TablepRO.webp'
 import '../components/assets/css/UserManagementConfigCom.css'
-import AddUserForm from './stepperForm/AddUserForm'
+import AddUserModal from '../components/stepperForm/AddUserModal'
 import { useSelector, useDispatch } from 'react-redux';
 
 
@@ -592,7 +592,7 @@ const UserManagementConfigCom = () => {
                 </div>
             </div>
             {addUser && (
-                <AddUserForm />
+                <AddUserModal />
             )}
         </>
 

@@ -9,7 +9,7 @@ import { CreateUserFun } from '../redux/slice/modalSlice';
 // import AddUserForm from '../components/stepperForm/Assets'
 
 function InnerTopbar(props) {
-    
+
     const dispatch = useDispatch();
     return (
         <>
@@ -81,7 +81,6 @@ function InnerTopbar(props) {
                     )}
                 </div>
             </div>
-            {/* {isFormOpen ? <AddUserForm open={handleForm}/> : ""} */}
         </>
     )
 }

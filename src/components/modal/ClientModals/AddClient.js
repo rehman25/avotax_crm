@@ -71,7 +71,14 @@ function AddClient() {
               </div>
 
               <div className="col-8">
-                hamza
+                <div>
+                  <form action="">
+                    <div>
+                      <h5></h5>
+                      
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

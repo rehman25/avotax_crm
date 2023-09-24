@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@ant-design/plots": "^1.2.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.10",
     "@mui/x-charts": "^6.0.0-alpha.11",
     "@react-icons/all-files": "^4.1.0",
