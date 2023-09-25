@@ -6,7 +6,7 @@ const ModalAppear = createSlice({
     ClientTypeModal: false,
     AddClientModal: false,
     CreateJobModal: false,
-    CreateUserModal: false
+    CreateUserModal: false,
   },
   reducers: {
     ClientTypes: (state) => {

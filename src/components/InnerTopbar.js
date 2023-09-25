@@ -5,6 +5,8 @@ import { BsSearch } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';
 import { ClientTypes } from '../redux/slice/modalSlice';
 import { CreateUserFun } from '../redux/slice/modalSlice';
+import { CreateJobFun } from '../redux/slice/modalSlice';
+
 
 function InnerTopbar(props) {
 
@@ -138,8 +140,8 @@ function InnerTopbar(props) {
                             <option value="3">Three</option>
                         </select>
                     )}
-                    {props?.UserManageCreateUserBtn && (
-                        <button className='CreateJobbtn'>{props?.createJobBtn}</button>
+                    {props?.createJobBtn && (
+                        <button className='CreateJobbtn'  onClick={() => dispatch(CreateJobFun())}>{props?.createJobBtn}</button>
                     )}
 
                     {/* User Management TOP BAR ON RIGHT SIDE =============================================== */}
