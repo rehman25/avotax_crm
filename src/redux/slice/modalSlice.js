@@ -5,7 +5,7 @@ const ModalAppear = createSlice({
   initialState: {
     ClientTypeModal: false,
     AddClientModal: false,
-    CreateJobModal: false,
+    CreateUserModal: false
   },
   reducers: {
     ClientTypes: (state) => {
@@ -14,12 +14,12 @@ const ModalAppear = createSlice({
     AddClientFun: (state) => {
       state.AddClientModal = !state.AddClientModal;
     },
-    CreateJobFun: (state) => {
-      state.CreateJobModal = !state.CreateJobModal;
+    CreateUserFun: (state) => {
+      state.CreateUserModal = !state.CreateUserModal
     }
   },
 });
 
-export const { ClientTypes,AddClientFun,CreateJobFun } = ModalAppear.actions;
+export const { ClientTypes, AddClientFun, CreateUserFun } = ModalAppear.actions;
 
 export default ModalAppear.reducer;
