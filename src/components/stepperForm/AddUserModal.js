@@ -186,56 +186,44 @@ const AddUserModal = (props) => {
                                                 <div className="row">
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel' >User Name</label>
+                                                            <label htmlFor="" className='createUserFormLabel' >Job title</label>
                                                             <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>First Name</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Home phone</label>
                                                             <input type="Email" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Last Name</label>
-                                                            <select name="" id="" className='form-select'>
-                                                                <option value=""></option>
-                                                            </select>
+                                                            <label htmlFor="" className='createUserFormLabel'>Linkedin profile</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Email Address</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Start Date</label>
                                                             <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Defualt Number Of Items</label>
-                                                            <select name="" id="" className='form-select'>
-                                                                <option value=""></option>
-                                                                <option value=""></option>
-                                                            </select>
+                                                            <label htmlFor="" className='createUserFormLabel'>Mobile Number</label>
+                                                            <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Defualt Report Tab</label>
-                                                            <select name="" id="" className='form-select'>
-                                                                <option value=""></option>
-                                                            </select>
+                                                            <label htmlFor="" className='createUserFormLabel'>Twitter ID</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Date Format on Screen</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Work phone</label>
                                                             <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Contact sort Order & Navigtion</label>
-                                                            <select name="" id="" className='form-select'>
-                                                                <option value=""></option>
-                                                                <option value=""></option>
-                                                            </select>
+                                                            <label htmlFor="" className='createUserFormLabel'>Skype ID</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Timesheet Entry</label>
-                                                            <select name="" id="" className='form-select'>
-                                                                <option value=""></option>
-                                                            </select>
+                                                            <label htmlFor="" className='createUserFormLabel'>Birthday</label>
+                                                            <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,7 +237,7 @@ const AddUserModal = (props) => {
                                                 <div className="row">
                                                     <div className="col-lg-5">
                                                         <div className="form-group others">
-                                                            <label htmlFor="" className='createUserFormLabel'>Display name is parttner field</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Profile Picture<span>*</span></label>
                                                             <div className='form-control FileUpload'>
                                                                 <BsFillImageFill className='uploadPicLogo' />
                                                                 <span className='filesbox'>
@@ -261,7 +249,7 @@ const AddUserModal = (props) => {
                                                     </div>
                                                     <div className="col-lg-5">
                                                         <div className="form-group others">
-                                                            <label htmlFor="" className='createUserFormLabel'>Display name  is manager field</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Note</label>
                                                             <textarea name="" id="" cols="25" rows="10" className='form-control textarea'></textarea>
                                                         </div>
                                                     </div>
@@ -284,18 +272,18 @@ const AddUserModal = (props) => {
                                                           </div>
                                                             <div className='licenseBox'>
                                                                 <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
+                                                                <p>Jobs & Billing(3)</p>
                                                                 <BiCross className='boardClipIcon' />
                                                             </div>
                                                             <div className='licenseBox'>
                                                                 <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
+                                                                <p>Client Portal</p>
                                                                 <BiCross className='boardClipIcon' />
                                                             </div>
                                                         </div>
                                                         
                                                         <div className="col-lg-5 Availiable">
-                                                            <h6>Availiable</h6>
+                                                            <h6>Selected</h6>
                                                             <div className='licenseBox'>
                                                                 <RxClipboardCopy className='boardClipIcon' />
                                                                 <p>Capacity Planning(4)</p>
@@ -312,29 +300,29 @@ const AddUserModal = (props) => {
                                                     <div className='firstStepHeading'>
                                                         <div className="row">
                                                             <div className="col-lg-5 Availiable">
-                                                                <h6>44</h6>
+                                                                <h6>Available</h6>
                                                                 <div className='licenseBox'>
                                                                     <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
+                                                                    <p>Tier 1-Super User</p>
                                                                     <BiCross className='boardClipIcon' />
                                                                 </div>
                                                                 <div className='licenseBox'>
                                                                     <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
+                                                                    <p>Tier 2-Partner</p>
                                                                     <BiCross className='boardClipIcon' />
                                                                 </div>
                                                                 <div className='licenseBox'>
                                                                     <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
+                                                                    <p>Tier 3-Billing</p>
                                                                     <BiCross className='boardClipIcon' />
                                                                 </div>
                                                             </div>
 
                                                             <div className="col-lg-5 Availiable">
-                                                                <h6>Availiable</h6>
+                                                                <h6>Selected</h6>
                                                                 <div className='licenseBox'>
                                                                     <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
+                                                                    <p>Tier 4-Employee</p>
                                                                     <BiCross className='boardClipIcon' />
                                                                 </div>
                                                             </div>
