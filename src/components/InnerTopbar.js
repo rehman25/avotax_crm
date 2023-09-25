@@ -14,7 +14,7 @@ function InnerTopbar(props) {
     return (
         <>
             <div className='InnerTopbar row'>
-                <div className="col-lg-6 col-md-6 col-sm-6 innerLeftSide">
+                <div className="col-lg-6 col-md-6  innerLeftSide">
 
                     
                     {/* CLIENT INFO PAGE TOP BAR ON LEFT SIDE =-=-=-=-= */}
@@ -90,6 +90,12 @@ function InnerTopbar(props) {
                             <img src={props?.UserManageConfigFilterIcon} alt="" />
                             {props?.UserManageConfigFilterBtn}
                         </button> 
+                    )}
+                    {props?.UMfilter && (
+                        <button >
+                            <img src={props?.icon} alt="" />
+                            {props?.UMfilter}
+                        </button>
                     )}
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
@@ -168,6 +174,9 @@ function InnerTopbar(props) {
                     )}
                     {props?.UserManageConfigCreateUserBtn && (
                         <button className='CreateJobbtn'>{props?.UserManageConfigCreateUserBtn}</button>
+                    )}
+                    {props?.CreatRole && (
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.CreatRole}</button>
                     )}
                 </div>
             </div>
