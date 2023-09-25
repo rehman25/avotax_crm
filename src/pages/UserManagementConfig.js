@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
+import InnerTopbar from '../components/InnerTopbar'
 import UserManagementConfigCom from '../components/UserManagementConfigCom'
+import filter_ico from '../components/assets/images/filter.avi'
+import setting_ico from '../components/assets/images/setting.avi'
 
 
 function UserManagementConfig() {
@@ -9,6 +12,8 @@ function UserManagementConfig() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
+    var one = "User";
+    var two = "Config";
     return (
         <>
             <div className="allPages">
@@ -17,9 +22,19 @@ function UserManagementConfig() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick }}
+                        {...{ hideShowMenuClick, one, two }}
                     />
-                    <div className="container mt-5">
+                    <InnerTopbar
+                        CreateUser="Create User"
+                        UserConfigfilterBtn="Filters"
+                        icon={filter_ico}
+                        UserCongigDropDown={true}
+                        setting={setting_ico}
+                        searchBar={true}
+                        
+                
+                    />
+                    <div className="container marginTop">
                         <UserManagementConfigCom />
                     </div>
                 </div>

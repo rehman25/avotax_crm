@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
 import JobTable from '../components/job/JobTable'
+import InnerTopbar from '../components/InnerTopbar'
+import filter_ico from '../components/assets/images/filter.avi'
+import setting_ico from '../components/assets/images/setting.avi'
+
 
 
 function Job(){
@@ -9,6 +13,9 @@ function Job(){
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
+    var HeadTop="Job";
+    var breadCrumOne="Home";
+    var breadCrumTwo="Jobs";
     return (
         <>
             <div className="allPages">
@@ -17,9 +24,17 @@ function Job(){
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick }}
+                        {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
-                    <div className="container mt-5">
+                    <InnerTopbar
+                        createJob="Create Job"
+                        allJobDropDown={true}
+                        jobsFilterBtn="Filters"
+                        jobsFIltericon={filter_ico}
+                        jobsSettingIcon={setting_ico}
+                        jobsSearchBar={true}
+                    />
+                    <div className="container marginTop">
                         <JobTable />
                     </div>
                 </div>

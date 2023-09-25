@@ -16,22 +16,24 @@ function Home() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
-    var one="Home";
-    var two="Team management";
+    var HeadTop="Team management";
+    var breadCrumOne="Home";
+    var breadCrumTwo="Team management";
+
     return (
         <>
             <div className="allPages">
                 <Sidebar
-                    {...{ isMenuOpen, setMenuOpen }}
+                    {...{ isMenuOpen, setMenuOpen,hideShowMenuClick }}
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick,one,two  }}
+                        {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
                     <InnerTopbar 
                         filterBtn="Filter"
                         icon={filter_ico}
-                        createJob="Create Job"
+                        createJobHome="Create Job"
                     />
                     <div className="container marginTop">
                         <div className="row">

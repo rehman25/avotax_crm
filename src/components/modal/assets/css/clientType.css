@@ -10,6 +10,7 @@
     left: 0;
     z-index: 9999;
 }
+
 .clientstypemodal .clientstypeinnermodal{
     width: 50%;
     background: white;
@@ -17,17 +18,21 @@
     padding: 50px 50px;
     border-radius: 10px;
 }
+
 .clientstypemodal .clientstypeinnermodal h4.head{
     text-align: center;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 .clientstypemodal .clientstypeinnermodal .ClientcloseIcon{
     position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 25px;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients{
     display: flex;
     align-items: center;
@@ -38,13 +43,15 @@
     position: relative;
     cursor: pointer;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients:hover{
     border: 2px dashed #3E97FF;
     background: #F1FAFF;
     cursor: pointer;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients img{
-    height: 40px;
+    height: 29px;
     margin-right: 20px;
 }
 .clientstypemodal .clientstypeinnermodal .PersonalClients input{
@@ -62,10 +69,16 @@
 }
 .clientstypemodal  .PersonalClients span h5{
     margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
 }
 .clientstypemodal  .PersonalClients span p{
     padding: 0;
     margin: 0;
+    font-size: 13px;
+    margin-top: 3px;
+    text-align: center;
 }
 .clientstypemodal .clientstypeinnermodal button{
     background: #3E97FF;
@@ -77,4 +90,38 @@
     font-weight: 500;
     margin-top: 80px !important;
     font-size: 20px;
+}
+
+@media screen and (max-width:992px){
+    .clientstypemodal .clientstypeinnermodal {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:575px){
+    .clientstypemodal .clientstypeinnermodal {
+        padding: 30px 10px;
+    }
+    .clientstypemodal .clientstypeinnermodal .PersonalClients {
+        flex-direction: column;
+        margin: 13px 0 !important;
+        padding: 10px 0px;
+    }
+    .clientstypemodal .clientstypeinnermodal .PersonalClients img {
+        margin-right: 0;
+    }
+    .clientstypemodal .PersonalClients span{
+        align-items: center;
+    }
+    .clientstypemodal .PersonalClients span h5 {
+        margin-top: 5px;
+    }
+    .clientstypemodal .clientstypeinnermodal button {
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width:420px){
+    .clientstypemodal .clientstypeinnermodal {
+        width: 95%;
+    }
 }

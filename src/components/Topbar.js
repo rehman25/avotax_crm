@@ -8,6 +8,9 @@ import user_img from '../components/assets/images/user.avi'
 import './assets/css/topbar.css'
 
 function Topbar(props) {
+
+
+    
     return (
         <>
             <div className='topBar'>
@@ -16,10 +19,10 @@ function Topbar(props) {
                     <img src={barIco} alt="" onClick={props.hideShowMenuClick} />
 
                     <div className='pageHead'>
-                        <h5>{props?.two}</h5>
+                        <h5>{props?.HeadTop}</h5>
                         <div className="bread-crum">
-                            <Link>{props?.one}  <BsChevronRight /></Link>
-                            <Link>{props?.two}</Link>
+                            <Link>{props?.breadCrumOne}  <BsChevronRight /></Link>
+                            <Link>{props?.breadCrumTwo}</Link>
                         </div>
                     </div>
 

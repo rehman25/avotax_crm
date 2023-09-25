@@ -29,13 +29,7 @@
     border-radius: 10px;
 }
 .createmembermodal .formScrollBox{
-    height: 500px;
-    overflow-y: scroll;
-    padding-bottom: 20px;
-    margin-top: 35px;
-}
-.createmembermodal .formScrollBox{
-    height: 500px;
+    height: 250px;
     overflow-y: scroll;
     padding-bottom: 20px;
 }
@@ -73,7 +67,7 @@
 .createmembermodal .fileBox .fileInnerBox{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    overflow: hidden;
     background: #F1FAFF;
     padding: 5px 8px;
     border-radius: 5px;
@@ -95,7 +89,7 @@
 
 .createmembermodal .fileBox .fileInnerBox input{
     position: absolute;
-    height: 62px;
+    height: 200px;
     top: 0;
     background: red;
     left: 0;
@@ -123,8 +117,25 @@
     }
 }
 
-@media screen and (max-width:756px) {
-    .createmembermodal .formScrollBox{
-        overflow-x: hidden;
+@media screen and (max-width:420px) {
+    .createmembermodal h4 {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .createmembermodal p {
+        font-size: 13px;
+    }
+    .createmembermodal .fileBox .fileInnerBox {
+        flex-direction: column;
+    }
+    .createmembermodal .fileBox .fileInnerBox .flexBoxxx {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .createmembermodal .fileBox .fileInnerBox h5 {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
     }
 }

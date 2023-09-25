@@ -32,16 +32,22 @@
     height: 70px;
     margin: 20px auto;
 }
+.mainSideBar .sidebarScrollBox .logoBox svg{
+    position: absolute;
+    right: 0;
+    top: 11px;
+    font-size: 27px;
+    border: 2px solid #f1f1f1;
+    padding: 3px 6px;
+    border-radius: 50px;
+}
 
 .toggleLogo{
-height: 30px !important;
+    height: 30px !important;
 }
 .sidebarScrollBox .sidebarHead{
     margin-top: 5px;
     color: #CCD3E3;
-}
-.DashboardIco{
-    /* color: blue !important; */
 }
 .sidebarScrollBox a{
     display: flex;
@@ -55,55 +61,30 @@ height: 30px !important;
 }
 .sidebarScrollBox svg{
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 .sidebarScrollBox span{
     font-size: 15px;
     font-weight: 800;
 }
-
+.SideNav .active{
+    color: #1565D8;
+}
 .sideclose{
     display: none;
 }
 
 @media screen and (max-width:992px) {
-    .mainSideBar{
-        width: 0;
+    #closeBox {
+        width: 0 !important;
     }
-    #openBar {
-        width: 35%;
+    .mainSideBar {
+        width: 0 !important;
     }
-}
-@media screen and (max-width:768px) {
-    
-    #openBar {
-        width: 47%;
+    .toggleLogo{
+        display: none !important;
     }
-}
-@media screen and (max-width:600px) {
-
-    #openBar {
-    width: 32%;
-    position: absolute;
-    z-index: 99;
-    }
-    .sidebarScrollBox span {
-        font-size: 13px;
-    }
-    .sideclose{
-        width: 25px;
-        height: 25px;
-        font-size: 15px !important;
-        display: block;
-        padding: 1px;
-        position: absolute;
-        right: 2px;
-        top: 3px;
-        display: flex;
-        justify-content: center;
-        border: 1px solid lightgray;
-        border-radius: 50%;
-        background: #3E97FF;
-        color: white;
+    #openBox {
+        width: 250px;
     }
 }
