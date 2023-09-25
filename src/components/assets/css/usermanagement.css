@@ -1,10 +1,10 @@
 .User_Admin_mainBox{
-background-color: #FFFFFF;
-border: 1px solid #F1F1F2;
-border-radius: 10px;
-margin-top: 22px;
-height: 230px;
-
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F2;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 15px 10px;
+    margin: 5px 0;
 }
 
 .User_Admin_Inner{
@@ -24,7 +24,6 @@ height: 230px;
 
 
 .User_Admin_Details li{
-    /* list-style: disc !important; */
     font-size: 11px;
     letter-spacing: 0.7px;      
 }

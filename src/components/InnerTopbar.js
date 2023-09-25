@@ -18,6 +18,17 @@ function InnerTopbar(props) {
                             <input type="search" placeholder='Search ...'/>
                         </div>
                     )}
+                    {props?.RoleSearchBar && (
+                        <div className="searchInnerTopBar">
+                            <BsSearch />
+                            <input type="search" placeholder='Search ...'/>
+                        </div>
+                    )}
+                    {props?.roleSetting && (
+                        <span className='mx-2'>
+                            <img src={props?.roleSetting} alt="" />
+                        </span>
+                    )}
                     {props?.setting && (
                         <span className='mx-2'>
                             <img src={props?.setting} alt="" />
@@ -27,6 +38,12 @@ function InnerTopbar(props) {
                         <button>
                             <img src={props?.icon} alt="" />
                             {props?.filterBtn2}
+                        </button> 
+                    )}
+                    {props?.roleFilter && (
+                        <button>
+                            <img src={props?.UserManageIcon} alt="" />
+                            {props?.roleFilter}
                         </button> 
                     )}
                 </div>
@@ -57,6 +74,9 @@ function InnerTopbar(props) {
                     )}
                     {props?.addClient && (
                         <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClient}</button>
+                    )}
+                    {props?.createRole && (
+                        <button className='CreateJobbtn'>{props?.createRole}</button>
                     )}
                 </div>
             </div>
