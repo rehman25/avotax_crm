@@ -12,7 +12,7 @@ function InnerTopbar(props) {
     return (
         <>
             <div className='InnerTopbar row'>
-                <div className="col-lg-6 col-md-6 col-sm-6 innerLeftSide">
+                <div className="col-lg-6 col-md-6  innerLeftSide">
 
                     
                     {/* CLIENT INFO PAGE TOP BAR LEFT SIDE =-=-=-=-= */}
@@ -20,6 +20,12 @@ function InnerTopbar(props) {
                         <div className="searchInnerTopBar">
                             <BsSearch />
                             <input type="search" placeholder='Search ...'/>
+                        </div>
+                    )}
+                    {props?.UMsearchBar && (
+                        <div className="searchInnerTopBar">
+                            <BsSearch />
+                            <input type="search" placeholder='Search ...' />
                         </div>
                     )}
                     {props?.setting && (
@@ -39,8 +45,14 @@ function InnerTopbar(props) {
                             {props?.UserConfigfilterBtn}
                         </button>
                     )}
+                    {props?.UMfilter && (
+                        <button >
+                            <img src={props?.icon} alt="" />
+                            {props?.UMfilter}
+                        </button>
+                    )}
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
+                <div className="col-lg-6 col-md-6  innerRightSide">
                     {props?.filterBtn && (
                         <button>
                             <img src={props?.icon} alt="" />
@@ -80,6 +92,9 @@ function InnerTopbar(props) {
                     )}
                     {props?.CreateUser && (
                         <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.CreateUser}</button>
+                    )}
+                    {props?.CreatRole && (
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.CreatRole}</button>
                     )}
                 </div>
             </div>
