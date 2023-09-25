@@ -5,10 +5,7 @@ import "../components/assets/css/addmember.css";
 import UserManagementCom from "../components/UserManagementCom";
 import InnerTopbar from "../components/InnerTopbar";
 import filter_ico from '../components/assets/images/filter.avi'
-<<<<<<< HEAD
 import setting_ico from '../components/assets/images/setting.avi'
-=======
->>>>>>> ed24a305d937f2b6d91bf7aeaa806a35e156b88d
 
 
 function UserManagement() {
