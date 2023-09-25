@@ -15,65 +15,106 @@ function InnerTopbar(props) {
                 <div className="col-lg-6 col-md-6 col-sm-6 innerLeftSide">
 
                     
-                    {/* CLIENT INFO PAGE TOP BAR LEFT SIDE =-=-=-=-= */}
-                    {props?.searchBar && (
+                    {/* CLIENT INFO PAGE TOP BAR ON LEFT SIDE =-=-=-=-= */}
+                    {props?.addClientSearchBar && (
                         <div className="searchInnerTopBar">
                             <BsSearch />
                             <input type="search" placeholder='Search ...'/>
                         </div>
                     )}
-                    {props?.RoleSearchBar && (
+                    {props?.addClientSetting && (
+                        <span className='mx-2'>
+                            <img src={props?.addClientSetting} alt="" />
+                        </span>
+                    )}
+                    {props?.addClientFilterBtn && (
+                        <button>
+                            <img src={props?.addClientFilterIcon} alt="" />
+                            {props?.addClientFilterBtn}
+                        </button> 
+                    )}
+
+                     {/* JOB PAGE TOP BAR ON LEFT SIDE =-=-=-=-= */}
+                     {props?.jobsSearchBar && (
                         <div className="searchInnerTopBar">
                             <BsSearch />
                             <input type="search" placeholder='Search ...'/>
                         </div>
                     )}
-                    {props?.roleSetting && (
+                    {props?.jobsSettingIcon && (
                         <span className='mx-2'>
-                            <img src={props?.roleSetting} alt="" />
+                            <img src={props?.jobsSettingIcon} alt="" />
                         </span>
                     )}
-                    {props?.setting && (
+                    {props?.jobsFilterBtn && (
+                        <button>
+                            <img src={props?.jobsFIltericon} alt="" />
+                            {props?.jobsFilterBtn}
+                        </button> 
+                    )}
+
+                     {/* User Management TOP BAR ON LEFT SIDE =-=-=-=-= */}
+                    {props?.UserManageSearchBar && (
+                        <div className="searchInnerTopBar">
+                            <BsSearch />
+                            <input type="search" placeholder='Search ...'/>
+                        </div>
+                    )}
+                    {props?.UserManageSetting && (
                         <span className='mx-2'>
-                            <img src={props?.setting} alt="" />
+                            <img src={props?.UserManageSetting} alt="" />
                         </span>
                     )}
-                    {props?.filterBtn2 && (
+                    {props?.UserManageFilterBtn && (
                         <button>
-                            <img src={props?.icon} alt="" />
-                            {props?.filterBtn2}
+                            <img src={props?.UserManageFilterIcon} alt="" />
+                            {props?.UserManageFilterBtn}
                         </button> 
                     )}
-                    {props?.roleFilter && (
-                        <button>
-                            <img src={props?.UserManageIcon} alt="" />
-                            {props?.roleFilter}
-                        </button> 
+                     {/* User Management TOP BAR ON LEFT SIDE =-=-=-=-= */}
+                     {props?.UserManageConfigSearchBar && (
+                        <div className="searchInnerTopBar">
+                            <BsSearch />
+                            <input type="search" placeholder='Search ...'/>
+                        </div>
                     )}
-                    {props?.UserConfigfilterBtn && (
-                        <button >
-                            <img src={props?.icon} alt="" />
-                            {props?.UserConfigfilterBtn}
-                        </button>
+                    {props?.UserManageConfigSetting && (
+                        <span className='mx-2'>
+                            <img src={props?.UserManageConfigSetting} alt="" />
+                        </span>
+                    )}
+                    {props?.UserManageConfigFilterBtn && (
+                        <button>
+                            <img src={props?.UserManageConfigFilterIcon} alt="" />
+                            {props?.UserManageConfigFilterBtn}
+                        </button> 
                     )}
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
-                    {props?.filterBtn && (
+                    {/* HOME PAGE TOP BAR ON RIGHT SIDE =============================================== */}
+                    {props?.homeFilterBtn && (
                         <button>
-                            <img src={props?.icon} alt="" />
-                            {props?.filterBtn}
+                            <img src={props?.homeFilericon} alt="" />
+                            {props?.homeFilterBtn}
                         </button> 
                     )}
-
-                    {props?.createJob && (
-                        <button className='CreateJobbtn'>{props?.createJob}</button>
-                    )}
-                    {props?.createNew && (
-                        <button className='CreateJobbtn'>{props?.createNew}</button>
+                    {props?.createJobHome && (
+                        <button className='CreateJobbtn'>{props?.createJobHome}</button>
                     )}
 
-                    {/* CLIENT INFO PAGE TOP BAR RIGHT SIDE =-=-=-=-= */}
-                    {props?.clientDropDown && (
+                    {/* Add MEMBER PAGE  TOP BAR ON RIGHT SIDE =============================================== */}
+                    {props?.addMemberFilterBtn && (
+                        <button>
+                            <img src={props?.addMemberFilterIcon} alt="" />
+                            {props?.addMemberFilterBtn}
+                        </button> 
+                    )}
+                    {props?.addMemberCreateNew && (
+                        <button className='CreateJobbtn'>{props?.addMemberCreateNew}</button>
+                    )}
+                    
+                     {/* CLIENT INFO PAGE TOP BAR ON RIGHT SIDE =-=-=-=-= */}
+                     {props?.addClientDropDown && (
                         <select class="form-select w-50">
                             <option selected>Client</option>
                             <option value="1">One</option>
@@ -81,7 +122,28 @@ function InnerTopbar(props) {
                             <option value="3">Three</option>
                         </select>
                     )}
-                    {props?.UserCongigDropDown && (
+                    {props?.addClientBulkBtn && (
+                        <button className='bulkBtn'>{props?.addClientBulkBtn}</button>
+                    )}
+                    {props?.addClientBtn && (
+                        <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClientBtn}</button>
+                    )}
+
+                    {/* JOB PAGE TOP BAR ON RIGHT SIDE =-=-=-=-= */}
+                    {props?.allJobDropDown && (
+                        <select class="form-select w-50">
+                            <option selected>All Job</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    )}
+                    {props?.UserManageCreateUserBtn && (
+                        <button className='CreateJobbtn'>{props?.createJobBtn}</button>
+                    )}
+
+                    {/* User Management TOP BAR ON RIGHT SIDE =============================================== */}
+                    {props?.UserManageDropDown && (
                         <select class="form-select w-50">
                             <option selected>My Comment</option>
                             <option value="1">One</option>
@@ -89,17 +151,21 @@ function InnerTopbar(props) {
                             <option value="3">Three</option>
                         </select>
                     )}
-                    {props?.BulkBtn && (
-                        <button className='bulkBtn'>{props?.BulkBtn}</button>
+                    {props?.UserManageCreateRoleBtn && (
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.UserManageCreateRoleBtn}</button>
                     )}
-                    {props?.addClient && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClient}</button>
+                    
+                    {/* User Management CONFIG TOP BAR ON RIGHT SIDE =============================================== */}
+                    {props?.UserManageConfigDropDown && (
+                        <select class="form-select w-50">
+                            <option selected>My Comment</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     )}
-                    {props?.createRole && (
-                        <button className='CreateJobbtn'>{props?.createRole}</button> 
-                    )}
-                    {props?.CreateUser && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.CreateUser}</button>
+                    {props?.UserManageConfigCreateUserBtn && (
+                        <button className='CreateJobbtn'>{props?.UserManageConfigCreateUserBtn}</button>
                     )}
                 </div>
             </div>

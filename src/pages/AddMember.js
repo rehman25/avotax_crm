@@ -12,8 +12,9 @@ function AddMember() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
-    var one="Home"
-    var two="Team management"
+    var HeadTop="Team management";
+    var breadCrumOne="Home";
+    var breadCrumTwo="Team management";
     return (
         <>
             <div className="allPages">
@@ -22,12 +23,12 @@ function AddMember() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick,one,two  }}
+                        {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo   }}
                     />
                     <InnerTopbar
-                        filterBtn="Filters"
-                        icon={filter_ico}
-                        createNew="Create New"
+                        addMemberFilterBtn="Filters"
+                        addMemberFilterIcon={filter_ico}
+                        addMemberCreateNew="Create New"
                     />
                     <div className="container marginTop">
                         <div className="row">

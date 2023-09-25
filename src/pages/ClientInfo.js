@@ -27,13 +27,14 @@ function ClientInfo() {
                         {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
                     <InnerTopbar
-                        addClient="Add Client"
-                        BulkBtn="Bulk Invite"
-                        filterBtn2="Filters"
-                        icon={filter_ico}
-                        clientDropDown={true}
-                        setting={setting_ico}
-                        searchBar={true}
+                        addClientBtn="Add Client"
+                        addClientBulkBtn="Bulk Invite"
+                        addClientDropDown={true}
+
+                        addClientFilterBtn="Filters"
+                        addClientFilterIcon={filter_ico}
+                        addClientSetting={setting_ico}
+                        addClientSearchBar={true}
                     />
                     <div className="container marginTop">
                         <div className="row">

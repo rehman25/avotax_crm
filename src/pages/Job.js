@@ -27,7 +27,7 @@ function Job(){
                         {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
                     <InnerTopbar
-                        createJob="Create Job"
+                        createJobBtn="Create Job"
                         allJobDropDown={true}
                         jobsFilterBtn="Filters"
                         jobsFIltericon={filter_ico}

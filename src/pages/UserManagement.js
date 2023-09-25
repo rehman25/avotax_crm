@@ -13,20 +13,22 @@ function UserManagement() {
   const hideShowMenuClick = () => {
     setMenuOpen((current) => !current);
   };
-  var one = "Config";
-  var two = "User management";
+  var HeadTop="User management";
+  var breadCrumOne="Config";
+  var breadCrumTwo="User";
   return (
     <>
       <div className="allPages">
         <Sidebar {...{ isMenuOpen, setMenuOpen }} />
         <div className="innerBox">
-          <Topbar {...{ hideShowMenuClick, one, two }} />
+          <Topbar {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo }} />
           <InnerTopbar
-              roleFilter="Filters"
-              UserManageIcon={filter_ico}
-              RoleSearchBar={true}
-              roleSetting={setting_ico}
-              createRole="Create Job"
+              UserManageFilterBtn="Filters"
+              UserManageFilterIcon={filter_ico}
+              UserManageSearchBar={true}
+              UserManageSetting={setting_ico}
+              UserManageCreateRoleBtn="Create Role"
+              UserManageDropDown={true}
           />
           <div className="container">
             <div className="row">
