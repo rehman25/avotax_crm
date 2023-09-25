@@ -10,6 +10,7 @@
     left: 0;
     z-index: 9999;
 }
+
 .clientstypemodal .clientstypeinnermodal{
     width: 50%;
     background: white;
@@ -17,17 +18,21 @@
     padding: 50px 50px;
     border-radius: 10px;
 }
+
 .clientstypemodal .clientstypeinnermodal h4.head{
     text-align: center;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 .clientstypemodal .clientstypeinnermodal .ClientcloseIcon{
     position: absolute;
     top: 15px;
     right: 15px;
     font-size: 18px;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients{
     display: flex;
     align-items: center;
@@ -38,11 +43,13 @@
     position: relative;
     cursor: pointer;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients:hover{
     border: 2px dashed #3E97FF;
     background: #F1FAFF;
     cursor: pointer;
 }
+
 .clientstypemodal .clientstypeinnermodal .PersonalClients img{
     height: 29px;
     margin-right: 20px;

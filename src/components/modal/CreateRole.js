@@ -23,7 +23,7 @@ function CreateRole() {
                             <table className="table align-middle mb-0 bg-white">
                                 <thead ct assName="bg-light">
                                     <tr className='craeterolltr'>
-                                        <th><p className='createtabletext'>Administrator Access</p></th>
+                                        <th><p className='createtabletextcon'>Administrator Access</p></th>
                                         <th><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></th>
                                         <th><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></th>
                                         <th><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></th>
@@ -31,37 +31,37 @@ function CreateRole() {
                                 </thead>
                                 <tbody>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>
                                     </tr>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>
                                     </tr>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>
                                     </tr>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>
                                     </tr>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>
                                     </tr>
                                     <tr className='craeterolltr'>
-                                        <td><p className='createtabletext'>Administrator Access</p></td>
+                                        <td><p className='createtabletextcon'>Administrator Access</p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Read</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Write</p></p></td>
                                         <td><p className='createtabletext'><input type="checkbox" name="" id="" /><p>Create</p></p></td>

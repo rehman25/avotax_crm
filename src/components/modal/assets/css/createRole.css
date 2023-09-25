@@ -37,11 +37,16 @@
     font-weight: 600;
 }
 
+.createtabletextcon {
+    font-weight: 600;
+}
+
 .createtabletext {
     display: flex;
     align-items: center;
     margin: 0;
     padding: 5px;
+    color: #7E87A1;
 }
 
 .createtabletext p {

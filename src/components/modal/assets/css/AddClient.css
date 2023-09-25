@@ -1,4 +1,4 @@
-.addClientModal{
+.addClientModal {
     position: fixed;
     background: #0000005e;
     display: flex;
@@ -11,38 +11,44 @@
     height: 100vh;
 }
 
-.addClientModal .inneraddClientModal{
-    width:100%;
+.addClientModal .inneraddClientModal {
+    width: 100%;
     background: white;
     position: relative;
 }
-.inneraddClientModal .container{
+
+.inneraddClientModal .container {
     display: contents;
 }
-.inneraddClientModal .customeRow{
+
+.inneraddClientModal .customeRow {
     padding: 5px 15px !important;
     border-bottom: 1px solid #f1f1f1;
 }
-.inneraddClientModal h5{}
-.inneraddClientModal svg{
+
+.inneraddClientModal h5 {}
+
+.inneraddClientModal svg.closeIcon {
     position: absolute;
     right: 15px;
     top: 10px;
 }
 
-.inneraddClientModal .clientStepsBox{
-    padding: 20px 0;
+.inneraddClientModal .clientStepsBox {
+    padding: 3px 0;
     /* flex-direction: column; */
     /* display: flex; */
     /* justify-content: space-between; */
     /* position: relative; */
     background: #F2F3F7;
 }
-.inneraddClientModal .clientStepsBox .innerStep span{
+
+.inneraddClientModal .clientStepsBox .innerStep span {
     position: relative;
     text-align: center;
 }
-.inneraddClientModal .clientStepsBox span::after{
+
+.inneraddClientModal .clientStepsBox span::after {
     content: "";
     position: absolute;
     top: 0;
@@ -50,12 +56,14 @@
     height: 65px;
     z-index: 99999;
 }
-.inneraddClientModal .clientStepsBox .innerStep{
+
+.inneraddClientModal .clientStepsBox .innerStep {
     display: flex;
-    margin: 25px 0;
+    margin: 17px 0;
     position: relative;
     margin-left: 25px;
 }
+
 .inneraddClientModal .clientStepsBox .innerStep span p{
     margin: 0;
     background: #F1FAFF;
@@ -66,15 +74,246 @@
     position: relative;
     border-radius: 5px;
 }
-.inneraddClientModal .clientStepsBox .innerStep div{
+.inneraddClientModal .clientStepsBox .innerStep span p.activeStep{
+    background-color: #3E97FF !important;
+    color: white !important;
+}
+.inneraddClientModal .clientStepsBox .innerStep span p.svgStep{
+    /* background: #F1FAFF; */
+}
+.inneraddClientModal .clientStepsBox .innerStep div {
     margin-left: 30px;
 }
-.inneraddClientModal .clientStepsBox .innerStep div h6{
+
+.inneraddClientModal .clientStepsBox .innerStep div h6 {
     color: #7E87A1;
     font-size: 13px;
 }
-.inneraddClientModal .clientStepsBox .innerStep div p{
+
+.inneraddClientModal .clientStepsBox .innerStep div p {
     margin: 0;
     font-weight: 600;
     font-size: 12px;
+}
+
+.CooperateClients {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 0 5px;
+}
+
+.CooperateClients .Generalinforowdirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Generalinforowdirst h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.CooperateClients .Generalinforowdirst .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+
+.CooperateClients .Generalinforowdirst .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Generalinforowdirst .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Generalinforowdirst .form-group label>span {
+    color: #FF4141;
+}
+
+
+.CooperateClients .Generalinforowsecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CooperateClients .Generalinforowsecond .form-group {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Generalinforowsecond .form-group input {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Generalinforowsecond .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Generalinforowthird {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.CooperateClients .Generalinforowthird .form-group {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Generalinforowthird .form-group input {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Generalinforowthird .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Generalinforowthird .form-group label>span {
+    color: #FF4141;
+}
+
+.Assignedto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.Assignedto h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.Assignedto .form-group {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+
+.Assignedto .form-group input {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+.Assignedto .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Contactinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .ContactinforowFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .ContactinforowFirst h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.CooperateClients .ContactinforowFirst .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .ContactinforowFirst .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .ContactinforowFirst .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Contactinforowsecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CooperateClients .Contactinforowsecond .form-group {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Contactinforowsecond .form-group input {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Contactinforowsecond .form-group label {
+    font-weight: 600;
+}
+
+.Cooperatefooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 30px;
+    border-top: 1px solid #ccc;
+}
+
+.Cooperatefooter .back {
+    margin-right: 20px;
+    padding: 5px 35px;
+    background-color: #F1FAFF;
+    color: #3E97FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Cooperatefooter .cancel {
+    margin-right: 20px;
+    padding: 5px 35px;
+    background-color: #F1FAFF;
+    color: #3E97FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Cooperatefooter .next {
+    padding: 5px 40px;
+    background-color: #3E97FF;
+    color: #FFFFFF;
+    ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

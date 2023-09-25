@@ -12,7 +12,7 @@ function ClientType() {
         <>
             <div className="clientstypemodal">
                 <div className="clientstypeinnermodal">
-                    <GrClose className='ClientcloseIcon' onClick={() => dispatch(ClientTypes())}/>
+                    <GrClose className='ClientcloseIcon' onClick={() => dispatch(ClientTypes())} />
                     <h4 className='head'> Client Type </h4>
                     <div className="PersonalClients mt-5">
                         <img src={Corporate} alt="" />
