@@ -31,7 +31,7 @@
 
 .inneraddUserModal h5 {}
 
-.inneraddUserModal svg {
+.inneraddUserModal .closeIcon {
     position: absolute;
     right: 15px;
     top: 10px;
@@ -52,12 +52,12 @@
     text-align: center;
 }
 
-.inneraddUserModal .AddUserStepsBox span::after {
+.inneraddUserModal .AddUserStepsBox .innerStep span.after::after {
     content: "";
     position: absolute;
     top: 0;
     border: 1px dashed #70707052;
-    height: 65px;
+    height: 85px;
     z-index: 99999;
 }
 
@@ -78,6 +78,15 @@
     z-index: 9999999;
     position: relative;
     border-radius: 5px;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep span p.activeStep {
+    background-color: #3E97FF !important;
+    color: white !important;
+}
+
+.inneraddUserModal .AddUserStepsBox .innerStep span p.svgStep{
+    padding:0 6px;
 }
 
 .inneraddUserModal .AddUserStepsBox .innerStep div {
