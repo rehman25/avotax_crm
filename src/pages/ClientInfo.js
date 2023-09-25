@@ -13,8 +13,9 @@ function ClientInfo() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
-    var one="Home"
-    var two="Client Info"
+    var HeadTop="Client Info";
+    var breadCrumOne="Home";
+    var breadCrumTwo="Client Info";
     return (
         <>
             <div className="allPages">
@@ -23,7 +24,7 @@ function ClientInfo() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick,one,two,  }}
+                        {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
                     <InnerTopbar
                         addClient="Add Client"

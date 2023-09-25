@@ -85,7 +85,6 @@
 
 .Add_member_panel {
     background: white;
-    height: 100vh;
     padding: 0 15px;
     margin-top: 30px;
     border: 1px solid #F1F1F2;
@@ -95,7 +94,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    max-height: 500px;
+    min-height: 755px;
 }
 
 .Add_member_panel img {

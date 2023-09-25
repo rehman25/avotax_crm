@@ -1,15 +1,20 @@
 import React from 'react'
 import "./assets/css/addJob.css";
 import { GrClose } from 'react-icons/gr';
+import { useSelector, useDispatch } from 'react-redux';
+import { CreateJobFun } from '../../redux/slice/modalSlice';
+
 
 
 function AddJob() {
+    const dispatch = useDispatch();
+
     return (
         <>
             <div className="addjobmodal">
                 <div className="addjobmodalInnerBox">
                     <h4> Add Job </h4>
-                    {<GrClose className='Iconclose' />}
+                    <GrClose className='Iconclose' onClick={() => dispatch(CreateJobFun())}/>
                     <form action="">
                         <div className="ScrollBar">
                             <div class="form-group mt-3 px-3">

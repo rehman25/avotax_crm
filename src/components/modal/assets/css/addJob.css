@@ -25,9 +25,17 @@
     border-radius: 10px;
 }
 .addjobmodal .ScrollBar{
-    height: 500px;
+    height: 350px;
     overflow-y: scroll;
     padding-bottom: 20px;
+}
+.addjobmodal .ScrollBar::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+.addjobmodal .ScrollBar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(226, 223, 223, 0.24);
 }
 .addjobmodal svg.Iconclose{
     position: absolute;
@@ -54,27 +62,24 @@
 }
 
 @media screen and (max-width:992px){
-    .addjobmodal .addjobmodalInnerBoxInnerBox{
+    .addjobmodal .addjobmodalInnerBox{
         width: 80%;
     }
 }
-@media screen and (max-width:768px){
-    .addjobmodal .addjobmodalInnerBoxInnerBox{
-        width: 80%;
-    }
-    .addjobmodal .addjobmodalInnerBox .formAlign{
-        flex-direction: column;
-        margin-top: 0px;
-    }
-    .addjobmodal .formAlign .form-group{
+@media screen and (max-width:480px){
+    .addjobmodal .addjobmodalInnerBox{
         width: 95%;
-        margin: 15px 0 0 10px;
     }
 }
 
-@media screen and (max-width:756px) {
-    .addjobmodal .ScrollBar{
-        overflow-x: hidden;
+@media screen and (max-width:320px){
+    .addjobmodal .addjobmodalInnerBox .formAlign {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 15px;
+    }
+    .addjobmodal .formAlign .form-group {
+        width: 100%;
     }
 }
 

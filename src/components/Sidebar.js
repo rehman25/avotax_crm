@@ -9,65 +9,67 @@ import {BiErrorCircle} from 'react-icons/bi'
 import { BsBagFill } from 'react-icons/bs'
 import {FaMoneyBill} from 'react-icons/fa'
 import {FaClipboardList} from 'react-icons/fa'
+import { GrClose } from 'react-icons/gr';
 import {RiSettings5Fill} from 'react-icons/ri'
+import { useNavigate, NavLink } from 'react-router-dom'
 
 
 export default function Sidebar(props) {
-    const [isOpen, setIsopen] = useState(false)
-    const handleClose = () =>{
-        setIsopen(true)
-    }
+    // const [isOpen, setIsopen] = useState(false)
+    // const handleClose = () =>{
+    //     setIsopen(true)
+    // }
     return (
     <>
-        <div className="mainSideBar" id={props.isMenuOpen ?  "openBar" : "closeBar"} isOpen={!isOpen}>
+        <div className="mainSideBar" id={props.isMenuOpen ?  "openBar" : "closeBar"}>
             <div className="innerSideBar" id={props.isMenuOpen ?  "openBox" : "closeBox"}>
                 <div className="positionBox">
                     <div className="sidebarScrollBox">
                         <div className="logoBox">
-                                <span className='sideclose' onClick={() => setIsopen(handleClose)}>X</span>
-                              {props.isMenuOpen ? <img src={logo} alt="" /> : <img src={logoIco} alt="" className='toggleLogo' />}
+                                {props.isMenuOpen ? <GrClose onClick={() => {props?.setMenuOpen(false)}}/> : false}
+                                {props.isMenuOpen ? <img src={logo} alt="" /> : <img src={logoIco} alt="" className='toggleLogo' />}
                         </div>
                           <div className="SideNav">
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Application</h6> : false}
-                            <Link to="/home">
+                            <NavLink to="/home">
                                 <AiFillPieChart className='DashboardIco' />
                                 {props.isMenuOpen ? <span>Dashboard</span> : false}
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className='SideNav'>
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Management</h6> : false}
-                              <Link to="/UserManagement">
+                              <NavLink to="/UserManagement">
                                   <IoIosPeople />
                                   {props.isMenuOpen ? <span>Team Management</span> : false}
-                              </Link>
-                              <Link to="/ClientInfo">
+                              </NavLink>
+                              <NavLink to="/ClientInfo">
                                   <BiErrorCircle />
                                   {props.isMenuOpen ? <span>Client</span> : false}
-                              </Link>
-                              <Link to="/Job">
+                              </NavLink>
+                              <NavLink to="/Job">
                                   <BsBagFill />
                                   {props.isMenuOpen ? <span>Jobs</span> : false}
-                              </Link>
+                              </NavLink>
 
-                              <Link to="">
+                              <NavLink to="/hamza">
                                   <FaMoneyBill />
                                   {props.isMenuOpen ? <span>Payroll</span> : false}
-                              </Link>
+                              </NavLink>
                         </div>
                           <div className='SideNav'>
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Others</h6> : false}
-                              <Link to="">
+                              <NavLink to="/hamza">
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Config</span> : false}
-                              </Link>
-                              <Link to="">
+                              </NavLink>
+                              <NavLink to="/hamza">
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Reports</span> : false}
-                              </Link>
-                              <Link to="">
+                              </NavLink>
+                              <NavLink to="/hamza">
                                   <RiSettings5Fill />
                                   {props.isMenuOpen ? <span>Settings</span> : false}
-                              </Link>
+                              </NavLink>
                         </div>
                     </div>
                 </div>

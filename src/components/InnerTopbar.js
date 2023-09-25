@@ -4,6 +4,8 @@ import { LuFilter as Filter_ico} from 'react-icons/lu'
 import { BsSearch } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';
 import { ClientTypes } from '../redux/slice/modalSlice';
+import { CreateJobFun } from '../redux/slice/modalSlice';
+
 
 function InnerTopbar(props) {
     const count = useSelector((state) => state.ModalSlice.ClientTypeModal);
@@ -12,6 +14,9 @@ function InnerTopbar(props) {
         <>
             <div className='InnerTopbar row'>
                 <div className="col-lg-6 col-md-6 col-sm-6 innerLeftSide">
+
+                    
+                    {/* CLIENT INFO PAGE TOP BAR LEFT SIDE =-=-=-=-= */}
                     {props?.searchBar && (
                         <div className="searchInnerTopBar">
                             <BsSearch />
@@ -29,6 +34,25 @@ function InnerTopbar(props) {
                             {props?.filterBtn2}
                         </button> 
                     )}
+                    
+                    {/* JOBS PAGE TOP BAR LEFT SIDE =-=-=-=-= */}
+                    {props?.jobsSearchBar && (
+                        <div className="searchInnerTopBar">
+                            <BsSearch />
+                            <input type="search" placeholder='Search ...'/>
+                        </div>
+                    )}
+                    {props?.jobsSettingIcon && (
+                        <span className='mx-2'>
+                            <img src={props?.jobsSettingIcon} alt="" />
+                        </span>
+                    )}
+                    {props?.jobsFilterBtn && (
+                        <button>
+                            <img src={props?.jobsFIltericon} alt="" />
+                            {props?.jobsFilterBtn}
+                        </button> 
+                    )}
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
                     {props?.filterBtn && (
@@ -37,13 +61,14 @@ function InnerTopbar(props) {
                             {props?.filterBtn}
                         </button> 
                     )}
-                    {props?.createJob && (
-                        <button className='CreateJobbtn'>{props?.createJob}</button>
+                    {props?.createJobHome && (
+                        <button className='CreateJobbtn'>{props?.createJobHome}</button>
                     )}
                     {props?.createNew && (
                         <button className='CreateJobbtn'>{props?.createNew}</button>
                     )}
-                    {/* ================ */}
+
+                    {/* CLIENT INFO PAGE TOP BAR RIGHT SIDE =-=-=-=-= */}
                     {props?.clientDropDown && (
                         <select class="form-select w-50">
                             <option selected>Client</option>
@@ -57,6 +82,20 @@ function InnerTopbar(props) {
                     )}
                     {props?.addClient && (
                         <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClient}</button>
+                    )}
+
+
+                    {/* JOBS PAGE TOP BAR RIGHT SIDE =-=-=-=-= */}
+                    {props?.allJobDropDown && (
+                        <select class="form-select w-50">
+                            <option selected>All Jobs</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    )}
+                    {props?.createJob && (
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateJobFun())}>{props?.createJob}</button>
                     )}
                 </div>
             </div>
