@@ -8,8 +8,8 @@ import { AddClientFun } from '../../../redux/slice/modalSlice';
 
 function AddClient() {
   const dispatch = useDispatch();
+  
   const [isFormSteps,setFormSteps] = useState("firstStep")
-
   const checkingForm = () => {
     if(isFormSteps == "firstStep"){
       setFormSteps("scdStep")
