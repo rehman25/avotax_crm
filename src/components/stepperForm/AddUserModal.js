@@ -7,6 +7,8 @@ import { Checkbox } from '@mui/material';
 import { BsFillImageFill } from 'react-icons/bs'
 import { RxClipboardCopy } from 'react-icons/rx'
 import { BiCross } from 'react-icons/bi'
+import { BsCheck } from 'react-icons/bs';
+
 
 
 const AddUserModal = (props) => {
@@ -14,7 +16,8 @@ const AddUserModal = (props) => {
 
     const [isFormSteps, setFormSteps] = useState("firstStep")
 
-    const checkingForm = () => {
+    const checkingForm = (e) => {
+        e.preventDefault()
         if (isFormSteps == "firstStep") {
             setFormSteps("scdStep")
         } else if (isFormSteps == "scdStep") {
@@ -25,176 +28,96 @@ const AddUserModal = (props) => {
     }
 
     return (
-        <div className="addUserModal">
-            <div className="inneraddUserModal">
-                <div className="">
-                    <div className="AddusercustomeRow">
-                        <h5>Add User</h5>
-                        <GrClose onClick={() => dispatch(CreateUserFun())} />
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4">
-                            <div className="AddUserStepsBox">
-
-                                <div className="innerStep">
-                                    <span>
-                                        <p>1</p>
-                                    </span>
-                                    <div className="">
-                                        <h6>General Details</h6>
-                                        <p>Name,Email,Phone,partner,etc</p>
-                                    </div>
-                                </div>
-                                <div className="innerStep">
-                                    <span>
-                                        <p>2</p>
-                                    </span>
-                                    <div className="">
-                                        <h6>Profile</h6>
-                                        <p>Name,Email,Phone</p>
-                                    </div>
-                                </div>
-                                <div className="innerStep">
-                                    <span>
-                                        <p>3</p>
-                                    </span>
-                                    <div className="">
-                                        <h6>Licenses</h6>
-                                        <p>Name,Email,Phone</p>
-                                    </div>
-                                </div>
-                                <div className="innerStep">
-                                    <span>
-                                        <p>4</p>
-                                    </span>
-                                    <div className="">
-                                        <h6>Security</h6>
-                                        <p>Name,Email,Phone</p>
-                                    </div>
-                                </div>
-
-                            </div>
+        <form onSubmit={checkingForm}>
+            <div className="addUserModal">
+                <div className="inneraddUserModal">
+                    <div className="">
+                        <div className="AddusercustomeRow">
+                            <h5>Add User</h5>
+                            <GrClose className="closeIcon" onClick={() => dispatch(CreateUserFun())} />
                         </div>
-
-                        <div className="col-lg-8">
-                            {isFormSteps == 'firstStep' ?
-                                <div className='AddUserResp'>
-                                    <form action="">
-                                        <div className='firstStepHeading'>
-                                            <h5>Details</h5>
-                                            <div className="row">
-                                                <div className="col-lg-4">
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel' >User Name</label>
-                                                        <input type="text" name="" id="" className='form-control' />
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>First Name</label>
-                                                        <input type="Email" name="" id="" className='form-control' />
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Last Name</label>
-                                                        <select name="" id="" className='form-select'>
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Email Address</label>
-                                                        <input type="text" name="" id="" className='form-control' />
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Defualt Number Of Items</label>
-                                                        <select name="" id="" className='form-select'>
-                                                            <option value=""></option>
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Defualt Report Tab</label>
-                                                        <select name="" id="" className='form-select'>
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Date Format on Screen</label>
-                                                        <input type="text" name="" id="" className='form-control' />
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Contact sort Order & Navigtion</label>
-                                                        <select name="" id="" className='form-select'>
-                                                            <option value=""></option>
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="" className='createUserFormLabel'>Timesheet Entry</label>
-                                                        <select name="" id="" className='form-select'>
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <div className="AddUserStepsBox">
+                                    <div className="innerStep">
+                                        <span className='after'>
+                                            {isFormSteps == "firstStep" ?
+                                            <p className="activeStep">1</p> : ""}
+                                                {
+                                                isFormSteps == "scdStep" || isFormSteps == "ThrdStep"
+                                                || isFormSteps == "forthStep"?
+                                                <p className="svgStep"><BsCheck className='svgStep' /></p> : ""
+                                            }
+                                        </span>
+                                        <div className="">
+                                            <h6>General Details</h6>
+                                            <p>Name,Email,Phone,partner,etc</p>
                                         </div>
-
-
-                                        <div className='firstStepHeading'>
-                                            <h5>
-                                                Allow Functionality
-                                            </h5>
-                                            <div className="row">
-                                                <div className="col-lg-4">
-                                                    <div className="form-group Functionality">
-                                                        <input type="checkbox" className='form-check mx-2' name="" id="" />
-                                                        <label htmlFor="" className='createUserFormLabel'>Display name is parttner field</label>
-                                                    </div>
-                                                    <div className="form-group Functionality">
-                                                        <input type="checkbox" className='form-check mx-2' name="" id="" />
-                                                        <label htmlFor="" className='createUserFormLabel'>Track Efficiency For User</label>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="form-group Functionality">
-                                                        <input type="checkbox" className='form-check mx-2' name="" id="" />
-                                                        <label htmlFor="" className='createUserFormLabel'>Display name  is manager field</label>
-                                                    </div>
-                                                    <div className="form-group Functionality">
-                                                        <input type="checkbox" className='form-check mx-2' name="" id="" />
-                                                        <label htmlFor="" className='createUserFormLabel'>Use Advanced HTML Editor</label>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="form-group Functionality">
-                                                        <input type="checkbox" className='form-check mx-2' name="" id="" />
-                                                        <label htmlFor="" className='createUserFormLabel'>Display user in capacity Planning</label>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div className="innerStep">
+                                        <span className='after'>
+                                            {isFormSteps == "scdStep" ?
+                                            <p className="activeStep">2</p> : 
+                                                isFormSteps == "ThrdStep" || isFormSteps == "forthStep"? false : <p className="">2</p>
+                                            }
+                                                {
+                                                    isFormSteps == "ThrdStep" || isFormSteps == "forthStep"?
+                                                <p className="svgStep"><BsCheck className='svgStep' /></p> : ""
+                                            }
+                                        </span>
+                                        <div className="">
+                                            <h6>Profile</h6>
+                                            <p>Name,Email,Phone</p>
                                         </div>
+                                    </div>
+                                    <div className="innerStep">
+                                        <span className='after'>
+                                            {isFormSteps == "ThrdStep" ?
+                                                <p className="activeStep">3</p> : 
+                                                    isFormSteps == "forthStep" ? false : <p className="">3</p>
+                                                }
+                                                {
+                                                isFormSteps == "forthStep" ?
+                                                    <p className="svgStep"><BsCheck className='svgStep' /></p> : ""
+                                                }
+                                        </span>
+                                        <div className="">
+                                            <h6>Licenses</h6>
+                                            <p>Name,Email,Phone</p>
+                                        </div>
+                                    </div>
+                                    <div className="innerStep">
+                                        <span>
+                                            {isFormSteps == "forthStep" ? <p className="activeStep">4</p> : 
+                                                isFormSteps == "firstStep" || isFormSteps == "scdStep" 
+                                                || isFormSteps == "ThrdStep"|| isFormSteps == "forthStep"? <p>4</p> : false
+                                            }
+                                        </span>
+                                        <div className="">
+                                            <h6>Security</h6>
+                                            <p>Name,Email,Phone</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    </form>
-
-                                </div> :
-                                isFormSteps == 'scdStep' ?
-                                    <div className='AddUserResp'>
-                                        <form action="">
+                                <div className="col-lg-8">
+                                    {isFormSteps == 'firstStep' ?
+                                        <div className='AddUserResp'>
                                             <div className='firstStepHeading'>
-                                                <h5>Profile</h5>
+                                                <h5>Details</h5>
                                                 <div className="row">
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
                                                             <label htmlFor="" className='createUserFormLabel' >User Name</label>
-                                                            <input type="text" name="" id="" className='form-control' />
+                                                            <input type="text" name="" id="" className='form-control' required/>
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>First Name</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Email address</label>
                                                             <input type="Email" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Last Name</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Date Format on Screen</label>
                                                             <select name="" id="" className='form-select'>
                                                                 <option value=""></option>
                                                             </select>
@@ -202,11 +125,11 @@ const AddUserModal = (props) => {
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Email Address</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>First Name</label>
                                                             <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Defualt Number Of Items</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Defualt number of items</label>
                                                             <select name="" id="" className='form-select'>
                                                                 <option value=""></option>
                                                                 <option value=""></option>
@@ -221,7 +144,7 @@ const AddUserModal = (props) => {
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Date Format on Screen</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Last name</label>
                                                             <input type="text" name="" id="" className='form-control' />
                                                         </div>
                                                         <div className="form-group">
@@ -232,7 +155,7 @@ const AddUserModal = (props) => {
                                                             </select>
                                                         </div>
                                                         <div className="form-group">
-                                                            <label htmlFor="" className='createUserFormLabel'>Timesheet Entry</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Timesheet Entry Method</label>
                                                             <select name="" id="" className='form-select'>
                                                                 <option value=""></option>
                                                             </select>
@@ -240,8 +163,89 @@ const AddUserModal = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
-
-
+                                            <div className='firstStepHeading'>
+                                                <h5>
+                                                    Allow Functionality
+                                                </h5>
+                                                <div className="row">
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group Functionality">
+                                                            <input type="checkbox" className='form-check mx-2' name="" id="" />
+                                                            <label htmlFor="" className='createUserFormLabel'>Display name is parttner field</label>
+                                                        </div>
+                                                        <div className="form-group Functionality">
+                                                            <input type="checkbox" className='form-check mx-2' name="" id="" />
+                                                            <label htmlFor="" className='createUserFormLabel'>Track Efficiency For User</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group Functionality">
+                                                            <input type="checkbox" className='form-check mx-2' name="" id="" />
+                                                            <label htmlFor="" className='createUserFormLabel'>Display name  is manager field</label>
+                                                        </div>
+                                                        <div className="form-group Functionality">
+                                                            <input type="checkbox" className='form-check mx-2' name="" id="" />
+                                                            <label htmlFor="" className='createUserFormLabel'>Use Advanced HTML Editor</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group Functionality">
+                                                            <input type="checkbox" className='form-check mx-2' name="" id="" />
+                                                            <label htmlFor="" className='createUserFormLabel'>Display user in capacity Planning</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> :
+                                    isFormSteps == 'scdStep' ?
+                                        <div className='AddUserResp'>
+                                            <div className='firstStepHeading'>
+                                                <h5>Profile</h5>
+                                                <div className="row">
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel' >Job title</label>
+                                                            <input type="text" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Home phone</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Linkedin profile</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Start Date</label>
+                                                            <input type="text" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Mobile Number</label>
+                                                            <input type="text" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Twitter ID</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Work phone</label>
+                                                            <input type="text" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Skype ID</label>
+                                                            <input type="Email" name="" id="" className='form-control' />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="" className='createUserFormLabel'>Birthday</label>
+                                                            <input type="text" name="" id="" className='form-control' />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div className='firstStepHeading'>
                                                 <h5>
                                                     Others
@@ -249,7 +253,7 @@ const AddUserModal = (props) => {
                                                 <div className="row">
                                                     <div className="col-lg-5">
                                                         <div className="form-group others">
-                                                            <label htmlFor="" className='createUserFormLabel'>Display name is parttner field</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Profile Picture<span>*</span></label>
                                                             <div className='form-control FileUpload'>
                                                                 <BsFillImageFill className='uploadPicLogo' />
                                                                 <span className='filesbox'>
@@ -261,101 +265,100 @@ const AddUserModal = (props) => {
                                                     </div>
                                                     <div className="col-lg-5">
                                                         <div className="form-group others">
-                                                            <label htmlFor="" className='createUserFormLabel'>Display name  is manager field</label>
+                                                            <label htmlFor="" className='createUserFormLabel'>Note</label>
                                                             <textarea name="" id="" cols="25" rows="10" className='form-control textarea'></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                        </form>
-                                    </div>
-                                    : isFormSteps == 'ThrdStep' ?
+                                        </div>: 
+                                    isFormSteps == 'ThrdStep' ?
                                         <div className='AddUserResp'>
-                                            <form action="">
-                                                <div className='firstStepHeading'>
-                                                    <div className="row">
-                                                        <div className="col-lg-5 Availiable">
-                                                           <h6>Availiable</h6>
-                                                          <div className='licenseBox'>
-                                                                <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
-                                                                <BiCross className='boardClipIcon' />
-                                                          </div>
-                                                            <div className='licenseBox'>
-                                                                <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
-                                                                <BiCross className='boardClipIcon' />
-                                                            </div>
-                                                            <div className='licenseBox'>
-                                                                <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
-                                                                <BiCross className='boardClipIcon' />
-                                                            </div>
+                                            <div className='firstStepHeading'>
+                                                <div className="row">
+                                                    <div className="col-lg-5 Availiable">
+                                                        <h6>Availiable</h6>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Capacity Planning(4)</p>
+                                                            <BiCross className='boardClipIcon' />
                                                         </div>
-                                                        
-                                                        <div className="col-lg-5 Availiable">
-                                                            <h6>Availiable</h6>
-                                                            <div className='licenseBox'>
-                                                                <RxClipboardCopy className='boardClipIcon' />
-                                                                <p>Capacity Planning(4)</p>
-                                                                <BiCross className='boardClipIcon' />
-                                                            </div>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Jobs & Billing(3)</p>
+                                                            <BiCross className='boardClipIcon' />
+                                                        </div>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Client Portal</p>
+                                                            <BiCross className='boardClipIcon' />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div className="col-lg-5 Availiable">
+                                                        <h6>Selected</h6>
+                                                        <div id="dropTarget" className='licenseBox'>
+                                                                
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Capacity Planning(4)</p>
+                                                            <BiCross className='boardClipIcon' />
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
-                                        </div>
-                                        : isFormSteps == 'forthStep' ?
-                                            <div className='AddUserResp'>
-                                                <form action="">
-                                                    <div className='firstStepHeading'>
-                                                        <div className="row">
-                                                            <div className="col-lg-5 Availiable">
-                                                                <h6>44</h6>
-                                                                <div className='licenseBox'>
-                                                                    <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
-                                                                    <BiCross className='boardClipIcon' />
-                                                                </div>
-                                                                <div className='licenseBox'>
-                                                                    <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
-                                                                    <BiCross className='boardClipIcon' />
-                                                                </div>
-                                                                <div className='licenseBox'>
-                                                                    <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
-                                                                    <BiCross className='boardClipIcon' />
-                                                                </div>
-                                                            </div>
-
-                                                            <div className="col-lg-5 Availiable">
-                                                                <h6>Availiable</h6>
-                                                                <div className='licenseBox'>
-                                                                    <RxClipboardCopy className='boardClipIcon' />
-                                                                    <p>Capacity Planning(4)</p>
-                                                                    <BiCross className='boardClipIcon' />
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                        </div>:
+                                    isFormSteps == 'forthStep' ?
+                                        <div className='AddUserResp'>
+                                            <div className='firstStepHeading'>
+                                                <div className="row">
+                                                    <div className="col-lg-5 Availiable">
+                                                        <h6>Available</h6>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Tier 1-Super User</p>
+                                                            <BiCross className='boardClipIcon' />
+                                                        </div>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Tier 2-Partner</p>
+                                                            <BiCross className='boardClipIcon' />
+                                                        </div>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Tier 3-Billing</p>
+                                                            <BiCross className='boardClipIcon' />
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div> : ""
-                            }
 
+                                                    <div className="col-lg-5 Availiable">
+                                                        <h6>Selected</h6>
+                                                        <div className='licenseBox'>
+                                                            <RxClipboardCopy className='boardClipIcon' />
+                                                            <p>Tier 4-Employee</p>
+                                                            <BiCross className='boardClipIcon' />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> : false
+                                    }
+                                </div>
+                                <div className="col-12">
+                                    <div className='AddUserModalBottom'>
+                                        <button className='AddUserCancelButton' onClick={() => dispatch(CreateUserFun())}>Cancel</button>
+                                        {
+                                            isFormSteps == 'firstStep' || isFormSteps == 'scdStep'
+                                            || isFormSteps == 'ThrdStep' ? <button className='AddUserNextButton' type='submit'>Next</button> :
+                                            isFormSteps == 'forthStep' ? <button>save</button> : false
+                                        }
+                                    </div>
+                                </div>
                         </div>
-                        <div className="col-12">
-                            <div className='AddUserModalBottom'>
-                                <button className='AddUserCancelButton' onClick={() => dispatch(CreateUserFun())}>Cancel</button>
-                                <button className='AddUserNextButton' onClick={checkingForm}>Next</button>
-                            </div>
-                        </div>
+
                     </div>
-
                 </div>
             </div>
-        </div>
+        </form>
     )
 }
 

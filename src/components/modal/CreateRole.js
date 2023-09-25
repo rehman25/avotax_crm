@@ -1,16 +1,19 @@
 import React from 'react'
 import "./assets/css/createRole.css"
 import { GrClose } from 'react-icons/gr';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { CreateRoleFun } from '../../redux/slice/modalSlice';
 
 
 function CreateRole() {
+    const dispatch = useDispatch();
+
     return (
         <>
             <div className="createrolemodel">
                 <div className="createrolemodelInnerBox">
                     <h4> Create Role </h4>
-                    <GrClose className='closeiconerole' />
+                    <GrClose className='closeiconerole' onClick={() => dispatch(CreateRoleFun())}/>
                     <form action="">
                         <div className='createrolmaincontainer'>
                             <div className='createrollheadercont'>

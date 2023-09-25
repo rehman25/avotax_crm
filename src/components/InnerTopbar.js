@@ -6,6 +6,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { ClientTypes } from '../redux/slice/modalSlice';
 import { CreateUserFun } from '../redux/slice/modalSlice';
 import { CreateJobFun } from '../redux/slice/modalSlice';
+import { CreateRoleFun } from '../redux/slice/modalSlice';
+
+
 
 
 function InnerTopbar(props) {
@@ -160,7 +163,7 @@ function InnerTopbar(props) {
                         </select>
                     )}
                     {props?.UserManageCreateRoleBtn && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.UserManageCreateRoleBtn}</button>
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateRoleFun())}>{props?.UserManageCreateRoleBtn}</button>
                     )}
                     
                     {/* User Management CONFIG TOP BAR ON RIGHT SIDE =============================================== */}
@@ -173,10 +176,7 @@ function InnerTopbar(props) {
                         </select>
                     )}
                     {props?.UserManageConfigCreateUserBtn && (
-                        <button className='CreateJobbtn'>{props?.UserManageConfigCreateUserBtn}</button>
-                    )}
-                    {props?.CreatRole && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.CreatRole}</button>
+                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.UserManageConfigCreateUserBtn}</button>
                     )}
                 </div>
             </div>
