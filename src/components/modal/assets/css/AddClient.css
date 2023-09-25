@@ -36,10 +36,6 @@
 
 .inneraddClientModal .clientStepsBox {
     padding: 3px 0;
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* position: relative; */
     background: #F2F3F7;
 }
 
@@ -64,7 +60,7 @@
     margin-left: 25px;
 }
 
-.inneraddClientModal .clientStepsBox .innerStep span p{
+.inneraddClientModal .clientStepsBox .innerStep span p {
     margin: 0;
     background: #F1FAFF;
     color: #3E97FF;
@@ -74,13 +70,15 @@
     position: relative;
     border-radius: 5px;
 }
-.inneraddClientModal .clientStepsBox .innerStep span p.activeStep{
+
+.inneraddClientModal .clientStepsBox .innerStep span p.activeStep {
     background-color: #3E97FF !important;
     color: white !important;
 }
-.inneraddClientModal .clientStepsBox .innerStep span p.svgStep{
-    /* background: #F1FAFF; */
+.inneraddClientModal .clientStepsBox .innerStep span p.svgStep {
+    padding: 0 6px;
 }
+
 .inneraddClientModal .clientStepsBox .innerStep div {
     margin-left: 30px;
 }
@@ -95,6 +93,8 @@
     font-weight: 600;
     font-size: 12px;
 }
+
+/* CooperateClients CSS SECTION CSS ================================ */
 
 .CooperateClients {
     height: 400px;
@@ -128,7 +128,7 @@
 .CooperateClients .Generalinforowdirst .form-group input {
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #ccc;
     margin-top: 10px;
 }
@@ -162,6 +162,10 @@
     font-weight: 600;
 }
 
+.CooperateClients .Generalinforowsecond .form-group label>span {
+    color: #FF4141;
+}
+
 .CooperateClients .Generalinforowthird {
     display: flex;
     justify-content: flex-start;
@@ -174,7 +178,7 @@
     margin-bottom: 10px;
 }
 
-.CooperateClients .Generalinforowthird .form-group input {
+.CooperateClients .Generalinforowthird .form-group select {
     margin-right: 0;
     margin-top: 10px;
 }
@@ -209,7 +213,7 @@
 }
 
 
-.Assignedto .form-group input {
+.Assignedto .form-group select {
     margin-right: 0;
     margin-top: 10px;
 }
@@ -238,7 +242,7 @@
     font-weight: 600;
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .CooperateClients .ContactinforowFirst .form-group {
@@ -250,7 +254,7 @@
 .CooperateClients .ContactinforowFirst .form-group input {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     margin-top: 10px;
 }
@@ -278,6 +282,8 @@
 .CooperateClients .Contactinforowsecond .form-group label {
     font-weight: 600;
 }
+
+/*  ================================ */
 
 .Cooperatefooter {
     display: flex;
@@ -317,3 +323,284 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Address CSS SECTION CSS ================================ */
+
+.CooperateClients .Addressrowdirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Addressrowdirst h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowdirst .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Addressrowdirst .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowdirst .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Addressrowsecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Addressrowsecond h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowsecond .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Addressrowsecond .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowsecond .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Addressrowthird {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Addressrowthird h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowthird .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Addressrowthird .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Addressrowthird .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Addressrowthird .form-group select {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Seccontactrowfirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Seccontactrowfirst h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Seccontactrowfirst .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Seccontactrowfirst .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Seccontactrowfirst .form-group label {
+    font-weight: 600;
+}
+
+
+.CooperateClients .Seccontactrowsecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Seccontactrowsecond h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Seccontactrowsecond .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Seccontactrowsecond .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Seccontactrowsecond .form-group label {
+    font-weight: 600;
+}
+
+/*  ================================ */
+
+/* Client Details CSS SECTION CSS ================================ */
+
+.CooperateClients .Internetrowfirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Internetrowfirst h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Internetrowfirst .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Internetrowfirst .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Internetrowfirst .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Internetrowsecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Internetrowsecond h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Internetrowsecond .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Internetrowsecond .form-group select {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Internetrowsecond .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Internetrowthird {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Internetrowthird h5 {
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Internetrowthird .form-group {
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Internetrowthird .form-group label {
+    font-weight: 600;
+}
+
+.CooperateClients .Internetrowthird .form-group select {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+.CooperateClients .Internetrowthird .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/*  ================================ */

@@ -5,6 +5,7 @@ import "../components/assets/css/addmember.css";
 import UserManagementCom from "../components/UserManagementCom";
 import InnerTopbar from "../components/InnerTopbar";
 import filter_ico from '../components/assets/images/filter.avi'
+import setting_ico from '../components/assets/images/setting.avi'
 
 
 function UserManagement() {
@@ -12,8 +13,8 @@ function UserManagement() {
   const hideShowMenuClick = () => {
     setMenuOpen((current) => !current);
   };
-  var one = "Home";
-  var two = "Team management";
+  var one = "Config";
+  var two = "User management";
   return (
     <>
       <div className="allPages">
