@@ -18,7 +18,7 @@ function LoginComp() {
           <div className="col-lg-5 p-0">
             <SimpleSlider />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <div className='sliderRightSide'>
               <div className='innersliderRightSide'>
                   <h4>Sign in</h4>

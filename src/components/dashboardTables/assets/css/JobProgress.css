@@ -172,8 +172,9 @@
 }
 
 
-@media screen and (max-width:350px) {
-.JpParentContainer{
-    height: 450px;
-}
+@media screen and (max-width:992px) {
+    .JpParentContainer {
+        height: auto;
+        margin-top: 20px;
+    }
 }

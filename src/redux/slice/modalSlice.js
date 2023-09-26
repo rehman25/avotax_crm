@@ -8,6 +8,8 @@ const ModalAppear = createSlice({
     CreateJobModal: false,
     CreateUserModal: false,
     CreateRoleModal: false,
+    SearchBarModal: false,
+    SettingSubModal: false,
 
   },
   reducers: {
@@ -25,10 +27,18 @@ const ModalAppear = createSlice({
     },
     CreateRoleFun: (state) => {
       state.CreateRoleModal = !state.CreateRoleModal;
+    },
+    SearchBarSettingFun: (state) => {
+      state.SearchBarModal = !state.SearchBarModal;
+    },
+    SearchSubFun: (state) => {
+      state.SettingSubModal = !state.SettingSubModal;
     }
   },
 });
 
-export const { ClientTypes, AddClientFun, CreateUserFun,CreateJobFun,CreateRoleFun } = ModalAppear.actions;
+export const { ClientTypes, AddClientFun, CreateUserFun,CreateJobFun,
+  CreateRoleFun,SearchBarSettingFun,SearchSubFun } = 
+  ModalAppear.actions;
 
 export default ModalAppear.reducer;

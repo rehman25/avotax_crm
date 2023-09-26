@@ -7,13 +7,17 @@ import { ClientTypes } from '../redux/slice/modalSlice';
 import { CreateUserFun } from '../redux/slice/modalSlice';
 import { CreateJobFun } from '../redux/slice/modalSlice';
 import { CreateRoleFun } from '../redux/slice/modalSlice';
-
-
-
+import { SearchBarSettingFun } from '../redux/slice/modalSlice';
+import { SearchSubFun } from '../redux/slice/modalSlice';
+import SearchSetting from './SearchSetting';
+import filter_ico from '../components/assets/images/filter.avi'
+import SettingSubBar from './SettingSubBar';
 
 function InnerTopbar(props) {
-
     const dispatch = useDispatch();
+    const isSearchBarSettingModal = useSelector((state) => state.ModalSlice.SearchBarModal);
+    const isSettingSubModal = useSelector((state) => state.ModalSlice.SettingSubModal);
+
     return (
         <>
             <div className='InnerTopbar row'>
@@ -22,37 +26,66 @@ function InnerTopbar(props) {
                     
                     {/* CLIENT INFO PAGE TOP BAR ON LEFT SIDE =-=-=-=-= */}
                     {props?.addClientSearchBar && (
-                        <div className="searchInnerTopBar">
-                            <BsSearch />
-                            <input type="search" placeholder='Search ...'/>
-                        </div>
+                        <>
+                            <div className="searchInnerTopBar">
+                                <BsSearch />
+                                <input type="search" placeholder='Search ...' className="searchInput" onClick={() => dispatch(SearchBarSettingFun())}/>
+                                {isSearchBarSettingModal && (
+                                   <img src={filter_ico} alt='search'/>
+                                )}
+                                {isSearchBarSettingModal && (
+                                    <SearchSetting />
+                                )}
+                            </div>
+                            
+                        </>
                     )}
                     {props?.addClientSetting && (
-                        <span className='mx-2'>
-                            <img src={props?.addClientSetting} alt="" />
-                        </span>
+                        <>
+                            <span className='mx-2'  >
+                                <img src={props?.addClientSetting} alt="" onClick={() => dispatch(SearchSubFun())}/>
+                                {isSettingSubModal && (
+                                    <SettingSubBar />
+                                )}
+                            </span>
+                        </>
                     )}
                     {props?.addClientFilterBtn && (
-                        <button>
+                        <button className='hiddenFilterBtn'>
                             <img src={props?.addClientFilterIcon} alt="" />
                             {props?.addClientFilterBtn}
                         </button> 
                     )}
 
                      {/* JOB PAGE TOP BAR ON LEFT SIDE =-=-=-=-= */}
-                     {props?.jobsSearchBar && (
-                        <div className="searchInnerTopBar">
-                            <BsSearch />
-                            <input type="search" placeholder='Search ...'/>
-                        </div>
+                    {props?.jobsSearchBar && (
+                        <>
+                            <div className="searchInnerTopBar">
+                                <BsSearch />
+                                <input type="search" placeholder='Search ...' className="searchInput" onClick={() => dispatch(SearchBarSettingFun())}/>
+                                {isSearchBarSettingModal && (
+                                   <img src={filter_ico} alt='search'/>
+                                )}
+                                {isSearchBarSettingModal && (
+                                    <SearchSetting />
+                                )}
+                            </div>
+                            
+                        </>
                     )}
                     {props?.jobsSettingIcon && (
-                        <span className='mx-2'>
-                            <img src={props?.jobsSettingIcon} alt="" />
-                        </span>
+                        <>
+                            <span className='mx-2'  >
+                                <img src={props?.jobsSettingIcon} alt="" onClick={() => dispatch(SearchSubFun())}/>
+                                {isSettingSubModal && (
+                                    <SettingSubBar />
+                                )}
+                            </span>
+                        </>
                     )}
+
                     {props?.jobsFilterBtn && (
-                        <button>
+                        <button className='hiddenFilterBtn'>
                             <img src={props?.jobsFIltericon} alt="" />
                             {props?.jobsFilterBtn}
                         </button> 
@@ -60,48 +93,71 @@ function InnerTopbar(props) {
 
                      {/* User Management TOP BAR ON LEFT SIDE =-=-=-=-= */}
                     {props?.UserManageSearchBar && (
-                        <div className="searchInnerTopBar">
-                            <BsSearch />
-                            <input type="search" placeholder='Search ...'/>
-                        </div>
+                        <>
+                            <div className="searchInnerTopBar">
+                                <BsSearch />
+                                <input type="search" placeholder='Search ...' className="searchInput" onClick={() => dispatch(SearchBarSettingFun())}/>
+                                {isSearchBarSettingModal && (
+                                    <img src={filter_ico} alt='search'/>
+                                )}
+                                {isSearchBarSettingModal && (
+                                    <SearchSetting />
+                                )}
+                            </div>
+                            
+                        </>
                     )}
+
                     {props?.UserManageSetting && (
-                        <span className='mx-2'>
-                            <img src={props?.UserManageSetting} alt="" />
-                        </span>
+                        <>
+                            <span className='mx-2'  >
+                                <img src={props?.UserManageSetting} alt="" onClick={() => dispatch(SearchSubFun())}/>
+                                {isSettingSubModal && (
+                                    <SettingSubBar />
+                                )}
+                            </span>
+                        </>
                     )}
                     {props?.UserManageFilterBtn && (
-                        <button>
+                        <button className='hiddenFilterBtn'>
                             <img src={props?.UserManageFilterIcon} alt="" />
                             {props?.UserManageFilterBtn}
                         </button> 
                     )}
                      {/* User Management TOP BAR ON LEFT SIDE =-=-=-=-= */}
-                     {props?.UserManageConfigSearchBar && (
-                        <div className="searchInnerTopBar">
-                            <BsSearch />
-                            <input type="search" placeholder='Search ...'/>
-                        </div>
+                    {props?.UserManageConfigSearchBar && (
+                        <>
+                            <div className="searchInnerTopBar">
+                                <BsSearch />
+                                <input type="search" placeholder='Search ...' className="searchInput" onClick={() => dispatch(SearchBarSettingFun())}/>
+                                {isSearchBarSettingModal && (
+                                <img src={filter_ico} alt='search'/>
+                                )}
+                                {isSearchBarSettingModal && (
+                                    <SearchSetting />
+                                )}
+                            </div>
+                            
+                        </>
                     )}
                     {props?.UserManageConfigSetting && (
-                        <span className='mx-2'>
-                            <img src={props?.UserManageConfigSetting} alt="" />
-                        </span>
+                        <>
+                            <span className='mx-2'  >
+                                <img src={props?.UserManageConfigSetting} alt="" onClick={() => dispatch(SearchSubFun())}/>
+                                {isSettingSubModal && (
+                                    <SettingSubBar />
+                                )}
+                            </span>
+                        </>
                     )}
                     {props?.UserManageConfigFilterBtn && (
-                        <button>
+                        <button  className='hiddenFilterBtn'>
                             <img src={props?.UserManageConfigFilterIcon} alt="" />
                             {props?.UserManageConfigFilterBtn}
                         </button> 
                     )}
-                    {props?.UMfilter && (
-                        <button >
-                            <img src={props?.icon} alt="" />
-                            {props?.UMfilter}
-                        </button>
-                    )}
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-6 innerRightSide">
+                <div className="col-lg-6 col-md-6 innerRightSide">
                     {/* HOME PAGE TOP BAR ON RIGHT SIDE =============================================== */}
                     {props?.homeFilterBtn && (
                         <button>
@@ -134,7 +190,7 @@ function InnerTopbar(props) {
                         </select>
                     )}
                     {props?.addClientBulkBtn && (
-                        <button className='bulkBtn'>{props?.addClientBulkBtn}</button>
+                        <button className='bulkBtn hiddenFilterBtn'>{props?.addClientBulkBtn}</button>
                     )}
                     {props?.addClientBtn && (
                         <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClientBtn}</button>

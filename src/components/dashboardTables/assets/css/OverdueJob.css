@@ -181,8 +181,9 @@
 }
 
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:992px) {
     .OdjParentContainer {
-        height: 450px;
+        height: auto;
+        margin-top: 20px;
     }
 }
