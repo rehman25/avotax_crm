@@ -31,8 +31,6 @@ function UserManagementConfig() {
                         UserCongigDropDown={true}
                         setting={setting_ico}
                         searchBar={true}
-                        
-                
                     />
                     <div className="container marginTop">
                         <UserManagementConfigCom />
