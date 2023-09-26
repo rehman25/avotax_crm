@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { AiFillPieChart } from 'react-icons/ai';
 import '../components/assets/css/sidebar.css'
-import logo from '../components/assets/images/fullLogo.avi'
-import logoIco from '../components/assets/images/logoIco.avi'
+import logo from '../components/assets/images/fullLogo.png'
+import logoIco from '../components/assets/images/logoIco.png'
 import {IoIosPeople} from 'react-icons/io'
 import {BiErrorCircle} from 'react-icons/bi'
 import { BsBagFill } from 'react-icons/bs'

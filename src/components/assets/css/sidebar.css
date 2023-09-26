@@ -26,10 +26,26 @@
 }
 .sidebarScrollBox{
     padding-left: 10px;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.sidebarScrollBox::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+.sidebarScrollBox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(226, 223, 223, 0.24);
+}
+.createmembermodal svg.formClsoeIco{
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
 .mainSideBar .sidebarScrollBox .logoBox img{
-     display: block;
-    height: 70px;
+    display: block;
+    height: 120px;
     margin: 20px auto;
 }
 .mainSideBar .sidebarScrollBox .logoBox svg{
