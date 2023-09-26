@@ -10,14 +10,9 @@ function AddClient() {
   const dispatch = useDispatch();
   const [isFormSteps, setFormSteps] = useState("firstStep")
 
-<<<<<<< HEAD
   const NextFun = (e) => {
     e.preventDefault()
     if(isFormSteps == "firstStep"){
-=======
-  const NextFun = () => {
-    if (isFormSteps == "firstStep") {
->>>>>>> 8324640841d266b61ad2981632633c11fe54c719
       setFormSteps("scdStep")
     } else if (isFormSteps == "scdStep") {
       setFormSteps("thirdSteps")
