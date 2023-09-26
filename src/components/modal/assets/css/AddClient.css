@@ -12,9 +12,16 @@
 }
 
 .addClientModal .inneraddClientModal {
-    width: 100%;
+    width: 90%;
     background: white;
     position: relative;
+}
+
+
+.addClientModal .inneraddClientModal h5{
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .inneraddClientModal .container {
@@ -44,7 +51,7 @@
     text-align: center;
 }
 
-.inneraddClientModal .clientStepsBox span::after {
+.inneraddClientModal .clientStepsBox span.after::after {
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +77,9 @@
     position: relative;
     border-radius: 5px;
 }
-
+.inneraddClientModal .clientStepsBox .innerStep span p.svgStep{
+    padding: 0 7px;
+}
 .inneraddClientModal .clientStepsBox .innerStep span p.activeStep {
     background-color: #3E97FF !important;
     color: white !important;
@@ -284,45 +293,6 @@
 }
 
 /*  ================================ */
-
-.Cooperatefooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF;
-    padding: 15px 30px;
-    border-top: 1px solid #ccc;
-}
-
-.Cooperatefooter .back {
-    margin-right: 20px;
-    padding: 5px 35px;
-    background-color: #F1FAFF;
-    color: #3E97FF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.Cooperatefooter .cancel {
-    margin-right: 20px;
-    padding: 5px 35px;
-    background-color: #F1FAFF;
-    color: #3E97FF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.Cooperatefooter .next {
-    padding: 5px 40px;
-    background-color: #3E97FF;
-    color: #FFFFFF;
-    ;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 /* Address CSS SECTION CSS ================================ */
 
@@ -604,3 +574,580 @@
 }
 
 /*  ================================ */
+
+/* Engagements CSS SECTION CSS ================================ */
+
+
+.CooperateClients .Engagementsrowfirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowfirst h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Engagementsrowfirst .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowfirst label{
+    font-weight: 600;
+}
+
+.CooperateClients .Engagementsrowfirst select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+.CooperateClients .Engagementsrowsecond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowsecond .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowsecond label{
+    font-weight: 600;
+}
+.CooperateClients .Engagementsrowsecond select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Engagementsrowthird{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowthird .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowthird label{
+    font-weight: 600;
+}
+.CooperateClients .Engagementsrowthird select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Engagementsrowfourth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowfourth .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowfourth label{
+    font-weight: 600;
+}
+.CooperateClients .Engagementsrowfourth select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+.CooperateClients .Engagementsrowfifth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowfifth .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowfifth label{
+    font-weight: 600;
+}
+.CooperateClients .Engagementsrowfifth select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Engagementsrowsixth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Engagementsrowsixth .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Engagementsrowsixth label{
+    font-weight: 600;
+}
+
+.CooperateClients .Engagementsrowsixth select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+/*  ================================ */
+
+
+/* Accounting Software CSS SECTION CSS ================================ */
+
+.CooperateClients .Accountsoftrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Accountsoftrow h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Accountsoftrow .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Accountsoftrow .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Accountsoftrow .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Accountsoftrow .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowfirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Bussinessaffilaiterowfirst h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowfirst .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowfirst .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowfirst .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Bussinessaffilaiterowsecond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Bussinessaffilaiterowsecond h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowsecond .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Bussinessaffilaiterowsecond .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+
+.CooperateClients .Bussinessaffilaiterowsecond .form-group label{
+    font-weight: 600;
+}
+
+/*  ================================ */
+
+
+/* Profile CSS SECTION CSS ================================ */
+
+
+.CooperateClients .Profierowfirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Profierowfirst h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Profierowfirst .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Profierowfirst .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Profierowfirst .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Profierowsecond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Profierowsecond h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Profierowsecond .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Profierowsecond .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Profierowsecond .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Annualaccschedule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Annualaccschedule h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Annualaccschedule .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Annualaccschedule .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Annualaccschedule .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .clienthistory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .clienthistory h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .clienthistory .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .clienthistory .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .clienthistory .form-group label{
+    font-weight: 600;
+}
+
+/*  ================================ */
+
+/* Billing CSS SECTION CSS ================================ */
+
+.CooperateClients .Billingrowfirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Billingrowfirst h5{
+    color: #7E87A1;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowfirst .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Billingrowfirst .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowfirst .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowfirst .form-group label{
+    font-weight: 600;
+}
+
+.CooperateClients .Billingrowsecond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CooperateClients .Billingrowsecond .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Billingrowsecond .form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowsecond .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowsecond .form-group label{
+    font-weight: 600;
+}
+
+/* .CooperateClients .Billingrowthird{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.CooperateClients .Billingrowthird .form-group{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.CooperateClients .Billingrowthird.form-group select{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.CooperateClients .Billingrowthird .form-group label{
+    font-weight: 600;
+}
+
+/*  ================================ */
+
+
+.Cooperatefooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 30px;
+    border-top: 1px solid #ccc;
+}
+
+.Cooperatefooter .back {
+    margin-right: 20px;
+    padding: 5px 35px;
+    background-color: #F1FAFF;
+    color: #3E97FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Cooperatefooter .cancel {
+    margin-right: 20px;
+    padding: 5px 35px;
+    background-color: #F1FAFF;
+    color: #3E97FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Cooperatefooter .next {
+    padding: 5px 40px;
+    background-color: #3E97FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Cooperatefooter .save {
+    padding: 5px 40px;
+    background-color: #3E97FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+    .CooperateClients .Generalinforowdirst .form-group,
+    .CooperateClients .Generalinforowsecond .form-group,
+    .CooperateClients .Generalinforowthird .form-group,
+    .Assignedto .form-group,
+    .CooperateClients .ContactinforowFirst .form-group
+    .CooperateClients .Addressrowdirst .form-group,
+    .CooperateClients .Addressrowsecond .form-group,
+    .CooperateClients .Addressrowthird .form-group,
+    .CooperateClients .Seccontactrowfirst .form-group,
+    .CooperateClients .Seccontactrowsecond .form-group,
+    .CooperateClients .Internetrowfirst .form-group,
+    .CooperateClients .Internetrowsecond .form-group,
+    .CooperateClients .Internetrowthird .form-group,
+    .CooperateClients .Engagementsrowfirst .form-group,
+    .CooperateClients .Engagementsrowsecond .form-group,
+    .CooperateClients .Engagementsrowthird .form-group,
+    .CooperateClients .Engagementsrowfourth .form-group,
+    .CooperateClients .Engagementsrowfifth .form-group,
+    .CooperateClients .Engagementsrowsixth .form-group,
+    .CooperateClients .Accountsoftrow .form-group,
+    .CooperateClients .Bussinessaffilaiterowfirst .form-group,
+    .CooperateClients .Bussinessaffilaiterowsecond .form-group,
+    .CooperateClients .Profierowfirst .form-group,
+    .CooperateClients .Profierowsecond .form-group,
+    .CooperateClients .Annualaccschedule .form-group,
+    .CooperateClients .clienthistory .form-group,
+    .CooperateClients .Billingrowfirst .form-group,
+    .CooperateClients .Billingrowsecond .form-group,
+    .CooperateClients .Billingrowthird .form-group{
+        width: 100%;
+    }
+}
+@media screen and (max-width:575px){
+    .CooperateClients {
+        height: 340px;
+    }
+    .Cooperatefooter {
+        flex-direction: column;
+        align-items: start;
+    }
+    .Cooperatefooter .cancel,
+    .Cooperatefooter .save{
+        margin-top: 10px;
+    }
+    .Cooperatefooter div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

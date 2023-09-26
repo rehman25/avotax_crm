@@ -12,8 +12,9 @@ function UserManagementConfig() {
     const hideShowMenuClick = () => {
         setMenuOpen(current => !current)
     }
-    var one = "User";
-    var two = "Config";
+    var HeadTop="User management";
+    var breadCrumOne="Config";
+    var breadCrumTwo="User";
     return (
         <>
             <div className="allPages">
@@ -22,17 +23,15 @@ function UserManagementConfig() {
                 />
                 <div className="innerBox">
                     <Topbar
-                        {...{ hideShowMenuClick, one, two }}
+                        {...{ hideShowMenuClick, HeadTop,breadCrumOne,breadCrumTwo }}
                     />
                     <InnerTopbar
-                        CreateUser="Create User"
-                        UserConfigfilterBtn="Filters"
-                        icon={filter_ico}
-                        UserCongigDropDown={true}
-                        setting={setting_ico}
-                        searchBar={true}
-                        
-                
+                        UserManageConfigCreateUserBtn="Create User"
+                        UserManageConfigDropDown={true}
+                        UserManageConfigSearchBar={true}
+                        UserManageConfigSetting={setting_ico}
+                        UserManageConfigFilterBtn="Filters"
+                        UserManageConfigFilterIcon={filter_ico}
                     />
                     <div className="container marginTop">
                         <UserManagementConfigCom />

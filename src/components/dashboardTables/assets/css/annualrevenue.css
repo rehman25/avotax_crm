@@ -1,115 +1,102 @@
-.ArParentContainer{
-background: #FFFFFF 0% 0% no-repeat padding-box;
+.ArParentContainer {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 2px #0000000A;
     border: 1px solid #F1F1F2;
     border-radius: 9px;
-    opacity: 1;
     height: 400px;
 }
 
-.ArTop{
-       display: flex;
+.ArTop {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 5px 15px;
     border-bottom: 1px solid lightgray;
 }
-.ArTop span{
+
+.ArTop span {
     margin-top: 10px;
 }
-.ArTop span .Head{
+
+.ArTop span .Head {
     font-size: 16px;
     color: black;
     margin: 0px;
 }
-.ArTop span p{
-  font-size: 10px;
-  color: lightgray;
-  margin: 0px;
+
+.ArTop span p {
+    font-size: 10px;
+    color: lightgray;
+    margin: 0px;
 }
-.ArTop span p b{
+
+.ArTop span p b {
     color: blue;
 }
 
-.ChartContAnnual{
-width: 100%;
+.ChartContAnnual {
+    width: 100%;
     padding: 10px;
     height: 283px;
-    
+
 }
 
-.ArBottom{
+.ArBottom {
     padding: 15px;
 }
 
-.ArCalender{
-    width: 150px !important;
-        height: 38px;
-        background: #F9F9F9;
-        border-radius: 8px !important;
-        opacity: 1;
-
-}
-
-.ArCalender span{
-        text-align: center;
-        font-size: 12px;
-        letter-spacing: 0px;
-        color: #B9C2D9;
-        opacity: 1;
-        margin: 0px;
-}
-.ArIcon{
-    font-size: 14px !important;
-}
-
-
-@media screen and (max-width:450px) {
 .ArCalender {
-width: 120px !important;
-height: 38px;
-background: #F9F9F9;
-border-radius: 8px !important;
-opacity: 1;
-
+    width: 150px !important;
+    background: #F9F9F9;
+    border-radius: 8px !important;
 }
+
 .ArCalender span {
-text-align: center;
-font-size: 8px;
-letter-spacing: 0px;
-color: #B9C2D9;
-opacity: 1;
-margin: 0px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #B9C2D9;
 }
 
 .ArIcon {
-font-size: 10px !important;
+    font-size: 14px !important;
 }
-}
-
-
-@media screen and (max-width:450px) {
-    .ArBottom{
-        overflow-x: scroll;
-        overflow-y: hidden;
+@media screen and (max-width:575px){
+    .ArCalender {
+        width: 100% !important;
     }
-    
+}
+@media screen and (max-width:480px) {
+    .ArParentContainer {
+        height: auto;
+    }
+    .ArCalender span {
+        text-align: center;
+        font-size: 8px;
+        color: #B9C2D9;
+    }
+
+    .ArIcon {
+        font-size: 10px !important;
+    }
+
     .ArBottom::-webkit-scrollbar {
         width: 2px;
     }
 
     /* Track */
-.ArBottom::-webkit-scrollbar-track {
-    background: transparent;
-}
+    .ArBottom::-webkit-scrollbar-track {
+        background: transparent;
+    }
 
-/* Handle */
-.ArBottom::-webkit-scrollbar-thumb {
-    background: transparent;
-}
+    /* Handle */
+    .ArBottom::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
 
-/* Handle on hover */
-.ArBottom::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
+    /* Handle on hover */
+    .ArBottom::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
 }

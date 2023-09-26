@@ -9,10 +9,10 @@ import { AddClientFun } from '../../../redux/slice/modalSlice';
 function AddClient() {
   const dispatch = useDispatch();
   const [isFormSteps, setFormSteps] = useState("firstStep")
-  // const [isActiveSteps,setActiveSteps] = useState(false)
 
-  const NextFun = () => {
-    if (isFormSteps == "firstStep") {
+  const NextFun = (e) => {
+    e.preventDefault()
+    if(isFormSteps == "firstStep"){
       setFormSteps("scdStep")
     } else if (isFormSteps == "scdStep") {
       setFormSteps("thirdSteps")
@@ -45,6 +45,7 @@ function AddClient() {
 
   return (
     <>
+    <form onSubmit={NextFun}>
       <div className="addClientModal">
         <div className="inneraddClientModal">
           <div className="">
@@ -56,11 +57,11 @@ function AddClient() {
               }} />
             </div>
             <div className="row">
-              <div className="col-4">
+              <div className="col-lg-4 d-lg-block d-none">
                 <div className="clientStepsBox">
 
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "firstStep" ?
                         <p className="activeStep">1</p> : ""}
                         {
@@ -76,7 +77,7 @@ function AddClient() {
                     </div>
                   </div>
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "scdStep" ?
                         <p className="activeStep">2</p> :
                         isFormSteps == "thirdSteps" || isFormSteps == "forStep" ||
@@ -92,7 +93,7 @@ function AddClient() {
                     </div>
                   </div>
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "thirdSteps" ?
                         <p className="activeStep">3</p> :
                         isFormSteps == "forStep" || isFormSteps == "fiveStep"
@@ -108,7 +109,7 @@ function AddClient() {
                     </div>
                   </div>
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "forStep" ?
                         <p className="activeStep">4</p> :
                         isFormSteps == "fiveStep" || isFormSteps == "sixStep" || isFormSteps == "sevenStep" ? false : <p className="">4</p>}
@@ -122,7 +123,7 @@ function AddClient() {
                     </div>
                   </div>
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "fiveStep" ?
                         <p className="activeStep">5</p> :
                         isFormSteps == "sixStep" || isFormSteps == "sevenStep" ? false : <p className="">5</p>}
@@ -137,7 +138,7 @@ function AddClient() {
                   </div>
 
                   <div className="innerStep">
-                    <span>
+                    <span className='after'>
                       {isFormSteps == "sixStep" ?
                         <p className="activeStep">6</p> : isFormSteps == "sevenStep" ? false : <p className="">6</p>}
 
@@ -157,9 +158,6 @@ function AddClient() {
                         isFormSteps == "firstStep" || isFormSteps == "scdStep" ||
                           isFormSteps == "thirdSteps" || isFormSteps == "forStep" ||
                           isFormSteps == "fiveStep" || isFormSteps == "sixStep" ? <p className="">7</p> : false}
-
-                      {/* { isFormSteps == "sevenStep" ?  */}
-                      {/* <p className="svgStep"><BsCheck className='svgStep' /></p> : ""} */}
                     </span>
                     <div className="">
                       <h6>Accounting Software</h6>
@@ -170,15 +168,15 @@ function AddClient() {
                 </div>
               </div>
 
-              <div className="col-8">
+              <div className="col-lg-8">
                 <div className="CooperateClients">
                   {isFormSteps == "firstStep" ?
-                    <form action="">
+                    <>
                       <div className="Generalinforowdirst">
                         <h5>General Information</h5>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Entity <span>(Prefilled)</span></label>
-                          <input type="email" class="form-control" placeholder="" required />
+                          <input type="email" class="form-control" placeholder=""  />
                         </div>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Code <span>(Prefilled)</span></label>
@@ -277,45 +275,109 @@ function AddClient() {
                           <input type="email" class="form-control" placeholder="" />
                         </div>
                       </div>
-                    </form> :
+                    </> :
                     isFormSteps == "scdStep" ?
-                      <form action="">
-                        <div className="Addressrowdirst">
-                          <h5>Address</h5>
+                    <>
+                      <div className="Addressrowdirst">
+                        <h5>Address</h5>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Address</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Number</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Apt</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                      </div>
+                      <div className="Addressrowsecond">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Street</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">PO BOX</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">RR</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                      </div>
+                      <div className="Addressrowthird">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">City/Town</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Province</label>
+                          <select class="form-select" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Postal Code</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                      </div>
+                      <div className="Seccontactrowfirst">
+                        <h5> Secondary Contact </h5>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Name</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">SIN</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Date of Birth</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                      </div>
+                      <div className="Seccontactrowsecond">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Position/Relationship</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email Address</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Phone Number</label>
+                          <input type="email" class="form-control" placeholder="" />
+                        </div>
+                      </div>
+                    </> :
+                    isFormSteps == "thirdSteps" ?
+                      <>
+                        <div className="Internetrowfirst">
+                          <h5>Internet</h5>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Address</label>
+                            <label for="exampleInputEmail1">Email</label>
                             <input type="email" class="form-control" placeholder="" />
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Number</label>
+                            <label for="exampleInputEmail1">Linkedin</label>
                             <input type="email" class="form-control" placeholder="" />
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Apt</label>
+                            <label for="exampleInputEmail1">Website</label>
                             <input type="email" class="form-control" placeholder="" />
                           </div>
                         </div>
-                        <div className="Addressrowsecond">
+                        <div className="Internetrowsecond">
+                          <h5>Consents</h5>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Street</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">PO BOX</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">RR</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                        </div>
-                        <div className="Addressrowthird">
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">City/Town</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleFormControlSelect1">Province</label>
+                            <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
                             <select class="form-select" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
@@ -325,61 +387,50 @@ function AddClient() {
                             </select>
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Postal Code</label>
+                            <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
+                            <select class="form-select" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div className="Internetrowthird">
+                          <h5>General</h5>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Is this a new client?</label>
+                            <select class="form-select" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">GST/HST BN?</label>
+                            <select class="form-select" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Client Wi-Fi Password</label>
                             <input type="email" class="form-control" placeholder="" />
                           </div>
                         </div>
-                        <div className="Seccontactrowfirst">
-                          <h5> Secondary Contact </h5>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Name</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">SIN</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Date of Birth</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                        </div>
-                        <div className="Seccontactrowsecond">
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Position/Relationship</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Email Address</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Phone Number</label>
-                            <input type="email" class="form-control" placeholder="" />
-                          </div>
-                        </div>
-                      </form> :
-                      isFormSteps == "thirdSteps" ?
-                        <form action="">
-                          <div className="Internetrowfirst">
-                            <h5>Internet</h5>
+                      </> :
+                    isFormSteps == "forStep" ?
+                        <>
+                          <div className="Engagementsrowfirst">
+                            <h5>Engagements</h5>
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Email</label>
-                              <input type="email" class="form-control" placeholder="" />
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Linkedin</label>
-                              <input type="email" class="form-control" placeholder="" />
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Website</label>
-                              <input type="email" class="form-control" placeholder="" />
-                            </div>
-                          </div>
-                          <div className="Internetrowsecond">
-                            <h5>Consents</h5>
-                            <div class="form-group">
-                              <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
+                              <label for="exampleFormControlSelect1">Do we do client HST return?</label>
                               <select class="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
@@ -389,7 +440,17 @@ function AddClient() {
                               </select>
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
+                              <label for="exampleFormControlSelect1">Do we do payroll for this client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Do we prepare T1 returns for this client?</label>
                               <select class="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
@@ -399,10 +460,9 @@ function AddClient() {
                               </select>
                             </div>
                           </div>
-                          <div className="Internetrowthird">
-                            <h5>General</h5>
+                          <div className="Engagementsrowsecond">
                             <div class="form-group">
-                              <label for="exampleFormControlSelect1">Is this a new client?</label>
+                              <label for="exampleFormControlSelect1">Do we prepare T2 returns for this client?</label>
                               <select class="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
@@ -412,7 +472,7 @@ function AddClient() {
                               </select>
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlSelect1">GST/HST BN?</label>
+                              <label for="exampleFormControlSelect1">Do we prepare T3 returns for this client?</label>
                               <select class="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
@@ -422,17 +482,141 @@ function AddClient() {
                               </select>
                             </div>
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Client Wi-Fi Password</label>
-                              <input type="email" class="form-control" placeholder="" />
+                              <label for="exampleFormControlSelect1">Do we prepare T4 returns for this client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
                             </div>
                           </div>
-                        </form> :
-                        isFormSteps == "forStep" ?
-                          <form action="">
-                            <div className="Engagementsrowfirst">
-                              <h5>Engagements</h5>
+                          <div className="Engagementsrowthird">
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Do we prepare T5 returns for this client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Do we prepare T5018's returns for this client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Do we do bookkeeping for this client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div className="Engagementsrowfourth">
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">GST/HST Filling?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">GST/HST Method?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Has GST return been e-filed?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div className="Engagementsrowfifth">
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Has T1 been e-filed?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Has T1135 been e-filed?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Has T2 been e-filed?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div className="Engagementsrowsixth">
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Is this a review client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">is this a audit client?</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                        </> :
+                  isFormSteps == "fiveStep" ?
+                          <>
+                            <div className="Accountsoftrow">
+                              <h5>Accounting Software</h5>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Do we do client HST return?</label>
+                                <label for="exampleFormControlSelect1">Accounting Software</label>
                                 <select class="form-select" id="exampleFormControlSelect1">
                                   <option>1</option>
                                   <option>2</option>
@@ -442,198 +626,52 @@ function AddClient() {
                                 </select>
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Do we do payroll for this client?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Username</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                             </div>
-                            <div className="Engagementsrowsecond">
+                            <div className="Bussinessaffilaiterowfirst">
+                              <h5>Business Affiliates</h5>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Bookkeeper name</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Bookkeeper phone number</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Bookkeeper e-mail</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                             </div>
-                            <div className="Engagementsrowthird">
+                            <div className="Bussinessaffilaiterowsecond">
+                              <h5>Business Affiliates</h5>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">Is this a new client?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Lawyer name</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Lawyer phone number</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
+                                <label for="exampleInputEmail1">Lawyer e-mail address</label>
+                                <input type="email" class="form-control" placeholder="" />
                               </div>
                             </div>
-                            <div className="Engagementsrowfourth">
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">Is this a new client?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div className="Engagementsrowfifth">
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">Is this a new client?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div className="Engagementsrowsixth">
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">Is this a new client?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                            </div>
-                          </form> :
-                          isFormSteps == "fiveStep" ?
-                            <form action="">
-                              <div className="Internetrowfirst">
-                                <h5>fiveStep</h5>
+
+                          </> :
+                          isFormSteps == "sixStep" ?
+                            <>
+                              <div className="Profierowfirst">
+                                <h5> More about the Contact </h5>
                                 <div class="form-group">
-                                  <label for="exampleInputEmail1">Email</label>
-                                  <input type="email" class="form-control" placeholder="" />
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputEmail1">Linkedin</label>
-                                  <input type="email" class="form-control" placeholder="" />
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputEmail1">Website</label>
-                                  <input type="email" class="form-control" placeholder="" />
-                                </div>
-                              </div>
-                              <div className="Internetrowsecond">
-                                <h5>Consents</h5>
-                                <div class="form-group">
-                                  <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
+                                  <label for="exampleFormControlSelect1">Tax Year End</label>
                                   <select class="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
@@ -643,7 +681,17 @@ function AddClient() {
                                   </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
+                                  <label for="exampleFormControlSelect1">Client Type</label>
+                                  <select class="form-select" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlSelect1">Client Type Subcategory</label>
                                   <select class="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
@@ -653,10 +701,9 @@ function AddClient() {
                                   </select>
                                 </div>
                               </div>
-                              <div className="Internetrowthird">
-                                <h5>General</h5>
+                              <div className="Profierowsecond">
                                 <div class="form-group">
-                                  <label for="exampleFormControlSelect1">Is this a new client?</label>
+                                  <label for="exampleFormControlSelect1">No. of Employees</label>
                                   <select class="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
@@ -666,7 +713,7 @@ function AddClient() {
                                   </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleFormControlSelect1">GST/HST BN?</label>
+                                  <label for="exampleFormControlSelect1">In business since</label>
                                   <select class="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
@@ -675,33 +722,38 @@ function AddClient() {
                                     <option>5</option>
                                   </select>
                                 </div>
+                              </div>
+                              <div className="Annualaccschedule">
+                                <h5> Annual Account Scheduling </h5>
                                 <div class="form-group">
-                                  <label for="exampleInputEmail1">Client Wi-Fi Password</label>
+                                  <label for="exampleFormControlSelect1">Annual Account Month</label>
+                                  <select class="form-select" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div className="clienthistory">
+                                <h5> Client History </h5>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Client From</label>
+                                  <input type="email" class="form-control" placeholder="" />
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Client Until</label>
                                   <input type="email" class="form-control" placeholder="" />
                                 </div>
                               </div>
-                            </form> :
-                            isFormSteps == "sixStep" ?
-                              <form action="">
-                                <div className="Internetrowfirst">
-                                  <h5>Six</h5>
+                            </> :
+                            isFormSteps == "sevenStep" ?
+                              <>
+                                <div className="Billingrowfirst">
+                                  <h5>Billing</h5>
                                   <div class="form-group">
-                                    <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control" placeholder="" />
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="exampleInputEmail1">Linkedin</label>
-                                    <input type="email" class="form-control" placeholder="" />
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="exampleInputEmail1">Website</label>
-                                    <input type="email" class="form-control" placeholder="" />
-                                  </div>
-                                </div>
-                                <div className="Internetrowsecond">
-                                  <h5>Consents</h5>
-                                  <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
+                                    <label for="exampleFormControlSelect1">Invoice/Statement Delivery</label>
                                     <select class="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
@@ -711,20 +763,7 @@ function AddClient() {
                                     </select>
                                   </div>
                                   <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div className="Internetrowthird">
-                                  <h5>General</h5>
-                                  <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Is this a new client?</label>
+                                    <label for="exampleFormControlSelect1">Charge Interest</label>
                                     <select class="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
@@ -734,104 +773,59 @@ function AddClient() {
                                     </select>
                                   </div>
                                   <div class="form-group">
-                                    <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="exampleInputEmail1">Client Wi-Fi Password</label>
+                                    <label for="exampleInputEmail1">Interest Rate %</label>
                                     <input type="email" class="form-control" placeholder="" />
                                   </div>
                                 </div>
-                              </form> :
-                              isFormSteps == "sevenStep" ?
-                                <form action="">
-                                  <div className="Internetrowfirst">
-                                    <h5>Seven</h5>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Email</label>
-                                      <input type="email" class="form-control" placeholder="" />
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Linkedin</label>
-                                      <input type="email" class="form-control" placeholder="" />
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Website</label>
-                                      <input type="email" class="form-control" placeholder="" />
-                                    </div>
+                                <div className="Billingrowsecond">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Interest Period</label>
+                                    <input type="email" class="form-control" placeholder="" />
                                   </div>
-                                  <div className="Internetrowsecond">
-                                    <h5>Consents</h5>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
-                                      <select class="form-select" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
-                                      <select class="form-select" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Minimum Amount</label>
+                                    <input type="email" class="form-control" placeholder="" />
                                   </div>
-                                  <div className="Internetrowthird">
-                                    <h5>General</h5>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">Is this a new client?</label>
-                                      <select class="form-select" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                                      <select class="form-select" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Client Wi-Fi Password</label>
-                                      <input type="email" class="form-control" placeholder="" />
-                                    </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Send Invoice Reminder</label>
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
                                   </div>
-                                </form> : ""
+                                </div>
+                                <div className="Billingrowthird">
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Tax rate</label>
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </> : ""
                   }
-
-
                 </div>
               </div>
             </div>
             <div className="Cooperatefooter">
               <span className="back" onClick={BackFun}>Back</span>
               <div>
-                <span className="cancel">Cancel</span>
+                <span className="cancel" onClick={() => {
+                dispatch(AddClientFun())
+                setFormSteps("firstStep")
+              }}>Cancel</span>
                 {
                   isFormSteps == "firstStep" || isFormSteps == "scdStep"
                     || isFormSteps == "thirdSteps" || isFormSteps == "forStep"
                     || isFormSteps == "fiveStep" || isFormSteps == "sixStep" ?
-                    <span className="next" onClick={NextFun}>Next</span> : isFormSteps == "sevenStep" ? <button>Save</button> : false
+                    <button className="next" type="sumbit">Next</button> : isFormSteps == "sevenStep" ? <button className="save">Save</button> : false
                 }
 
               </div>
@@ -839,6 +833,7 @@ function AddClient() {
           </div>
         </div>
       </div>
+    </form>
     </>
   )
 }

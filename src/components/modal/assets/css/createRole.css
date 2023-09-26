@@ -4,7 +4,12 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    height: 100vh;
     width: 100%;
+    background: #00000081;
+    z-index: 99999;
+    top: 0;
+    left: 0;
 }
 
 .createrolemodel h4 {
@@ -21,7 +26,18 @@
     padding: 15PX;
     position: relative;
 }
-
+.createrolemodel .createrolemodelInnerBox .createrolmaincontainer{
+    overflow-y: scroll;
+    height: 300px;
+}
+.createrolemodel .createrolemodelInnerBox .createrolmaincontainer::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+.createrolemodel .createrolemodelInnerBox .createrolmaincontainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(226, 223, 223, 0.24);
+}
 .createrolemodel .createrolemodelInnerBox svg.closeiconerole {
     position: absolute;
     right: 10px;
@@ -90,6 +106,6 @@
 
 @media (max-width: 576px) {
     .createrolemodel .createrolemodelInnerBox {
-        width: 90%;
+        width: 100%;
     }
 }

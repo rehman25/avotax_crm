@@ -1,9 +1,8 @@
 .SOVParentContainer {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     box-shadow: 0px 0px 2px #0000000A;
     border: 1px solid #F1F1F2;
     border-radius: 9px;
-    opacity: 1;
     height: 400px;
 }
 
@@ -11,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 5px 15px;
     border-bottom: 1px solid lightgray;
 }
@@ -49,48 +49,43 @@
     color: blue;
 }
 
-.SOvBottom{
+.SOvBottom {
     padding: 15px;
 }
 
-.ChartCont{
+.ChartCont {
     padding: 15px;
-    height:300px;
-    
+    height: 300px;
+
 }
 
-@media screen and (max-width:450px) {
-    .ChartCont{
-        overflow-x: scroll;
-        overflow-y: hidden;
-
+@media screen and (max-width:992px) {
+    .SOVParentContainer {
+        height: auto;
+        margin-top: 20px;
     }
-    
+    .ChartCont {
+        overflow: scroll;
+    }
     .ChartCont::-webkit-scrollbar {
         width: 2px;
     }
-    
-    /* Track */
     .ChartCont::-webkit-scrollbar-track {
         background: transparent;
+    }
+    .ChartCont::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    .ChartCont::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
 }
 
-/* Handle */
-.ChartCont::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-
-/* Handle on hover */
-.ChartCont::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
-}
-
-@media screen and (max-width:400px){
-.SOVselectList li{
-    font-size: 10px;
-}
-.SOVTop span .Head{
-    font-size: 14px;
-}
+@media screen and (max-width:420px) {
+    .SOVselectList li {
+        font-size: 10px;
+    }
+    .SOVTop span .Head {
+        font-size: 14px;
+    }
 }

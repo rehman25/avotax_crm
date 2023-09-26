@@ -55,15 +55,14 @@
 }
 
 .InnerTopbar {
-    /* height: 56px; */
     margin: 0px 0px !important;
     background: #FFFFFF;
     position: fixed;
     width: -webkit-fill-available;
     padding: 10px;
-    top: 53px;
+    top: 52px;
     z-index: 99;
-
+    border-top: 1px solid #f1f1f1;
 }
 
 .innerRightSide {
@@ -102,8 +101,6 @@
     color: white !important;
 }
 
-.bulkBtn {}
-
 .innerRightSide button img {
     height: 15px;
     margin-right: 5px;
@@ -117,6 +114,7 @@
 .innerLeftSide span {
     border: 1px solid #f1f1f1;
     padding: 0 6px;
+    position: relative;
     border-radius: 5px;
 }
 
@@ -126,14 +124,16 @@
 
 .searchInnerTopBar {
     position: relative;
+    top: 0;
 }
 
-.searchInnerTopBar input {
+.searchInnerTopBar input.searchInput {
     border: 1px solid lightgray;
     padding-left: 25px;
+    width: 100%;
 }
 
-.searchInnerTopBar input::placeholder {
+.searchInnerTopBar input.searchInput::placeholder {
     font-size: 14px;
 }
 
@@ -143,48 +143,166 @@
     top: 8px;
     font-size: 12px;
 }
-
-
-
-@media screen and (max-width:490px) {
-    .topBar .leftSide .pageHead h5 {
-        font-size: 10px;
-    }
-
-    .topBar .leftSide .bread-crum a {
-        font-size: 8px;
-    }
-        .topBar .leftSide img {
-            height: 20px;
-        }
-                .topBar .rightSide img {
-                    height: 22px;
-                }
-}
-@media screen and (max-width:370px) {
-    .topBar .leftSide .pageHead h5 {
-        font-size: 8px;
-    }
-
-    .topBar .leftSide .bread-crum a {
-        font-size: 6px;
-    }
-        .topBar .leftSide img {
-            height: 16px;
-        }
+.searchInnerTopBar img {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    height: 15px;
 }
 
-@media screen and (max-width:768px) {
-    .InnerTopbar{
-        /* height: 86px; */
-        /* padding: 10px; */
+/* SEARCH  BAR SETTING MODAL BOX CSS ================================================== */
+.mainSearchBarSettingBox{
+    position: fixed;
+    background: white;
+    width: 40%;
+    margin-top: 30px;
+    box-shadow: 4px 2px 10px #80808042;
+}
+.mainSearchBarSettingBox::after{
+    content: "";
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: -10px;
+    background: white;
+    right: 45px;
+    height: 11px;
+    width: 15px;
+}
+.mainSearchBarSettingBox .searchSettingInnerCheckBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 0 20px;
+}
+.mainSearchBarSettingBox .searchSettingInnerCheckBox .form-check{
+    margin: 10px 10px;
+}
+.mainSearchBarSettingBox .innerStartEndDateBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #f1f1f1;
+}
+.mainSearchBarSettingBox .innerStartEndDateBox .form-group{
+    width: 48%;
+}
+
+.mainSearchBarSettingBox .SearchBarDropDown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #f1f1f1;
+}
+.mainSearchBarSettingBox .SearchBarDropDown select{
+    height: 40px;
+    width: 60%;
+}
+.mainSearchBarSettingBox .SearchBarDropDown button{
+    color: blue;
+    font-weight: 500;
+}
+
+.mainSearchBarSettingBox .filterApplyBox{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.mainSearchBarSettingBox .filterApplyBox button{
+    border: none;
+    padding: 5px 30px;
+}
+.mainSearchBarSettingBox .filterApplyBox button:nth-child(1){
+    color: gray;
+}
+.mainSearchBarSettingBox .filterApplyBox button:nth-child(2){
+    background: #18235B;
+    color: white;
+}
+
+.settingModalBox{
+    position: fixed;
+    background: white;
+    box-shadow: 4px 2px 10px #80808042;
+    padding: 20px;
+    width: 40%;
+    margin-top: 21px;
+}
+.settingModalBox div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.settingModalBox div .form-check{
+    margin: 10px 10px;
+}
+.settingModalBox div .form-check label{
+    margin: 0 5px;
+}
+@media screen and (max-width:992px){
+    .mainSearchBarSettingBox {
+        width: 80%;
     }
-        .innerLeftSide{
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .innerRightSide{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+}
+@media screen and (max-width:768px){
+    .innerLeftSide, .innerRightSide {
+        justify-content: center;
+    }
+    .innerRightSide {
+        margin-top: 10px !important;
+        flex-wrap: wrap;
+    }
+    .innerLeftSide .hiddenFilterBtn, .innerRightSide .hiddenFilterBtn{
+        display: none;
+    }
+    .searchInnerTopBar {
+        width: 95%;
+    }
+    .settingModalBox{
+        width: 95%;
+        left: 10px;
+    }
+}
+@media screen and (max-width:667px){
+    .topBar .leftSide {
+        width: 100%;
+    }
+    .topBar .rightSide {
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    .mainSearchBarSettingBox {
+        width: 95%;
+        left: 5px;
+    }
+    .mainSearchBarSettingBox {
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width:320px){
+    .topBar .leftSide .pageHead h5 {
+        font-size: 11px;
+    }
+    .topBar .leftSide .bread-crum a {
+        font-size: 9px;
+    }
+    .InnerTopbar {
+        top: 47px;
+    }
+    .mainSearchBarSettingBox .innerStartEndDateBox b{
+        display: none;
+    }
+    .mainSearchBarSettingBox .innerStartEndDateBox .form-group {
+        width: 100%;
+        margin-top: 4px;
+    }
+    .mainSearchBarSettingBox .searchSettingInnerCheckBox .form-check {
+        margin: 0px 10px;
+        font-size: 14px;
+    }
 }

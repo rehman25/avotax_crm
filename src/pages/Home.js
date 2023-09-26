@@ -31,8 +31,8 @@ function Home() {
                         {...{ hideShowMenuClick,HeadTop,breadCrumOne,breadCrumTwo  }}
                     />
                     <InnerTopbar 
-                        filterBtn="Filter"
-                        icon={filter_ico}
+                        homeFilterBtn="Filters"
+                        homeFilericon={filter_ico}
                         createJobHome="Create Job"
                     />
                     <div className="container marginTop">

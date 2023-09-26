@@ -22,15 +22,20 @@
     margin: 0 5px;
 }
 .sliderLeftSide .slick-slider .slick-dots li button{
-    padding: 0;
+    padding: 5px 5px;
     height: 9px;
     text-align: center;
     align-items: center;
     color: transparent;
     border-radius: 10px;
+    background: white;
+    max-width: 0;
 }
 .sliderLeftSide .slick-slider .slick-dots li button:focus{
     outline: none;
+}
+.sliderLeftSide .slick-slider .slick-dots li.slick-active button{
+    background: black !important;
 }
 .sliderLeftSide{
     height: 100vh;
@@ -124,12 +129,18 @@
     accent-color: black;
     margin-right: 10px;
 }
-.innersliderRightSide form button{
+.innersliderRightSide form .SignBtn{
     background: #000;
     color: white;
     width: inherit;
     padding: 11px 0;
+    text-align: center;
     margin-top: 20px;
+}
+.SignBtn button{
+    background-color: transparent;
+    color: white;
+
 }
 .innersliderRightSide .loginFooter{
     display: flex;
@@ -148,6 +159,9 @@
    color: #C1C1C1;
 }
 @media screen and (max-width:992px){
+    .loginSection {
+        height: auto;
+    }
     .sliderLeftSide{
         display: none;
     }
@@ -158,13 +172,20 @@
         position: relative;
     }
 }
-@media screen and (max-width:575px){
-    .innersliderRightSide .loginFooter{
+@media screen and (max-width:768px){
+    .innersliderRightSide .loginFooter {
         flex-direction: column;
-        margin-top: 20px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+    }
+    .innersliderRightSide .loginFooter div {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .innersliderRightSide .loginFooter div a {
+        margin: 0 10px;
     }
 }
 @media screen and (max-width:380px){
