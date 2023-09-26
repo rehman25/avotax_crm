@@ -601,7 +601,7 @@ const AddUserModal = (props) => {
                         Next
                       </button>
                     ) : isFormSteps == "forthStep" ? (
-                      <button>save</button>
+                      <button className="AddUserNextButton">save</button>
                     ) : (
                       false
                     )}
