@@ -351,7 +351,7 @@ const AddUserModal = (props) => {
                     </div>
                   ) : isFormSteps == "scdStep" ? (
                     <div className="AddUserResp">
-                      <div className="firstStepHeading">
+                        <div className="firstStepHeading ">
                         <h5>Profile</h5>
                         <div className="row">
                           <div className="col-lg-4">
@@ -501,9 +501,9 @@ const AddUserModal = (props) => {
                     </div>
                   ) : isFormSteps == "ThrdStep" ? (
                     <div className="AddUserResp">
-                      <div className="firstStepHeading">
-                        <div className="row">
-                          <div className="col-lg-5 Availiable">
+                          <div className="firstStepHeading draganddrop">
+                            <div className="row ">
+                              <div className="col-lg-5 col-md-5 col-sm-5 Availiable resAvailiable">
                             <h6>Available</h6>
                             {availableItems.map((item) => (
                               <div
@@ -521,7 +521,7 @@ const AddUserModal = (props) => {
                             ))}
                           </div>
 
-                          <div className="col-lg-5 Availiable">
+                              <div className="col-lg-5 col-md-5 col-sm-5 Availiable resAvailiable">
                             <h6>Selected</h6>
                             {selectedItems.map((item) => (
                               <div
@@ -543,9 +543,9 @@ const AddUserModal = (props) => {
                     </div>
                   ) : isFormSteps == "forthStep" ? (
                     <div className="AddUserResp">
-                      <div className="firstStepHeading">
+                            <div className="firstStepHeading draganddrop">
                         <div className="row">
-                          <div className="col-lg-5 Availiable">
+                                <div className="col-lg-5 col-md-5  col-sm-5 Availiable resAvailiable">
                             <h6>Available</h6>
                             {scdAvailableItems.map((item) => (
                               <div
@@ -563,7 +563,7 @@ const AddUserModal = (props) => {
                             ))}
                           </div>
 
-                          <div className="col-lg-5 Availiable">
+                                <div className="col-lg-5 col-md-5  col-sm-5 Availiable resAvailiable">
                             <h6>Selected</h6>
                             {scdselectedItems.map((item) => (
                               <div
@@ -602,7 +602,7 @@ const AddUserModal = (props) => {
                         Next
                       </button>
                     ) : isFormSteps == "forthStep" ? (
-                      <button>save</button>
+                      <button className="AddUserNextButton">save</button>
                     ) : (
                       false
                     )}

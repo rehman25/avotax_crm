@@ -6,6 +6,7 @@ import Statistics from './assets/images/Stats.avi.png';
 import Next from './assets/images/next.avi.png'
 import showPwdImg from './assets/images/hide.avi'
 import hidePwdImg from './assets/images/show.avi'
+import { Link } from 'react-router-dom';
 
 
 function LoginComp() {
@@ -44,7 +45,9 @@ function LoginComp() {
                       <input type="checkbox" class="form-check-input"/>
                       <label class="form-check-label">Remember me</label>
                     </div>
+                    <Link to="/home" className='SignBtn'>
                     <button>Sign in</button>
+                    </Link>
                   </form>
                   <div className='loginFooter'>
                     <div className='loginFfooterleft'>

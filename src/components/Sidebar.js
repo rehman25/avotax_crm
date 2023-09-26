@@ -51,22 +51,22 @@ export default function Sidebar(props) {
                                   {props.isMenuOpen ? <span>Jobs</span> : false}
                               </NavLink>
 
-                              <NavLink to="/hamza">
+                              <NavLink to="/">
                                   <FaMoneyBill />
                                   {props.isMenuOpen ? <span>Payroll</span> : false}
                               </NavLink>
                         </div>
                           <div className='SideNav'>
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Others</h6> : false}
-                              <NavLink to="/hamza">
+                                <NavLink to="/UserManagementConfig">
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Config</span> : false}
                               </NavLink>
-                              <NavLink to="/hamza">
+                              <NavLink to="/">
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Reports</span> : false}
                               </NavLink>
-                              <NavLink to="/hamza">
+                              <NavLink to="/">
                                   <RiSettings5Fill />
                                   {props.isMenuOpen ? <span>Settings</span> : false}
                               </NavLink>

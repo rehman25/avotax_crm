@@ -2,7 +2,7 @@
     position: fixed;
     background: #0000005e;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     width: 100%;
     left: 0;
@@ -66,7 +66,7 @@
     margin: 25px 0;
     position: relative;
     margin-left: 25px;
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .inneraddUserModal .AddUserStepsBox .innerStep span p {
@@ -85,8 +85,8 @@
     color: white !important;
 }
 
-.inneraddUserModal .AddUserStepsBox .innerStep span p.svgStep{
-    padding:0 6px;
+.inneraddUserModal .AddUserStepsBox .innerStep span p.svgStep {
+    padding: 0 6px;
 }
 
 .inneraddUserModal .AddUserStepsBox .innerStep div {
@@ -104,50 +104,51 @@
     font-size: 12px;
 }
 
-.firstStepHeading{
+.firstStepHeading {
     padding: 5px;
     margin-top: 15px;
 }
-.firstStepHeading h5{
-    font-size:18px;
-        letter-spacing: 0px;
-        color: #7E87A1;
+
+.firstStepHeading h5 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #7E87A1;
 }
 
-.formInputs{
+.formInputs {
     display: flex;
     flex-direction: row;
 }
 
-.formInputs .form-group{
+.formInputs .form-group {
     margin: 0px 5px;
 }
 
-.form-group .form-select{
-   background-color: #F9F9F9;
-}
-
-.form-group .form-control{
+.form-group .form-select {
     background-color: #F9F9F9;
 }
 
-.createUserFormLabel{
+.form-group .form-control {
+    background-color: #F9F9F9;
+}
+
+.createUserFormLabel {
     font-size: 14px;
     color: #000000;
     font-weight: 600;
 }
 
-.createUserFormLabel span{
+.createUserFormLabel span {
     color: #ff4141;
 }
 
-.Functionality{
+.Functionality {
     padding: 2px;
     display: flex;
 }
 
-.AddUserModalBottom{
-    border-top:1px solid #f1f1f1 ;
+.AddUserModalBottom {
+    border-top: 1px solid #f1f1f1;
     margin: 0px;
     padding: 10px;
     display: flex;
@@ -155,12 +156,12 @@
     flex-direction: row;
 }
 
-.AddUserModalBottom button{
-   margin: 0px 5px;
+.AddUserModalBottom button {
+    margin: 0px 5px;
 }
 
-.AddUserCancelButton{
-    background: #F1FAFF ;
+.AddUserCancelButton {
+    background: #F1FAFF;
     border-radius: 6px;
     color: #3E97FF;
     width: 12%;
@@ -174,6 +175,7 @@
     border-radius: 6px;
     color: #FFFF;
 }
+
 .uploadPicLogo {
     position: relative !important;
     top: 0 !important;
@@ -182,7 +184,8 @@
     font-size: 25px;
     color: #3E97FF !important;
 }
-.FileUpload{
+
+.FileUpload {
     display: flex !important;
     padding: 15px 10px;
     /* justify-content: center; */
@@ -190,42 +193,69 @@
     border: 1px dashed #3E97FF !important;
     background-color: #F1FAFF !important;
 }
-.filesbox p{
-   margin: 0px;
-   font-size: 12px;
+
+.filesbox p {
+    margin: 0px;
+    font-size: 12px;
 }
 
-.filesbox{
+.filesbox {
     margin-left: 10px;
 }
 
-.textarea{
+.textarea {
     height: 50px !important;
 }
 
-.Availiable{
+.Availiable {
     background: #FFFFFF;
-        border: 1px solid #EEEEEE;
-        border-radius: 6px;
-        opacity: 1;
-        padding: 5px;
-       height: 377px;
-       margin: 0px 2px;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 5px;
+    height: 377px;
+    margin: 0px 2px;
+    overflow-y: scroll;
 }
-.Availiable h6{
-        font-size:14px;
-        letter-spacing: 0px;
-        color: #7E87A1;
+
+/* width */
+.Availiable::-webkit-scrollbar {
+    width: 2px;
 }
-.boardClipIcon{
+
+/* Track */
+.Availiable::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ffff;
+    border-radius: 10px;
+}
+
+/* Handle */
+.Availiable::-webkit-scrollbar-thumb {
+    background: #f1faff;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.Availiable::-webkit-scrollbar-thumb:hover {
+    background: #f1faff;
+}
+
+.Availiable h6 {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #7E87A1;
+}
+
+.boardClipIcon {
     position: relative !important;
     right: 0 !important;
     top: 0 !important;
     left: 0 !important;
     font-size: 16px;
 }
-.licenseBox{
-    background: #F9F9F9 ;
+
+.licenseBox {
+    background: #F9F9F9;
     border-radius: 5px;
     opacity: 1;
     display: flex;
@@ -234,31 +264,125 @@
     padding: 12px;
     margin-top: 5px;
 }
-.licenseBox p{
+
+.licenseBox p {
     margin: 0px;
     font-size: 16px;
 }
 
 
 
-@media screen and (max-width:992px){
-    .inneraddUserModal .AddUserStepsBox{
+@media screen and (max-width:992px) {
+    .inneraddUserModal .AddUserStepsBox {
         display: none;
     }
-        .AddUserResp{
-            height: 381px;
-                overflow-y: scroll; 
+
+    .AddUserResp {
+        height: 381px;
+        overflow-x: scroll;
 
     }
+        .AddUserResp::-webkit-scrollbar {
+            width: 2px;
+            height: 2px;
+        }
+    
+        /* Track */
+        .AddUserResp::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #FFFF;
+            border-radius: 10px;
+        }
+    
+        /* Handle */
+        .AddUserResp::-webkit-scrollbar-thumb {
+            background: #f1faff;
+            border-radius: 10px;
+        }
+    
+        /* Handle on hover */
+        .AddUserResp::-webkit-scrollbar-thumb:hover {
+            background: #f1faff;
+        }
 }
 
 @media screen and (max-width:550px) {
+
+}
+
+@media screen and (max-width:768px) {
+    .licenseBox p{
+        font-size: 12px;
+    }
+    .boardClipIcon{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:576px) {
+      .draganddrop{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+      }
+      .AddUserModalBottom{
+        justify-content: space-between;
+        padding: 10px;
+      }
+          .AddUserCancelButton {
+        width: 25%;
+
+    }
+    .resAvailiable{
+        width: 180px !important;
+        padding: 10px !important;
+    }
+
+    .AddUserNextButton {
+        width: 25%;
+    }
+}
+
+
+
+@media screen and (max-width:460px) {
+    .draganddrop {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+
+    .AddUserModalBottom {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
     .AddUserCancelButton {
-            width: 20%;
-            
+        width: 25%;
+
+    }
+
+    .resAvailiable {
+        width: 150px !important;
+        padding: 10px !important;
+    }
+
+    .AddUserNextButton {
+        width: 25%;
+    }
+        .licenseBox p{
+        font-size: 8px;
         }
-    
-        .AddUserNextButton {
-            width: 20%;
+        .boardClipIcon{
+            font-size: 10px;
         }
+        .licenseBox{
+            padding: 10px;
+        }
+}
+
+@media screen and (max-width:420px){
+.resAvailiable {
+        width: 100% !important;
+        padding: 10px !important;
+        margin-top: 2px !important;
+    }
 }
