@@ -76,6 +76,25 @@ const AddUserModal = (props) => {
     }
   };
 
+  const [dragging, setDragging] = useState(false);
+
+  const handleDragStart = (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setDragging(true);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    const droppedItemId = e.dataTransfer.getData('text/plain');
+    const droppedItem = document.getElementById(droppedItemId);
+    e.target.appendChild(droppedItem);
+    setDragging(false);
+  };
+
   return (
     <DndProvider backend={HTML5Backend}>
       <form onSubmit={checkingForm}>
