@@ -43,10 +43,6 @@
 
 .inneraddClientModal .clientStepsBox {
     padding: 3px 0;
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* position: relative; */
     background: #F2F3F7;
 }
 
@@ -88,9 +84,8 @@
     background-color: #3E97FF !important;
     color: white !important;
 }
-
 .inneraddClientModal .clientStepsBox .innerStep span p.svgStep {
-    /* background: #F1FAFF; */
+    padding: 0 6px;
 }
 
 .inneraddClientModal .clientStepsBox .innerStep div {

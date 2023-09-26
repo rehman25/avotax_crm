@@ -10,9 +10,14 @@ function AddClient() {
   const dispatch = useDispatch();
   const [isFormSteps, setFormSteps] = useState("firstStep")
 
+<<<<<<< HEAD
   const NextFun = (e) => {
     e.preventDefault()
     if(isFormSteps == "firstStep"){
+=======
+  const NextFun = () => {
+    if (isFormSteps == "firstStep") {
+>>>>>>> 8324640841d266b61ad2981632633c11fe54c719
       setFormSteps("scdStep")
     } else if (isFormSteps == "scdStep") {
       setFormSteps("thirdSteps")
@@ -64,12 +69,12 @@ function AddClient() {
                     <span className='after'>
                       {isFormSteps == "firstStep" ?
                         <p className="activeStep">1</p> : ""}
-
-                      {
-                        isFormSteps == "scdStep" || isFormSteps == "thirdSteps"
+                        {
+                          isFormSteps == "scdStep" || isFormSteps == "thirdSteps"
                           || isFormSteps == "forStep" || isFormSteps == "fiveStep"
                           || isFormSteps == "sixStep" || isFormSteps == "sevenStep" ?
-                          <p className="svgStep"><BsCheck className='svgStep' /></p> : ""}
+                          <p className="svgStep"><BsCheck className='svgStep' /></p> : ""
+                        }
                     </span>
                     <div className="">
                       <h6>General Details</h6>
