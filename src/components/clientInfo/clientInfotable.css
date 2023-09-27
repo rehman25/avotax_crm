@@ -11,6 +11,7 @@
     font-size: 12px;
     letter-spacing: 0.7px;
     color: #000000;
+    white-space: pre;
 }
 
 .CITICOtext {
@@ -48,6 +49,7 @@
     color: #A1A1A1 !important;
     opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .CitTR {

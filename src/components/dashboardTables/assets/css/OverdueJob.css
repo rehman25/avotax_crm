@@ -69,8 +69,8 @@
     font-size: 12px;
     letter-spacing: 0px;
     color: #A1A1A1 !important;
-    opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .objtr{
@@ -84,11 +84,13 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    white-space: pre;
     /* text-align: center; */
 }
 
 .OdjBottom {
     padding: 5px;
+    overflow-x: scroll;
 }
 
 
@@ -147,24 +149,7 @@
         overflow-y: hidden;
         overflow-x: scroll;
     }
-    .OdjBottom::-webkit-scrollbar {
-        width: 2px;
-    }
-
-    /* Track */
-    .OdjBottom::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    /* Handle */
-    .OdjBottom::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-
-    /* Handle on hover */
-    .OdjBottom::-webkit-scrollbar-thumb:hover {
-        background: transparent;
-    }
+    
 
     .OdjTableText {
         font-size: 8px;
@@ -186,4 +171,23 @@
         height: auto;
         margin-top: 20px;
     }
+}
+
+.OdjBottom::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.OdjBottom::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.OdjBottom::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+.OdjBottom::-webkit-scrollbar-thumb:hover {
+    background: transparent;
 }
