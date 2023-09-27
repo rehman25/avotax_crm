@@ -112,3 +112,24 @@
     padding: 10px;
     border-radius: 10px  ;
 }
+
+
+@media screen and (max-width:420px) {
+    .UMpagesICo{
+        width: 18px;
+        height: 24px;
+    }
+    .UMpageno{
+        font-size: 10px;
+        width: 18px;
+        height: 24px;
+    }
+    .UMpagination span{
+        font-size: 10px;
+    }
+    .UMtotalPage{
+        width: 70px;
+        height: 24px;
+        font-size: 10px;
+    }
+}

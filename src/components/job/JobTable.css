@@ -130,3 +130,27 @@
         overflow-x: scroll !important;
     }
 }
+
+
+@media screen and (max-width:420px) {
+    .JobpagesICo {
+        width: 18px;
+        height: 24px;
+    }
+
+    .Jobpageno{
+        font-size: 10px;
+        width: 18px;
+        height: 24px;
+    }
+
+    .Jobpagination span {
+        font-size: 10px;
+    }
+
+    .JobtotalPage {
+        width: 70px;
+        height: 24px;
+        font-size: 10px;
+    }
+}
