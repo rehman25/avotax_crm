@@ -174,37 +174,37 @@ function AddClient() {
                     <>
                       <div className="Generalinforowdirst">
                         <h5>General Information</h5>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Entity <span>(Prefilled)</span></label>
-                          <input type="email" class="form-control" placeholder=""  />
+                          <input type="email" className="form-control" placeholder=""  />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Code <span>(Prefilled)</span></label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Name <span>*</span></label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Generalinforowsecond">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Business Number</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Mailing Name <span>*</span></label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Salution <span>*</span></label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Generalinforowthird">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleFormControlSelect1">Contact Type <span>*</span></label>
-                          <select class="form-select" id="exampleFormControlSelect1">
+                          <select className="form-select" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -212,9 +212,9 @@ function AddClient() {
                             <option>5</option>
                           </select>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleFormControlSelect1">Communication Language <span>*</span></label>
-                          <select class="form-select" id="exampleFormControlSelect1">
+                          <select className="form-select" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -225,9 +225,9 @@ function AddClient() {
                       </div>
                       <div className="Assignedto">
                         <h5>Assigned To</h5>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleFormControlSelect1">Partner</label>
-                          <select class="form-select" id="exampleFormControlSelect1">
+                          <select className="form-select" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -235,9 +235,9 @@ function AddClient() {
                             <option>5</option>
                           </select>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleFormControlSelect1">Manager</label>
-                          <select class="form-select" id="exampleFormControlSelect1">
+                          <select className="form-select" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -248,31 +248,31 @@ function AddClient() {
                       </div>
                       <div className="ContactinforowFirst">
                         <h5>Contact Information</h5>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Work Phone</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Mobile</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Skype</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Contactinforowsecond">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Home Phone</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Fax</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Twitter</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                     </> :
@@ -280,41 +280,41 @@ function AddClient() {
                     <>
                       <div className="Addressrowdirst">
                         <h5>Address</h5>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Address</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Number</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Apt</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Addressrowsecond">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Street</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">PO BOX</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">RR</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Addressrowthird">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">City/Town</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleFormControlSelect1">Province</label>
-                          <select class="form-select" id="exampleFormControlSelect1">
+                          <select className="form-select" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -322,38 +322,38 @@ function AddClient() {
                             <option>5</option>
                           </select>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Postal Code</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Seccontactrowfirst">
                         <h5> Secondary Contact </h5>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Name</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">SIN</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Date of Birth</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                       <div className="Seccontactrowsecond">
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Position/Relationship</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Email Address</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputEmail1">Phone Number</label>
-                          <input type="email" class="form-control" placeholder="" />
+                          <input type="email" className="form-control" placeholder="" />
                         </div>
                       </div>
                     </> :
@@ -361,24 +361,24 @@ function AddClient() {
                       <>
                         <div className="Internetrowfirst">
                           <h5>Internet</h5>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" placeholder="" />
+                            <input type="email" className="form-control" placeholder="" />
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleInputEmail1">Linkedin</label>
-                            <input type="email" class="form-control" placeholder="" />
+                            <input type="email" className="form-control" placeholder="" />
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleInputEmail1">Website</label>
-                            <input type="email" class="form-control" placeholder="" />
+                            <input type="email" className="form-control" placeholder="" />
                           </div>
                         </div>
                         <div className="Internetrowsecond">
                           <h5>Consents</h5>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleFormControlSelect1">Has the client signed T1013?</label>
-                            <select class="form-select" id="exampleFormControlSelect1">
+                            <select className="form-select" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -386,9 +386,9 @@ function AddClient() {
                               <option>5</option>
                             </select>
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleFormControlSelect1">Has the client signed RC59?</label>
-                            <select class="form-select" id="exampleFormControlSelect1">
+                            <select className="form-select" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -399,9 +399,9 @@ function AddClient() {
                         </div>
                         <div className="Internetrowthird">
                           <h5>General</h5>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleFormControlSelect1">Is this a new client?</label>
-                            <select class="form-select" id="exampleFormControlSelect1">
+                            <select className="form-select" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -409,9 +409,9 @@ function AddClient() {
                               <option>5</option>
                             </select>
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleFormControlSelect1">GST/HST BN?</label>
-                            <select class="form-select" id="exampleFormControlSelect1">
+                            <select className="form-select" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -419,9 +419,9 @@ function AddClient() {
                               <option>5</option>
                             </select>
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <label for="exampleInputEmail1">Client Wi-Fi Password</label>
-                            <input type="email" class="form-control" placeholder="" />
+                            <input type="email" className="form-control" placeholder="" />
                           </div>
                         </div>
                       </> :
@@ -429,9 +429,9 @@ function AddClient() {
                         <>
                           <div className="Engagementsrowfirst">
                             <h5>Engagements</h5>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we do client HST return?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -439,9 +439,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we do payroll for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -449,9 +449,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T1 returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -461,9 +461,9 @@ function AddClient() {
                             </div>
                           </div>
                           <div className="Engagementsrowsecond">
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T2 returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -471,9 +471,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T3 returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -481,9 +481,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T4 returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -493,9 +493,9 @@ function AddClient() {
                             </div>
                           </div>
                           <div className="Engagementsrowthird">
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T5 returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -503,9 +503,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we prepare T5018's returns for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -513,9 +513,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Do we do bookkeeping for this client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -525,9 +525,9 @@ function AddClient() {
                             </div>
                           </div>
                           <div className="Engagementsrowfourth">
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">GST/HST Filling?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -535,9 +535,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">GST/HST Method?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -545,9 +545,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Has GST return been e-filed?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -557,9 +557,9 @@ function AddClient() {
                             </div>
                           </div>
                           <div className="Engagementsrowfifth">
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Has T1 been e-filed?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -567,9 +567,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Has T1135 been e-filed?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -577,9 +577,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Has T2 been e-filed?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -589,9 +589,9 @@ function AddClient() {
                             </div>
                           </div>
                           <div className="Engagementsrowsixth">
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">Is this a review client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -599,9 +599,9 @@ function AddClient() {
                                 <option>5</option>
                               </select>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="exampleFormControlSelect1">is this a audit client?</label>
-                              <select class="form-select" id="exampleFormControlSelect1">
+                              <select className="form-select" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -615,9 +615,9 @@ function AddClient() {
                           <>
                             <div className="Accountsoftrow">
                               <h5>Accounting Software</h5>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleFormControlSelect1">Accounting Software</label>
-                                <select class="form-select" id="exampleFormControlSelect1">
+                                <select className="form-select" id="exampleFormControlSelect1">
                                   <option>1</option>
                                   <option>2</option>
                                   <option>3</option>
@@ -625,43 +625,43 @@ function AddClient() {
                                   <option>5</option>
                                 </select>
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Username</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
                             </div>
                             <div className="Bussinessaffilaiterowfirst">
                               <h5>Business Affiliates</h5>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Bookkeeper name</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Bookkeeper phone number</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Bookkeeper e-mail</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
                             </div>
                             <div className="Bussinessaffilaiterowsecond">
                               <h5>Business Affiliates</h5>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Lawyer name</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Lawyer phone number</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
-                              <div class="form-group">
+                              <div className="form-group">
                                 <label for="exampleInputEmail1">Lawyer e-mail address</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" className="form-control" placeholder="" />
                               </div>
                             </div>
 
@@ -670,9 +670,9 @@ function AddClient() {
                             <>
                               <div className="Profierowfirst">
                                 <h5> More about the Contact </h5>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">Tax Year End</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -680,9 +680,9 @@ function AddClient() {
                                     <option>5</option>
                                   </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">Client Type</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -690,9 +690,9 @@ function AddClient() {
                                     <option>5</option>
                                   </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">Client Type Subcategory</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -702,9 +702,9 @@ function AddClient() {
                                 </div>
                               </div>
                               <div className="Profierowsecond">
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">No. of Employees</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -712,9 +712,9 @@ function AddClient() {
                                     <option>5</option>
                                   </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">In business since</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -725,9 +725,9 @@ function AddClient() {
                               </div>
                               <div className="Annualaccschedule">
                                 <h5> Annual Account Scheduling </h5>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleFormControlSelect1">Annual Account Month</label>
-                                  <select class="form-select" id="exampleFormControlSelect1">
+                                  <select className="form-select" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -738,13 +738,13 @@ function AddClient() {
                               </div>
                               <div className="clienthistory">
                                 <h5> Client History </h5>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleInputEmail1">Client From</label>
-                                  <input type="email" class="form-control" placeholder="" />
+                                  <input type="email" className="form-control" placeholder="" />
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                   <label for="exampleInputEmail1">Client Until</label>
-                                  <input type="email" class="form-control" placeholder="" />
+                                  <input type="email" className="form-control" placeholder="" />
                                 </div>
                               </div>
                             </> :
@@ -752,9 +752,9 @@ function AddClient() {
                               <>
                                 <div className="Billingrowfirst">
                                   <h5>Billing</h5>
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleFormControlSelect1">Invoice/Statement Delivery</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
+                                    <select className="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -762,9 +762,9 @@ function AddClient() {
                                       <option>5</option>
                                     </select>
                                   </div>
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleFormControlSelect1">Charge Interest</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
+                                    <select className="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -772,23 +772,23 @@ function AddClient() {
                                       <option>5</option>
                                     </select>
                                   </div>
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleInputEmail1">Interest Rate %</label>
-                                    <input type="email" class="form-control" placeholder="" />
+                                    <input type="email" className="form-control" placeholder="" />
                                   </div>
                                 </div>
                                 <div className="Billingrowsecond">
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleInputEmail1">Interest Period</label>
-                                    <input type="email" class="form-control" placeholder="" />
+                                    <input type="email" className="form-control" placeholder="" />
                                   </div>
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleInputEmail1">Minimum Amount</label>
-                                    <input type="email" class="form-control" placeholder="" />
+                                    <input type="email" className="form-control" placeholder="" />
                                   </div>
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleFormControlSelect1">Send Invoice Reminder</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
+                                    <select className="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -798,9 +798,9 @@ function AddClient() {
                                   </div>
                                 </div>
                                 <div className="Billingrowthird">
-                                  <div class="form-group">
+                                  <div className="form-group">
                                     <label for="exampleFormControlSelect1">Tax rate</label>
-                                    <select class="form-select" id="exampleFormControlSelect1">
+                                    <select className="form-select" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>

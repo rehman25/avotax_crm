@@ -159,9 +159,6 @@
    color: #C1C1C1;
 }
 @media screen and (max-width:992px){
-    .loginSection {
-        height: auto;
-    }
     .sliderLeftSide{
         display: none;
     }

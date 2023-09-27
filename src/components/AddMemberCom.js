@@ -17,7 +17,7 @@ function AddMemberCom() {
               <BiSearchAlt2 />
               <input
                 type="text"
-                class="search-input"
+                className="search-input"
                 placeholder="Search member"
               ></input>
             </div>
@@ -30,84 +30,84 @@ function AddMemberCom() {
                 }}
               >
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Smith John</h5>
                   <span>ceo</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Kat jim</h5>
                   <span>Manager</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Loe Janna</h5>
                   <span>Marketing Manager</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Emma Smith</h5>
                   <span>ceo</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Caesa</h5>
                   <span>General Manager</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Emma Smith</h5>
                   <span>General Manager</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Emma Smith</h5>
                   <span>Employee</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Emma Smith</h5>
                   <span>Employee</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>David</h5>
                   <span>Employee</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Watson</h5>
                   <span>Employee</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Jackon</h5>
                   <span>Employee</span>
                 </div>
               </div>
               <div className="team_member">
                 <img src={user_img} alt="" />
-                <div class="team_detail">
+                <div className="team_detail">
                   <h5>Albert</h5>
                   <span>Employee</span>
                 </div>

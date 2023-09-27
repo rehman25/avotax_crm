@@ -17,12 +17,12 @@ function AddJob() {
                     <GrClose className='Iconclose' onClick={() => dispatch(CreateJobFun())}/>
                     <form action="">
                         <div className="ScrollBar">
-                            <div class="form-group mt-3 px-3">
+                            <div className="form-group mt-3 px-3">
                                 <label> Client <span>*</span></label>
-                                <textarea class="form-control" ></textarea>
+                                <textarea className="form-control" ></textarea>
                             </div>
                             <div className="formAlign pt-4">
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Job Type</label>
                                     <select className="form-control">
                                         <option>1</option>
@@ -32,14 +32,14 @@ function AddJob() {
                                         <option>5</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label> Period Ended <span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder="" />
                                 </div>
                             </div>
 
                             <div className="formAlign">
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Job Partner</label>
                                     <select className="form-control">
                                         <option>1</option>
@@ -49,7 +49,7 @@ function AddJob() {
                                         <option>5</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Job Manager</label>
                                     <select className="form-control">
                                         <option>1</option>
@@ -62,7 +62,7 @@ function AddJob() {
                             </div>
 
                             <div className="formAlign">
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Job Owner</label>
                                     <select className="form-control">
                                         <option>1</option>
@@ -72,7 +72,7 @@ function AddJob() {
                                         <option>5</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Currently Responsible</label>
                                     <select  className="form-control">
                                         <option>1</option>
@@ -85,17 +85,17 @@ function AddJob() {
                             </div>
 
                             <div className="formAlign">
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label> Target Start Date  <span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder="" />
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label> Target End Date <span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder="" />
                                 </div>
                             </div>
                             <div className="formAlign">
-                            <div class="form-group">
+                            <div className="form-group">
                                     <label for="">Job Status</label>
                                     <select  className="form-control">
                                         <option>1</option>
@@ -105,7 +105,7 @@ function AddJob() {
                                         <option>5</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="">Priority</label>
                                     <select  className="form-control">
                                         <option>1</option>
@@ -116,27 +116,27 @@ function AddJob() {
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group mt-3 px-3">
+                            <div className="form-group mt-3 px-3">
                                 <label> Job Details <span>*</span></label>
-                                <textarea class="form-control" ></textarea>
+                                <textarea className="form-control" ></textarea>
                             </div>
-                            <div class="form-group mt-3 px-3">
+                            <div className="form-group mt-3 px-3">
                                 <label> Opening WIP Description <span>*</span></label>
-                                <textarea class="form-control" ></textarea>
+                                <textarea className="form-control" ></textarea>
                             </div>
                             <div className="formAlign">
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label> Opening WIP <span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder="" />
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label> Agreed Free <span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder="" />
                                 </div>
                             </div>
-                            <div class="form-group mt-3 px-3">
+                            <div className="form-group mt-3 px-3">
                                 <label> Budget Total <span>*</span></label>
-                                <textarea class="form-control" ></textarea>
+                                <textarea className="form-control" ></textarea>
                             </div>
                         </div>
                         <button>Save</button>

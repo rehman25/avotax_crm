@@ -35,7 +35,7 @@ function MemberDetails() {
             </span>
           </div>
           <div>
-            <div class='employe_detail'>
+            <div className='employe_detail'>
               <img src={user_img} alt="" />
 
               <div className='employee_data'>
@@ -125,7 +125,7 @@ function MemberDetails() {
                               </div>
                             </div>
                             <div className="getTaskBox">
-                                <table class="tableee">
+                                <table className="tableee">
                                   <tbody>
                                     <tr>
                                       <td style={{borderLeft: "5px solid #2DACF2"}}>T2</td>

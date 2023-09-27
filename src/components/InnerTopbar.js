@@ -182,7 +182,7 @@ function InnerTopbar(props) {
                     
                      {/* CLIENT INFO PAGE TOP BAR ON RIGHT SIDE =-=-=-=-= */}
                      {props?.addClientDropDown && (
-                        <select class="form-select w-50">
+                        <select className="form-select w-50">
                             <option selected>Client</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -198,7 +198,7 @@ function InnerTopbar(props) {
 
                     {/* JOB PAGE TOP BAR ON RIGHT SIDE =-=-=-=-= */}
                     {props?.allJobDropDown && (
-                        <select class="form-select w-50">
+                        <select className="form-select w-50">
                             <option selected>All Job</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -211,7 +211,7 @@ function InnerTopbar(props) {
 
                     {/* User Management TOP BAR ON RIGHT SIDE =============================================== */}
                     {props?.UserManageDropDown && (
-                        <select class="form-select w-50">
+                        <select className="form-select w-50">
                             <option selected>My Comment</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -224,7 +224,7 @@ function InnerTopbar(props) {
                     
                     {/* User Management CONFIG TOP BAR ON RIGHT SIDE =============================================== */}
                     {props?.UserManageConfigDropDown && (
-                        <select class="form-select w-50">
+                        <select className="form-select w-50">
                             <option selected>My Comment</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
