@@ -137,6 +137,62 @@ const TeamManagement = () => {
                                 </p>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <p className='JpTableText'>T2</p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">Dec 31 2020</p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">
+                                    9829253 Canada Inc - Sean Swarts
+                                </p>
+                            </td>
+                            <td>
+                                <p className="TableTextHighlighted">
+                                    In Process
+                                </p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">
+                                    12,521
+                                </p>
+                            </td>
+                            <td>
+                                <p className="JpTableIcon">
+                                    <BsThreeDotsVertical />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='JpTableText'>T2</p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">Dec 31 2020</p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">
+                                    9829253 Canada Inc - Sean Swarts
+                                </p>
+                            </td>
+                            <td>
+                                <p className="TableTextHighlighted">
+                                    In Process
+                                </p>
+                            </td>
+                            <td>
+                                <p className="JpTableText">
+                                    12,521
+                                </p>
+                            </td>
+                            <td>
+                                <p className="JpTableIcon">
+                                    <BsThreeDotsVertical />
+                                </p>
+                            </td>
+                        </tr>
 
                     </tbody>
                 </table>

@@ -137,6 +137,62 @@ const TeamManagement = () => {
                                 </p>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <p className='OdjTableText'>T2</p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">Dec 31 2020</p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">
+                                    9829253 Canada Inc - Sean Swarts
+                                </p>
+                            </td>
+                            <td>
+                                <p className="TableTextHighlighted">
+                                    In Process
+                                </p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">
+                                    12,521
+                                </p>
+                            </td>
+                            <td>
+                                <p className="OdjTableIcon">
+                                    <BsThreeDotsVertical />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='OdjTableText'>T2</p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">Dec 31 2020</p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">
+                                    9829253 Canada Inc - Sean Swarts
+                                </p>
+                            </td>
+                            <td>
+                                <p className="TableTextHighlighted">
+                                    In Process
+                                </p>
+                            </td>
+                            <td>
+                                <p className="OdjTableText">
+                                    12,521
+                                </p>
+                            </td>
+                            <td>
+                                <p className="OdjTableIcon">
+                                    <BsThreeDotsVertical />
+                                </p>
+                            </td>
+                        </tr>
 
                     </tbody>
                 </table>
