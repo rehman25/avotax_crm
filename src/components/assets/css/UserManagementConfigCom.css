@@ -14,6 +14,7 @@
     color: #000000;
     opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .UMCCtext {
@@ -51,6 +52,7 @@
     color: #A1A1A1 !important;
     opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .UMCCtTR {
@@ -179,4 +181,28 @@
         height: 34px;
     }
 
+}
+
+
+@media screen and (max-width:420px) {
+    .UMCCpagesICo {
+        width: 18px;
+        height: 24px;
+    }
+
+    .UMCCpageno {
+        font-size: 10px;
+        width: 18px;
+        height: 24px;
+    }
+
+    .UMCCpagination span {
+        font-size: 10px;
+    }
+
+    .UMCCtotalPage {
+        width: 70px;
+        height: 24px;
+        font-size: 10px;
+    }
 }

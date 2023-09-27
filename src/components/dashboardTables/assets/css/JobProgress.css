@@ -71,6 +71,7 @@
     color: #A1A1A1 !important;
     opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .jptr{
@@ -84,11 +85,13 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    white-space: pre;
     /* text-align: center; */
 }
 
 .JpBottom {
     padding: 5px;
+    overflow-x: scroll;
 
 }
 
@@ -146,24 +149,7 @@
         overflow-x: scroll;
     }
     
-    .JpBottom::-webkit-scrollbar {
-        width: 2px;
-    }
-    
-    /* Track */
-    .JpBottom::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    
-    /* Handle */
-    .JpBottom::-webkit-scrollbar-thumb {
-    background: transparent;
-}
 
-/* Handle on hover */
-.JpBottom::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
 
 .JpTableText{
     font-size: 8px !important;
@@ -178,3 +164,22 @@
         margin-top: 20px;
     }
 }
+
+        .JpBottom::-webkit-scrollbar {
+            width: 2px;
+        }
+    
+        /* Track */
+        .JpBottom::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    
+        /* Handle */
+        .JpBottom::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+    
+        /* Handle on hover */
+        .JpBottom::-webkit-scrollbar-thumb:hover {
+            background: transparent;
+        }

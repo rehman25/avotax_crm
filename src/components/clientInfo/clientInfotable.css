@@ -11,6 +11,7 @@
     font-size: 12px;
     letter-spacing: 0.7px;
     color: #000000;
+    white-space: pre;
 }
 
 .CITICOtext {
@@ -48,6 +49,7 @@
     color: #A1A1A1 !important;
     opacity: 1;
     margin: 0px;
+    white-space: pre;
 }
 
 .CitTR {
@@ -119,5 +121,28 @@
 @media screen and (max-width:1100px) {
     .CItable{
         overflow-x: scroll !important;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .pagesICo {
+        width: 18px;
+        height: 24px;
+    }
+
+    .cipageno {
+        font-size: 10px;
+        width: 18px;
+        height: 24px;
+    }
+
+    .cipagination span {
+        font-size: 10px;
+    }
+
+    .CitotalPage {
+        width: 70px;
+        height: 24px;
+        font-size: 10px;
     }
 }

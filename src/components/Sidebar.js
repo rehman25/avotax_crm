@@ -62,11 +62,11 @@ export default function Sidebar(props) {
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Config</span> : false}
                               </NavLink>
-                              <NavLink to="/home">
+                                <NavLink to="/home">
                                   <FaClipboardList />
                                   {props.isMenuOpen ? <span>Reports</span> : false}
                               </NavLink>
-                              <NavLink to="/home">
+                                <NavLink to="/home">
                                   <RiSettings5Fill />
                                   {props.isMenuOpen ? <span>Settings</span> : false}
                               </NavLink>
