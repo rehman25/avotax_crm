@@ -8,7 +8,6 @@ import CreateRole from './modal/CreateRole';
 
 function UserManagementCom() {
     const addRole = useSelector((state) => state.ModalSlice.CreateRoleModal);
-    console.log(addRole)
     return (
         <>
             <div className="row">

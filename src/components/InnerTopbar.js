@@ -193,7 +193,7 @@ function InnerTopbar(props) {
                         <button className='bulkBtn hiddenFilterBtn'>{props?.addClientBulkBtn}</button>
                     )}
                     {props?.addClientBtn && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(ClientTypes())}>{props?.addClientBtn}</button>
+                        <button className='CreateJobbtn hiddenFilterBtn' onClick={() => dispatch(ClientTypes())}>{props?.addClientBtn}</button>
                     )}
 
                     {/* JOB PAGE TOP BAR ON RIGHT SIDE =-=-=-=-= */}
@@ -232,7 +232,7 @@ function InnerTopbar(props) {
                         </select>
                     )}
                     {props?.UserManageConfigCreateUserBtn && (
-                        <button className='CreateJobbtn' onClick={() => dispatch(CreateUserFun())}>{props?.UserManageConfigCreateUserBtn}</button>
+                        <button className='CreateJobbtn hiddenFilterBtn' onClick={() => dispatch(CreateUserFun())}>{props?.UserManageConfigCreateUserBtn}</button>
                     )}
                 </div>
             </div>
