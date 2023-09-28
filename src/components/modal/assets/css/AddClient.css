@@ -12,7 +12,7 @@
 }
 
 .addClientModal .inneraddClientModal {
-    width: 90%;
+    width: 95%;
     background: white;
     position: relative;
 }
@@ -32,9 +32,6 @@
     padding: 5px 15px !important;
     border-bottom: 1px solid #f1f1f1;
 }
-
-.inneraddClientModal h5 {}
-
 .inneraddClientModal svg.closeIcon {
     position: absolute;
     right: 15px;
@@ -110,7 +107,15 @@
     overflow-y: scroll;
     padding: 0 5px;
 }
-
+.CooperateClients::-webkit-scrollbar {
+    width: 8px;
+    padding-right: 5px;
+    background-color: transparent;
+}
+.CooperateClients::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(161, 158, 158, 0.486);
+}
 .CooperateClients .Generalinforowdirst {
     display: flex;
     justify-content: space-between;
