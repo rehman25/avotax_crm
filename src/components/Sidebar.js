@@ -31,7 +31,7 @@ export default function Sidebar(props) {
                         </div>
                           <div className="SideNav">
                               {props.isMenuOpen ? <h6 className='sidebarHead'>Application</h6> : false}
-                            <NavLink to="/home">
+                            <NavLink to="/cls">
                                 <AiFillPieChart className='DashboardIco' />
                                 {props.isMenuOpen ? <span>Dashboard</span> : false}
                             </NavLink>

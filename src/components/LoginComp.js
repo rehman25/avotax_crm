@@ -15,52 +15,56 @@ function LoginComp() {
   return (
     <section className='loginSection'>
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-lg-5 p-0">
+        <div className="row align-items-center">
+          <div className="col-lg-5">
             <SimpleSlider />
           </div>
-          <div className="col-lg-7">
-            <div className='sliderRightSide'>
-              <div className='innersliderRightSide'>
-                  <h4>Sign in</h4>
-                  <h6>How bitco helps?<a href="">Have a look</a><img src={Next} alt="" /></h6>
-                  <form action="">
-                    <div className="form-group">
-                      <label >Email address</label>
-                      <input type="email" className="form-control" placeholder="Enter email" />
-                    </div>
-                    <div className="form-group" style={{position: "relative"}}>
-                      <div className='innerFormFlex'>
-                          <label>Password</label>
-                          <a href="">Forgot Password</a>
+          <div className="col-lg-7 customeFlexLogin">
+            <div className="col-lg-8">
+              <div className='sliderRightSide'>
+                <div className='innersliderRightSide'>
+                    <h4>Sign in</h4>
+                    <h6>How bitco helps?<a href="">Have a look</a><img src={Next} alt="" /></h6>
+                    <form action="">
+                      <div className="form-group">
+                        <label >Email address</label>
+                        <input type="email" className="form-control" placeholder="Enter email" />
                       </div>
-                      <input type={isRevealPwd ? "text" : "password"} className="form-control" />
-                      <img className='pwdShowHideImg'
-                          title={isRevealPwd ? "Hide password" : "Show password"}
-                          src={isRevealPwd ? hidePwdImg : showPwdImg}
-                          onClick={() => setIsRevealPwd(prevState => !prevState)}
-                      />
-                    </div>
-                    <div className="form-group form-check">
-                      <input type="checkbox" className="form-check-input"/>
-                      <label className="form-check-label">Remember me</label>
-                    </div>
-                    <Link to="/home" className='SignBtn'>
-                    <button>Sign in</button>
-                    </Link>
-                  </form>
-                  <div className='loginFooter'>
-                    <div className='loginFfooterleft'>
-                      <a href="#">© 2023-2024</a>
-                      <a href="#">www.bitco.com</a>
-                    </div>
-                    <div className='loginFooterright'>
-                      <a href="#">Terms & conditions</a>
-                      <a href="#">Privacy Policy</a>
-                      <a href="#">Contact Us</a>
-                    </div>
-                  </div>
+                      <div className="form-group" style={{position: "relative"}}>
+                        <div className='innerFormFlex'>
+                            <label>Password</label>
+                            <a href="">Forgot Password</a>
+                        </div>
+                        <input type={isRevealPwd ? "text" : "password"} className="form-control" />
+                        <img className='pwdShowHideImg'
+                            title={isRevealPwd ? "Hide password" : "Show password"}
+                            src={isRevealPwd ? hidePwdImg : showPwdImg}
+                            onClick={() => setIsRevealPwd(prevState => !prevState)}
+                        />
+                      </div>
+                      <div className="form-group form-check">
+                        <input type="checkbox" className="form-check-input"/>
+                        <label className="form-check-label">Remember me</label>
+                      </div>
+                      <Link to="/home" className='SignBtn'>
+                      <button>Sign in</button>
+                      </Link>
+                    </form>
+                </div>
               </div>
+            </div>
+            <div className="col-lg-12">
+                <div className='loginFooter'>
+                  <div className='loginFfooterleft'>
+                    <a href="#">© 2023-2024</a>
+                    <a href="#">www.bitco.com</a>
+                  </div>
+                  <div className='loginFooterright'>
+                    <a href="#">Terms & conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>

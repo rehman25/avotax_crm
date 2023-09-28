@@ -79,28 +79,33 @@
 .innerRightSide button {
     background: #FFFFFF;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 0px 15px;
     margin: 0px 5px;
     border: 1px solid #f1f1f1;
     font-size: 14px;
     color: #000000;
+    line-height: 33px;
 }
 
 .innerLeftSide button {
     background: #FFFFFF;
     border: 1px solid #f1f1f1;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 0px 15px;
     margin: 0px 5px;
     font-size: 14px;
     color: #000000;
+    line-height: 33px;
 }
 
 .CreateJobbtn {
     background: #3E97FF !important;
     color: white !important;
 }
-
+.innerRightSide select{
+    line-height: 21px;
+    border-radius: 0 !important;
+}
 .innerRightSide button img {
     height: 15px;
     margin-right: 5px;
@@ -113,13 +118,16 @@
 
 .innerLeftSide span {
     border: 1px solid #f1f1f1;
-    padding: 0 6px;
+    padding: 0 8px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
+    height: 35px;
 }
 
 .innerLeftSide span img {
-    height: 15px;
+    height: 20px;
+    position: relative;
+    top: 3.1px;
 }
 
 .searchInnerTopBar {
@@ -128,19 +136,23 @@
 }
 
 .searchInnerTopBar input.searchInput {
-    border: 1px solid lightgray;
+    border: 1px solid #E2E5F1;
     padding-left: 25px;
     width: 100%;
+    line-height: 30px;
+    border-radius: 3px;
 }
 
 .searchInnerTopBar input.searchInput::placeholder {
     font-size: 14px;
+    color: black;
+    font-weight: 400;
 }
 
 .searchInnerTopBar svg {
     position: absolute;
-    left: 5px;
-    top: 8px;
+    left: 7px;
+    top: 11px;
     font-size: 12px;
 }
 .searchInnerTopBar img {
@@ -265,6 +277,9 @@
     .settingModalBox{
         width: 95%;
         left: 10px;
+    }
+    .innerRightSide select{
+        width: 100% !important;
     }
 }
 @media screen and (max-width:667px){

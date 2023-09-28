@@ -165,3 +165,9 @@ td {
     margin-top: 150px;
     margin-bottom: 50px;
 }
+
+@media screen and (max-width:768px){
+    .marginTop{
+        margin-top: 190px;
+    }
+}
