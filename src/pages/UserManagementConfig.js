@@ -33,8 +33,12 @@ function UserManagementConfig() {
                         UserManageConfigFilterBtn="Filters"
                         UserManageConfigFilterIcon={filter_ico}
                     />
-                    <div className="container marginTop">
+                    <div className="container-fluid marginTop">
+                        <div className="row">
+                            <div className="col-12">
                         <UserManagementConfigCom />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -51,7 +51,7 @@ export default function Sidebar(props) {
                                   {props.isMenuOpen ? <span>Jobs</span> : false}
                               </NavLink>
 
-                              <NavLink to="/home">
+                                <NavLink to="/AddMember">
                                   <FaMoneyBill />
                                   {props.isMenuOpen ? <span>Payroll</span> : false}
                               </NavLink>

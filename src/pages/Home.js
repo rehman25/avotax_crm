@@ -35,7 +35,7 @@ function Home() {
                         homeFilericon={filter_ico}
                         createJobHome="Create Job"
                     />
-                    <div className="container marginTop">
+                    <div className="container-fluid marginTop">
                         <div className="row">
                             <div className="col-lg-6">
                                 <AnnualRevenue />

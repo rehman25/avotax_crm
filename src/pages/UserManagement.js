@@ -30,10 +30,10 @@ function UserManagement() {
               UserManageCreateRoleBtn="Create Role"
               UserManageDropDown={true}
           />
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-12 p-0">
-                <div className="container marginTop">
+                <div className="container-fluid marginTop">
                     <UserManagementCom />
                 </div>
               </div>

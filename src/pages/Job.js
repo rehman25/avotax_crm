@@ -34,8 +34,12 @@ function Job(){
                         jobsSettingIcon={setting_ico}
                         jobsSearchBar={true}
                     />
-                    <div className="container marginTop">
-                        <JobTable />
+                    <div className="container-fluid marginTop">
+                        <div className="row">
+                            <div className="col-12">
+                              <JobTable />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

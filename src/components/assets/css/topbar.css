@@ -79,7 +79,7 @@
 .innerRightSide button {
     background: #FFFFFF;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 8px 15px;
     margin: 0px 5px;
     border: 1px solid #f1f1f1;
     font-size: 14px;
@@ -90,7 +90,7 @@
     background: #FFFFFF;
     border: 1px solid #f1f1f1;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 8px 15px;
     margin: 0px 5px;
     font-size: 14px;
     color: #000000;
@@ -113,7 +113,7 @@
 
 .innerLeftSide span {
     border: 1px solid #f1f1f1;
-    padding: 0 6px;
+    padding: 6px 10px;
     position: relative;
     border-radius: 5px;
 }
@@ -125,10 +125,19 @@
 .searchInnerTopBar {
     position: relative;
     top: 0;
+    background: #FFFFFF ;
+    border: 1px solid #E2E5F1;
+    border-radius: 6px;
+    padding: 4px 1px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+
+
 }
 
 .searchInnerTopBar input.searchInput {
-    border: 1px solid lightgray;
+    border: none  !important;
     padding-left: 25px;
     width: 100%;
 }
