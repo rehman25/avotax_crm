@@ -71,7 +71,7 @@ function UserManagementCom() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-3">
                     <div className="User_Admin_mainBox">
                         <div className='User_Admin_Inner'>
                             <h5>Employee#2</h5>
@@ -91,7 +91,7 @@ function UserManagementCom() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-3">
                     <div className="User_Admin_mainBox">
                         <div className='User_Admin_Inner'>
                             <h5>Employee#3</h5>
@@ -111,7 +111,7 @@ function UserManagementCom() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-3">
                     <div className="User_Admin_mainBox">
                         <div className='User_Admin_Inner'>
                             <h5>Employee#4</h5>

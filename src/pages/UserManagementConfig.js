@@ -36,7 +36,7 @@ function UserManagementConfig() {
                     <div className="container-fluid marginTop">
                         <div className="row">
                             <div className="col-12">
-                        <UserManagementConfigCom />
+                                <UserManagementConfigCom />
                             </div>
                         </div>
                     </div>

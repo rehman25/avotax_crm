@@ -4,7 +4,6 @@
     border-radius: 10px;
     margin-top: 0;
     padding: 15px 10px;
-    margin: 5px 0;
 }
 
 .User_Admin_Inner{
@@ -24,8 +23,8 @@
 
 
 .User_Admin_Details li{
-    font-size: 11px;
-    letter-spacing: 0.7px;      
+    margin: 7px 0;
+    font-size: 13px;
 }
 
 .User_Admin_Details li::before {

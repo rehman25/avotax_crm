@@ -16,8 +16,8 @@ const JobTable = () => {
         <>
             <div className="JobMain">
                 <div className='Jobtable'>
-                    <table className="table align-middle mb-0 bg-white">
-                        <thead ct assName="bg-light">
+                    <table className="table">
+                        <thead>
                             <tr className='JobtTR'>
                                 <th><input type="Checkbox" name="" id="" className='jobtext'/></th>
                                 <th><p className='jobtext'>Job ID</p></th>

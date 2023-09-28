@@ -212,15 +212,31 @@
 }
 .getTaskBox .tableee {
   width: 100%;
-  overflow-y: scroll;
   display: block;
 }
 
 .getTaskBox .tableee tr {
   border-bottom: 1px dashed #dddddd;
   margin: 20px 0;
-  display: block;
+  display: inline-flex;
   padding-bottom: 10px;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+}
+.getTaskBox .tableee tbody{
+    width: 100%;
+    overflow: scroll;
+    display: block;
+}
+.getTaskBox .tableee tbody::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+  background-color: transparent;
+}
+.getTaskBox .tableee tbody::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(128, 125, 125);
 }
 .getTaskBox .tableee td{
   text-align: left;

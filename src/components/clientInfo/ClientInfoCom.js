@@ -17,8 +17,8 @@ const ClientInfoCom = () => {
         <>
             <div className="ClientInfoMain">
                 <div className='CItable'>
-                <table className="table align-middle mb-0 bg-white">
-                    <thead ct assName="bg-light">
+                <table className="table">
+                    <thead>
                         <tr className='CitTR'>
                             <th><input type="Checkbox" name="" id="" className='cittext' /></th>
                             <th><p className='cittext'>Client Code</p></th>

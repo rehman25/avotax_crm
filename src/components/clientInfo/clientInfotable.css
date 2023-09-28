@@ -1,9 +1,27 @@
 .ClientInfoMain {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     box-shadow: 0px 0px 2px #0000000A;
     border: 1px solid #F1F1F2;
     border-radius: 9px;
     padding: 10px;
+}
+.CItable{
+    overflow-x: scroll !important;
+}
+.CItable::-webkit-scrollbar {
+    height: 5px;
+    background-color: transparent;
+}
+.CItable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(128, 125, 125);
+}
+
+.CItable table thead tr th{
+    background: #FAFAFA;
+}
+.CItable table tr td{
+    padding: 18px 9px;
 }
 
 .clientinfotabletext {
@@ -19,16 +37,16 @@
 }
 
 .CITICo {
-    background: #F2F3F7 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background: #F2F3F7 ;
     margin: 0px 5px;
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
-
+    padding: 5px 6px;
+}
+.CITICo svg{
+    font-size: 20px;
 }
 
 .editico {
@@ -46,8 +64,6 @@
 .cittext {
     font-size: 14px;
     letter-spacing: 0px;
-    /* color: #A1A1A1 !important; */
-    opacity: 1;
     margin: 0px;
     white-space: pre;
 }
@@ -117,12 +133,6 @@
 .PaginationRow{
     display: flex !important;
     flex-wrap: wrap !important;
-}
-
-@media screen and (max-width:1100px) {
-    .CItable{
-        overflow-x: scroll !important;
-    }
 }
 
 @media screen and (max-width:420px) {

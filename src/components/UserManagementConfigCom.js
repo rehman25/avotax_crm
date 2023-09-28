@@ -18,8 +18,8 @@ const UserManagementConfigCom = () => {
         <>
             <div className="UMCCMain">
                 <div className='UMCCtable'>
-                    <table className="table align-middle mb-0 bg-white">
-                        <thead ct assName="bg-light">
+                    <table className="table">
+                        <thead>
                             <tr className='UMCCtTR'>
                                 <th><input type="Checkbox" name="" id="" className='UMCCtext' /></th>
                                 <th><p className='UMCCtext'>Profile</p></th>
