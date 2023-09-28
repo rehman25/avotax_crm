@@ -30,10 +30,10 @@ function AddMember() {
                         addMemberFilterIcon={filter_ico}
                         addMemberCreateNew="Create New"
                     />
-                    <div className="container marginTop">
+                    <div className="container-fluid marginTop">
                         <div className="row">
-                            <div className="col-12 p-0">
-                            <div className='container mb-5'>
+                            <div className="col-12">
+                                <div className='container-fluid mb-5'>
                                 <AddMemberCom/>
                             </div>
                             </div>

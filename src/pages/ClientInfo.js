@@ -36,9 +36,11 @@ function ClientInfo() {
                         addClientSetting={setting_ico}
                         addClientSearchBar={true}
                     />
-                    <div className="container marginTop">
+                    <div className="container-fluid  marginTop">
                         <div className="row">
+                            <div className="col-12">
                             <ClientInfoCom />
+                            </div>
                         </div>
                     </div>
                 </div>
